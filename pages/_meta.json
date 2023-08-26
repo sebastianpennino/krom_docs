@@ -1,0 +1,28 @@
+{
+  "index": {
+    "type": "page",
+    "title": "Kromsys",
+    "display": "hidden",
+    "theme": {
+      "layout": "raw"
+    }
+  },
+  "docs": {
+    "type": "page",
+    "title": "Documentacion"
+  },
+  "about": {
+    "type": "page",
+    "title": "Acerca De",
+    "theme": {
+      "typesetting": "article"
+    }
+  },
+  "404": {
+    "type": "page",
+    "theme": {
+      "timestamp": false,
+      "typesetting": "article"
+    }
+  }
+}
