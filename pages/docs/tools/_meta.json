@@ -1,0 +1,17 @@
+{
+  "pc-link": {
+    "title": "Creador de personajes ↗",
+    "href": "https://krom-char.vercel.app/",
+    "newWindow": true
+  },
+  "tt-link": {
+    "title": "Turnos Tacticos ↗",
+    "href": "https://krom-turn.vercel.app/",
+    "newWindow": true
+  },
+  "sp-link": {
+    "title": "Magia Alternativa ↗",
+    "href": "https://krom-magic.vercel.app/",
+    "newWindow": true
+  }
+}

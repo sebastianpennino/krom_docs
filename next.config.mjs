@@ -10,7 +10,7 @@ const withNextra = nextra({
 })
 
 export default withNextra({
-  reactStrictMode: true,
+  reactStrictMode: false,
   // i18n: {
   //   locales: ['es', 'en'],
   //   defaultLocale: 'es'
@@ -19,18 +19,6 @@ export default withNextra({
     // Eslint behaves weirdly in this monorepo.
     ignoreDuringBuilds: true
   },
-  redirects: () => [
-    {
-      source: '/docs/guide/:slug(typescript|latex|tailwind-css|mermaid)',
-      destination: '/docs/guide/advanced/:slug',
-      permanent: false
-    },
-    {
-      source: '/docs/docs-theme/built-ins/:slug(callout|steps|tabs)',
-      destination: '/docs/guide/built-ins/:slug',
-      permanent: false
-    }
-  ],
   webpack(config) {
     const allowedSvgRegex = /components\/icons\/.+\.svg$/
 

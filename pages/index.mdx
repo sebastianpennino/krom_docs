@@ -89,14 +89,14 @@ export function RandomTools() {
       a={
         <div style={{ display: "flex", flexDirection: "column", gap: ".5rem" }}>
           <File
-            name="krom-player.vercel.app"
+            name="krom-char.vercel.app"
             className={active === "pc" && styles.active}
             onPointerOver={() => setActive("pc")}
           />
           <File
             name="krom-turn.vercel.app"
-            className={active === "kt" && styles.active}
-            onPointerOver={() => setActive("kt")}
+            className={active === "tt" && styles.active}
+            onPointerOver={() => setActive("tt")}
           />
         </div>
       }
@@ -114,18 +114,18 @@ export function RandomTools() {
             )}
             onPointerOver={() => setActive("pc")}
           >
-            Creacion de players
+            Creador de Personajes
           </span>
           <span
             className={cn(
               "relative cursor-default select-none whitespace-nowrap px-4 py-1.5",
-              active === "kt"
+              active === "tt"
                 ? "nx-text-primary-600 nx-bg-primary-50 dark:nx-bg-primary-500/10"
                 : "text-gray-800 dark:text-gray-100 "
             )}
-            onPointerOver={() => setActive("kt")}
+            onPointerOver={() => setActive("tt")}
           >
-            Trackeador de turnos
+            Turnos Tácticos
           </span>
         </div>
       }
@@ -135,8 +135,8 @@ export function RandomTools() {
 
 <div className="home-content">
   <div className="content-container">
-    <h1 className="headline">Sistema de Juego de Rol <br className='sm:block hidden'/>(de papel y lapiz) Gratuito</h1>
-    <p className="subtitle">Tactico, Poderoso, Curva de aprendizaje intermedia</p>
+    <h1 className="headline">Sistema de Juego de Rol <br className='sm:block hidden'/>(de papel y lápiz) Gratuito</h1>
+    <p className="subtitle">Táctico, Poderoso, con una curva de aprendizaje intermedia</p>
     <p className="subtitle">
       <Link className={styles.cta} href="/docs">Comenzar! <span>→</span></Link>
     </p>
@@ -256,15 +256,6 @@ export function RandomTools() {
       width: min(300px, 41%);
       min-width: 155px;
     }
-    :global(#a11y-card) {
-      background-image: url(/assets/high-contrast.png);
-      background-position: -160px 160px;
-    }
-    @media screen and (max-width: 1300px) {
-      :global(#a11y-card) {
-        background-image: linear-gradient(to bottom, white, transparent), url(/assets/high-contrast.png);
-      }
-    }
     @media screen and (max-width: 1200px) {
       :global(#highlighting-card) {
         aspect-ratio: auto;
@@ -293,10 +284,6 @@ export function RandomTools() {
       }
       :global(#highlighting-card) {
         background-size: 136%;
-      }
-      :global(#a11y-card) {
-        background-image: url(/assets/high-contrast.png);
-        background-position: center 160px;
       }
     }
     @media screen and (max-width: 768px) {
@@ -338,16 +325,16 @@ export function RandomTools() {
   <div className="features-container">
     <div className="content-container">
       <Features>
-        <Feature index={0} large centered id="docs-card" href="/docs/docs-theme/start">
+        <Feature index={0} large centered id="docs-card" href="/docs/rules-magic">
           <Image src={docsCard} alt="Background" loading="eager" />
           <Image src={docsCardDark} alt="Background (Dark)" loading="eager" />
-          <h3>Magia Espontánea</h3>
+          <h3>Poderosa Magia Espontánea</h3>
         </Feature>
-        <Feature index={1} centered className="card-with-border" href="/docs/guide/image">
+        <Feature index={1} centered className="card-with-border" href="/docs/rules-combat">
           <div className="h-full flex flex-col justify-between">
             <h3>Combate táctico <br className="show-on-mobile"/><span className="font-light">con opciones y sabor</span></h3>
-            <p className='mb-1'>Cada personaje tiene un repertorio de cosas para hacer durante y fuera del combate</p>
-            <p className='mb-8'>Siempre hay una [Respuesta](/docs/guide/tratado-combate) para dar!</p>
+            <p className='mb-1'>Cada arquetipo con un repertorio unico de opciones durante y fuera del combate</p>
+            <p className='mb-8'>Siempre hay una [Respuesta](/docs/rules-combat/05) para dar!</p>
             <div>
               <div className={styles.optimization}>
                 <div style={{ fontSize: '.9rem' }} className="leading-8">
@@ -363,12 +350,12 @@ export function RandomTools() {
             </div>
           </div>
         </Feature>
-        <Feature index={2} href="/docs/guide/i18n">
+        <Feature index={2} href="/docs/tools">
           <h3>Herramientas online <br className="show-on-mobile"/>gratis</h3>
-          <p className='mb-4'>Diferentes apps que se encargan de ayudar al director y los jugadores.</p>
+          <p className='mb-4'>Apps que ayudan al director y los jugadores.</p>
           <RandomTools/>
         </Feature>
-        <Feature index={3} centered className="feat-darkmode" style={{
+        <Feature index={3} centered className="feat-darkmode" href="/docs/to-print" style={{
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
@@ -423,11 +410,11 @@ export function RandomTools() {
             }}
           >Hojas <br/>de personaje <br/>incluidas</motion.h3>
         </Feature>
-        <Feature index={4} id="highlighting-card" href="/docs/guide/syntax-highlighting">  
-          <h3>Ricos transfondos. <br className="show-on-mobile"/>Decisiones que importan.</h3>
-          <p>Tanto en las [Especies](/docs/guide/lista-de-clases) como las [Subclases](/docs/guide/lista-de-clases)</p>
+        <Feature index={4} id="highlighting-card">  
+          <h3>Exquisitos trasfondos. <br className="show-on-mobile"/>Decisiones que importan.</h3>
+          <p>Tanto en las [Especies](/docs/list-species) como las [Subclases](/docs/list-classes)</p>
         </Feature>
-        <Feature index={5} large id="search-card" href="/docs/docs-theme/theme-configuration#search">
+        <Feature index={5} large id="search-card" href="/docs">
           <div style={{ zIndex: 2}}>
             <h3>Documentación disponible y<br/> accesible en línea</h3>
             <p>La información actualizada, siempre disponible.</p>
@@ -440,9 +427,9 @@ export function RandomTools() {
             <source src="/assets/search-dark.mp4" type="video/mp4"/>
           </video>
         </Feature>
-        <Feature index={6} href="/docs/about">
+        <Feature index={6}>
           <h3>Licencia: MIT</h3>
-          <p className='mr-6'>Podés construir, modificar y alterar el sistema a gusto!. Sin clausulas raras, cash grabs o cambios inesperados!</p>
+          <p className='mr-6'>Podés construir, modificar y alterar el sistema a gusto!</p><p>Sin cláusulas basura, cash grabs o cambios inesperados!</p>
         </Feature>
         <Feature index={7} extralarge>
           <h3>Y Más...</h3>

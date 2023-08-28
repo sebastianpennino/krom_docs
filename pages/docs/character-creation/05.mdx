@@ -1,0 +1,33 @@
+import {
+  CardsIcon,
+  FolderTreeIcon,
+  IdCardIcon,
+  OneIcon,
+  WarningIcon
+} from '@components/icons'
+import { Card, Cards } from 'nextra/components'
+
+# Eligiendo Talentos
+
+Kromsys includes a couple of built-in components that you can use to better style
+your content:
+
+<Cards>
+  <Card
+    icon={<WarningIcon />}
+    title="Callout"
+    href="/docs/tbd"
+  />
+  <Card icon={<CardsIcon />} title="Tabs" href="/docs/tbd" />
+  <Card
+    icon={<IdCardIcon />}
+    title="Cards"
+    href="/docs/tbd"
+  />
+  <Card icon={<OneIcon />} title="Steps" href="/docs/tbd" />
+  <Card
+    icon={<FolderTreeIcon className="h-5 w-5" />}
+    title="FileTree"
+    href="/docs/tbd"
+  />
+</Cards>

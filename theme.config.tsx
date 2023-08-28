@@ -3,8 +3,9 @@ import type { DocsThemeConfig } from "nextra-theme-docs";
 import { useConfig } from "nextra-theme-docs";
 
 const logo = (
-  <span>
+  <span className="w-3/4 sm:w-full">
     <svg
+      className="w-full"
       version="1.0"
       width="208px"
       height="72px"
@@ -47,9 +48,9 @@ const config: DocsThemeConfig = {
     link: "https://github.com/sebastianpennino/krom_docs_nextra",
   },
   docsRepositoryBase: "https://github.com/sebastianpennino/krom_docs_nextra/tree/main/pages/docs",
-  primaryHue: 0,
+  primaryHue: 33,
   search: {
-    error: 'error!...',
+    error: 'Error!...',
     placeholder: "Buscar...",
     emptyResult: () => {
       return(
@@ -127,7 +128,7 @@ const config: DocsThemeConfig = {
     );
   },
   editLink: {
-    text: "Edit this page on GitHub →",
+    text: "Editar esta pagina en GitHub →",
   },
   sidebar: {
     titleComponent({ title, type }) {

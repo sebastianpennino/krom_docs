@@ -9,12 +9,13 @@
   },
   "docs": {
     "type": "page",
-    "title": "Documentacion"
+    "title": "Documentación"
   },
   "about": {
     "type": "page",
     "title": "Acerca De",
     "theme": {
+      "timestamp": false,
       "typesetting": "article"
     }
   },

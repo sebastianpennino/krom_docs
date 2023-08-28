@@ -1,6 +1,7 @@
 # mine
 notes.txt
 _/*
+.obsidian
 
 # dependencies
 /node_modules

@@ -1,33 +1,77 @@
-# Nextra
+## El sistema
 
-**Nextra** is a framework on top of Next.js, that lets you build content focused
-websites. It has all the great features from Next.js, plus extra power to create
-Markdown-based content with ease.
+**Kromsys** es un RPG (en inglés [Role Playing Game ↗](https://en.wikipedia.org/wiki/Role-playing_game)) 
+no-equitativo no-predecible, orientado a la interpretación, con un modo táctico 
+y un sistema de magia espontánea. Si vienes de otros juegos de rol Kromsys quizá 
+te resulte extraño al principio, si en cambio eres nuevo en los juegos de rol 
+quizá sea un buen comienzo. Se dice que es no-equitativo y no-predecible porque 
+el _[Director](/docs/tbd)_ tiene poder absoluto sobre todas las cosas, quizá más allá que
+en otros sistemas: jugar con diferentes directores cambia radicalmente la 
+experiencia de juego (y la interpretación de muchas reglas).
 
-## Quick Start
+Decimos que es _orientado a la interpretación_ porque muchas cosas del juego están 
+ahí para ser completadas por el jugador más allá de sus estadísticas o valores 
+numéricos; El juego se desarrolla en dos modos: narrativo y táctico, cuando los
+jugadores encuentran enemigos, usualmente se requiere más precisión, entonces 
+el _director_ puede decidir pasar al [modo táctico](/docs/tbd), donde el juego 
+se desarrolla más parecido a un juego de mesa (con casillas y movimientos medidos!).
 
-import { Card, Cards } from 'nextra/components'
+### Requisitos
 
-To start using Nextra, you need to select a theme first:
+Para jugar a `Kromsys` necesitas: saber 
+[interpretar un personaje ↗](https://www.youtube.com/watch?v=VRkZYdWCe7w&t=145s) 
+al menos de forma básica, un par de lápices y algunas hojas en blanco
+(o puedes imprimir los [elementos necesarios](/docs/tbd)),
+una cierta cantidad (al menos tres) de 
+[dados de diez caras ↗](https://en.wikipedia.org/wiki/Pentagonal_trapezohedron) 
+(referidos a partir de ahora como **d10**), este manual y **mucha imaginación.**
+
+Adicionalmente una buena partida de rol necesita al menos 3 _[Jugadores](/docs/tbd)_ 
+y un _[Director](/docs/tbd)_. No entraré en detalles sobre como jugar a un juego 
+de rol de papel y lápiz, internet se encuentra plagada de este tipo de información. 
+
+### Ambientación
+
+La ambientación es agnóstica. Si bien el sistema fue concebido para una ambientación
+[Medieval High Fantasy ↗](https://en.wikipedia.org/wiki/High_fantasy) (principalmente
+por el sistema de magia y las especies disponibles), puede ser adaptado a 
+cualquiera que el director crea potable.
+
+A su vez, la capa de lore que hemos dejado es deliberadamente fina, para que se 
+pueda torcer, completar y moldear a las necesidades del director y su narrativa.
+
+### Terminología
+
+Durante todo este manual usaremos abreviaciones y cierto lenguaje técnico, para que
+no queden dudas, hemos confeccionado esta pequeña guía de
+[terminología común de los dados](/docs/tbd) y el [glosario de Kromsys](/docs/tbd).
+
+## Inicio Rápido
+
+import { Card, Cards } from "nextra/components";
+
+Puedes comenzar yendo a la creación de personajes jugadores (PJ) o ver un pantallazo
+general de los detalles técnicos del sistema y sus sub-partes.
 
 <Cards num={2}>
-  <Card image arrow title="Documentation theme" href="/docs/docs-theme/start">
-    <>![Documentation theme](/assets/docs-theme.png)</>
+  <Card image arrow title="Guía de creación de personaje" href="/docs/character-creation">
+    <>![Creación de personaje](/assets/quick-character-creation.png)</>
   </Card>
-  <Card image arrow title="Blog theme" href="/docs/blog-theme/start">
-    <>![Blog theme](/assets/blog-theme.png)</>
+  <Card image arrow title="Detalles técnicos" href="/docs/parts-overview">
+    <>![Overview](/assets/quick-overview.png)</>
   </Card>
 </Cards>
 
-If you want to use Nextra without using these built-in themes, you can follow
-the [Custom Theme](/docs/custom-theme) docs.
+## Kromsys FAQ
 
-## Nextra FAQ
+El <strong title="Preguntas frecuentes" className="nx-text-primary-600">FAQ</strong> 
+es una colección de preguntas y respuestas que nos parecen utiles para los no
+iniciados. Si piensas que tienes una buena pregunta que necesita respuesta 
+(y no ha sido contestada), puedes 
+[crear una discusion](https://github.com/sebastianpennino/krom_docs_nextra/discussions) en nuestro
+repo de github.
 
-The Nextra FAQ is a collection of useful questions and answers about the
-project. If you have a question that isn't answered here, please
-[open a discussion](https://github.com/shuding/nextra/discussions).
-
+{/* 
 export function FAQBox({ title, children }) {
   return (
     <details
@@ -39,21 +83,22 @@ export function FAQBox({ title, children }) {
       </summary>
       <div className="nx-p-2">{children}</div>
     </details>
-  )
+  );
 }
 
-<FAQBox title="Can I use X with Nextra?">
-  The answer is “yes” for most things. Since Nextra is just a Next.js plugin, almost all the things
-  that can be done with React can be done with Nextra. Here are some examples and guides:
+<FAQBox title="Can I use X with Kromsys?">
+  The answer is “yes” for most things. Since Kromsys is just a Next.js plugin, almost all the things
+  that can be done with React can be done with Kromsys. Here are some examples and guides:
 
-- [Use Tailwind CSS](/docs/guide/tailwind-css)
-- [Use custom CSS and Sass](/docs/guide/custom-css)
-- [Use custom fonts](https://nextjs.org/docs/basic-features/font-optimization)
+- [Use Tailwind CSS](/docs/tbd")
+- [Use custom CSS and Sass](/docs/tbd")
+- [Use custom fonts](https://nextjs.org/docs/tbd")
 
 </FAQBox>
 
-<FAQBox title="How can I add a live coding component in Nextra?">
+<FAQBox title="How can I add a live coding component in Kromsys?">
   There are libraries like [Sandpack](https://sandpack.codesandbox.io) and
   [react-live](https://github.com/FormidableLabs/react-live) that can help you
   add live coding components to your MDX.
-</FAQBox>
+</FAQBox> 
+*/}

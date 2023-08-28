@@ -1,24 +1,78 @@
 {
-  "index": "Introduction",
-  "guide": "",
-  "-- Themes": {
-    "type": "separator",
-    "title": "Themes"
+  "index": "Introducción",
+  "character-creation": {
+    "title": "Creación de Personaje"
   },
-  "docs-theme": "",
-  "blog-theme": "",
-  "custom-theme": "",
-  "-- More": {
+  "character-sheet": {
+    "title": "La hoja de personaje",
+    "display": "hidden"
+  },
+  "-- Lists": {
     "type": "separator",
-    "title": "More"
+    "title": "Listas"
+  },
+  
+  "list-species": {
+    "title": "Especies"
+  },
+  "list-classes": {
+    "title": "Clases y subclases"
+  },
+  "list-skill": {
+    "title": "Habilidades"
+  },
+  "list-hexagons": {
+    "title": "Hexagonos"
+  },
+
+  "-- Rules": {
+    "type": "separator",
+    "title": "Reglamento"
+  },
+  "rules-general": {
+    "title": "Resolución de acciones"
+  },
+  "rules-combat": {
+    "title": "Tratado de Combate"
+  },
+  "rules-magic": {
+    "title": "Cónclave de la Magia"
+  },
+  "resolution-tables": {
+    "title": "Tablas de resolución"
+  },
+
+  "-- Misc": {
+    "type": "separator",
+    "title": "Misceláneas"
+  },
+  "list-annex": {
+    "title": "Anexos"
+  },
+  "glossary": {
+    "title": "Glosario"
+  },
+  "to-print": {
+    "title": "Para Imprimir"
+  },
+  "tools": {
+    "title": "Herramientas"
+  },
+  "parts-overview": {
+    "title": "Partes del sistema",
+    "display": "hidden"
   },
   "about-link": {
-    "title": "About Nextra",
+    "title": "Acerca de...",
     "href": "/about"
   },
-  "next.js-link": {
-    "title": "Next.js Docs ↗",
-    "href": "https://nextjs.org?utm_source=nextra.site&utm_medium=referral&utm_campaign=sidebar",
-    "newWindow": true
+
+  "tbd": {
+    "type": "page",
+    "display": "hidden",
+    "theme": {
+      "timestamp": false,
+      "layout": "raw"
+    }
   }
 }
