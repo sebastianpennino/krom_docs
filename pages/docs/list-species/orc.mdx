@@ -1,131 +1,34 @@
-import { BoxIcon, GearIcon, RowsIcon } from '@components/icons'
-import { Callout, Card, Cards, Steps } from 'nextra/components'
-import { Screenshot } from 'components/screenshot'
-import placeholderImage from '../../../public/assets/docs/species/placeholder.jpg'
+import { Screenshot } from '@components/screenshot'
+import placeholderImage from '@assets/docs/placeholder-red.jpg'
+import { Bleed } from 'nextra-theme-docs'
 
 # Orcos
 
-<Screenshot src={placeholderImage} alt="placeholder" half />
+<Bleed>
+  <Screenshot src={placeholderImage} alt="placeholder" full />
+</Bleed>
 
-Kromsys Docs Theme is a theme that includes almost everything you need to build a
-modern documentation website. It includes a top navigation bar, a search bar, a
-pages sidebar, a TOC sidebar, and other built-in components.
+## Descripción & Lore
+lorem impsum
 
-This website itself is built with the Kromsys Docs Theme.
+## Talentos
 
-## Quick Start from Template
+### Innato (1)
+> _**Estado de Alerta:**_ es difícil tomar a este personaje por sorpresa. Gracias a su agudo instinto de supervivencia y combate, tienen la capacidad de percibir sutiles indicios de peligro y reaccionar rápidamente, cuando fuese a ser emboscado deberá realizar una tirada de reflejos (VE 6, un solo éxito) y si la supera no ha sido emboscado y además puede elegir desenvainar sus armas (si las tuviese).  
 
-### Deploy to Vercel
+### Adquiribles (5)
 
-You can start by creating your own Kromsys site and deploying to Vercel by
-clicking the link:
+* _**Ignorar dolor (Mayor):**_ el personaje es adepto a resistir dolor, incluso en situaciones de dolor intenso, son capaces de mantener la concentración y continuar luchando (deja la habilidad de Ignorar dolor en 5 y si no tenías la habilidad agregala).  
+* _**Golpe mejorado (Mayor):**_ +2 al valor de golpe y +3 al valor de golpe aumentado  
+* _**Visión nocturna (Menor):**_ estos seres poseen una visión excepcionalmente aguda en condiciones de poca luz. Pueden ver con claridad en la oscuridad, lo que les permite moverse y detectar objetos o enemigos con mayor facilidad durante la noche. Bono +2 a percepción en entornos nocturnos o con poca luz o similares.  
+* _**Comunión con los ancestros (Menor):**_ narrativo. Una conexión especial con sus antepasados. El personaje entra en trance (solo una vez por día) y tiene una visión y/o un diálogo con sus antepasados. El director puede dar información según su criterio personal.  
+* _**Arma universal (Menor):**_ habilidad excepcional para adaptarse rápidamente al uso de diferentes armas. Incluso si no están familiarizados con un tipo específico de arma, son capaces de utilizarla de manera efectiva. Cuando utilices un arma que no tienes habilidad, usas dos dados (en vez de lo usual que es uno)
 
-<a
-  className="mt-3 inline-flex"
-  target="_blank"
-  href="https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fshuding%2Fnextra-docs-template&showOptionalTeamCreation=false"
->
-  ![](https://vercel.com/button)
-</a>
+### Camino de la sangre (1)
 
-Vercel will fork the
-[Kromsys Docs template](https://github.com/shuding/nextra-docs-template) and
-deploy the site for you. Once done, every commit in the repository will be
-deployed automatically.
+* _**Sangre guerrera (Mayor):**_ puede sobrevivir a heridas mortales en combate. Incluso cuando se enfrentan a una situación en la que la mayoría perecería, son capaces de continuar luchando, gracias a su resistencia y determinación. El personaje debe seguir luchando luego de alcanzar cero de vida o menos (no se desmaya, pero cada daño que recibe sigue siendo tenido en cuenta), por cada ataque reciba que incluya al menos un crítico debe superar una tirada de resistencia física para seguir en pie, de lo contrario cae al suelo desmayado. Cada 10 de daño recibido por debajo de cero  -> menos uno al total de vida. Permanente (sí papu).
 
-### Fork the Template
+### Caminito de la destreza (2)
 
-You can also manually fork the
-[template repository](https://github.com/shuding/nextra-docs-template).
-
-## Start as New Project
-
-<Steps>
-### Install
-
-To create a Kromsys Docs site manually, you have to install **Next.js**,
-**React**, **Kromsys**, and **Kromsys Docs Theme**. In your project directory, run
-the following command to install the dependencies:
-
-```sh npm2yarn
-npm i next react react-dom nextra nextra-theme-docs
-```
-
-<Callout>
-  If you already have Next.js installed in your project, you only need to
-  install `nextra` and `nextra-theme-docs` as the add-ons.
-</Callout>
-
-### Add Next.js Config
-
-Create the following `next.config.js` file in your project’s root directory:
-
-```js filename="next.config.js"
-const withKromsys = require('nextra')({
-  theme: 'nextra-theme-docs',
-  themeConfig: './theme.config.jsx'
-})
-
-module.exports = withKromsys()
-
-// If you have other Next.js configurations, you can pass them as the parameter:
-// module.exports = withKromsys({ /* other next.js config */ })
-```
-
-With the above configuration, Kromsys can handle Markdown files in your Next.js
-project, with the specified theme. Other Kromsys configurations can be found in
-[Guide](/docs/tbd).
-
-### Create Docs Theme Config
-
-Lastly, create the corresponding `theme.config.jsx` file in your project’s root
-directory. This will be used to configure the Kromsys Docs theme:
-
-```jsx filename="theme.config.jsx"
-export default {
-  logo: <span>My Kromsys Documentation</span>,
-  project: {
-    link: 'https://github.com/shuding/nextra'
-  }
-  // ... other theme options
-}
-```
-
-Full theme configurations can be found
-[here](/docs/tbd)
-
-### Ready to Go!
-
-Now, you can create your first MDX page as `pages/index.mdx`:
-
-```mdx filename="pages/index.mdx"
-# Welcome to Kromsys
-
-Hello, world!
-```
-
-And run the `next` or `next dev` command specified in `package.json`to start
-developing the project! 🎉
-
-</Steps>
-
-Next, check out the next section to learn about organizing the documentation
-structure and configuring the website theme:
-
-<Cards>
-  <Card
-    icon={<RowsIcon />}
-    title="Page Structure"
-    href="/docs/tbd"
-  />
-  <Card
-    icon={<GearIcon />}
-    title="Theme Configuration"
-    href="/docs/tbd"
-  />
-  <Card
-    icon={<BoxIcon />}
-    title="Built-in Components"
-    href="/docs/tbd"
-  />
-</Cards>
+* _**Ambidiestro natural (Mayor):**_ el personaje tiene una habilidad innata para usar ambas manos con destreza. Esto les permite utilizar armas o realizar acciones con igual habilidad tanto con su mano dominante como con la mano no dominante (puede realizar ataques dual wielding).  
+* _**Derribo mejorado (Menor):**_ puede comprar 1 dado adicional gastando adrenalina cuando usa la maniobra derribar

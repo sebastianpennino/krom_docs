@@ -1,70 +1,184 @@
 import {
-  BoxIcon,
-  BrushIcon,
-  DropperIcon,
-  FilesIcon,
-  GlobeIcon,
-  LightningIcon,
-  LinkIcon,
-  MarkdownIcon,
-  PictureIcon,
-  StarsIcon
+FilesIcon,
+MarkdownIcon,
+TailwindIcon,
+LinkIcon,
+LightningIcon,
+GlobeIcon,
+HeartIcon,
+PictureIcon,
+CodeIcon,
+BrushIcon,
+DropperIcon,
+StarsIcon,
+FormulaIcon,
+WarningIcon,
+ChevronRightIcon,
+BoxIcon,
+GearIcon,
+RowsIcon,
+CardsIcon,
+OneIcon,
+CloudIcon,
+TableIcon,
+FileIcon,
+NewsletterIcon,
+ArrowRightIcon,
+SwitchIcon,
+TerminalIcon,
+DiagramIcon,
+FolderTreeIcon,
+IdCardIcon
 } from '@components/icons'
-import { Card, Cards } from 'nextra/components'
 
-# Guía de creación de personajes jugadores
+import { Card, Cards, Steps } from 'nextra/components'
 
-Si es la primera vez que juegas **Kromsys** recomendamos usar la guía paso a paso, 
-es más detallada y acompaña cada paso con comentarios que pueden ser de utilidad.
+# Personajes jugadores
+
+Si es la primera vez que juegas **Kromsys** recomendamos usar la guía detallada, 
+es más introductoria y acompaña cada paso con comentarios que pueden ser de utilidad.
 
 Si en cambio ya es la segunda o tercera vez que armas un personaje, puede utilizar
-la _versión rápida,_ o la App [krom-char ↗](https://krom-char.vercel.app/) 
+la _guía rápida,_ o la App [krom-char.vercel.app ↗](https://krom-char.vercel.app/) 
 (**importante:** aún no terminada!).
 
-## Version rápida
+## Guía rápida
 
 Primero el jugador debe conceptualizar el personaje y tomar prioridades, 
 **es importante tenerlo en claro antes de avanzar.**
 
+
+<Steps>
+### Concepto
+Conceptualiza tu personaje (que quiere? quién es?, sus motivaciones ten en mente una especie y subclase!)
+ 
+### Especie y Subclase
+Elige tu [especie](/docs/list-species) y tu [subclase](/docs/list-classes).
+
+### Prioridades
+Determina las prioridades usando [TC 1 - Prioridades](/docs/character-creation/creation-tables/TC1) (Comienza primero la clase que ya le utiliza una posición, luego elige las demás).
+</Steps>
+
+{/*
 > 1. Conceptualiza tu personaje (que quiere? quién es?, sus motivaciones ten en mente una especie y subclase!)
-> 2. Elige [especie](/docs/list-species) y una [subclase](/docs/list-classes).
+> 2. Elige tu [especie](/docs/list-species) y tu [subclase](/docs/list-classes).
 > 3. Determina las prioridades usando [TC 1 - Prioridades](/docs/character-creation/creation-tables/TC1) (Comienza primero la clase que ya le utiliza una posición, luego elige las demás).
+*/}
 
-Luego empieza a completar su personaje, según la prioridad: 
+> Luego completa tu personaje, según las prioridades asignadas: 
 
-> 1. Reparte puntos de [características](/docs/tbd) respetando los minimos, maximos y luego aplica los [TC 2 - Modificadores por especie](/docs/character-creation/creation-tables/TC2), calculando el valor final.
+<Steps>
+### Caractersiticas
+Reparte puntos de [características](/docs/tbd) teniendo en cuenta los minimos, maximos y los [TC 2 - Modificadores por especie](/docs/character-creation/creation-tables/TC2) y calcula el valor final.
+ 
+### Talentos
+Viendo la pagina de su especie, elige sus [talentos](/docs/tbd).
+
+### Fuentes
+Usando [TC 3 - Fuentes](/docs/character-creation/creation-tables/TC3) según su especie y clase, anota sus fuentes.
+
+### Derivadas
+Se calculan las derivadas y las resistencias usado [TC 4 - Derivadas](/docs/character-creation/creation-tables/TC4).
+
+### Skillpacks & Habilidades
+Elegir [skillpacks](/docs/tbd) y [habilidades sueltas](/docs/tbd) según la prioridad.
+
+### Historial
+Viendo la pagina de su subclase, elige su [historial](/docs/tbd).
+
+### Equipamiento
+Se compra equipo [TC 5 - Equipo](/docs/character-creation/creation-tables/TC5).
+
+</Steps>
+
+{/*
+> 1. Reparte puntos de [características](/docs/tbd) teniendo en cuenta los minimos, maximos y los [TC 2 - Modificadores por especie](/docs/character-creation/creation-tables/TC2) y calcula el valor final.
 > 2. Viendo la pagina de su especie, elige sus [talentos](/docs/tbd).
 > 3. Usando [TC 3 - Fuentes](/docs/character-creation/creation-tables/TC3) según su especie y clase, anota sus fuentes.
 > 4. Se calculan las derivadas y las resistencias usado [TC 4 - Derivadas](/docs/character-creation/creation-tables/TC4).
 > 5. Elegir [skillpacks](/docs/tbd) y [habilidades sueltas](/docs/tbd) según la prioridad.
 > 6. Viendo la pagina de su subclase, elige su [historial](/docs/tbd).
 > 7. Se compra equipo [TC 5 - Equipo](/docs/character-creation/creation-tables/TC5).
+*/}
 
-## Version paso a paso
+## Guía detallada
 
 <Cards>
   <Card
     icon={<FilesIcon />}
-    title="Organize Files"
-    href="/docs/tbd"
+    title="Especie y Subclase"
+    href="/docs/character-creation/01"
   />
-  <Card icon={<MarkdownIcon />} title="Markdown" href="/docs/tbd" />
+  <Card 
+    icon={<OneIcon />} 
+    title="Prioridades" 
+    href="/docs/character-creation/02" 
+  />
   <Card
+    icon={<GearIcon />} 
+    title="Caractersiticas"
+    href="/docs/character-creation/03"
+  />
+  <Card 
+    icon={<MarkdownIcon />}  
+    title="Aplicando modificadores" 
+    href="/docs/character-creation/04" 
+  />
+  <Card 
     icon={<StarsIcon />}
-    title="Syntax Highlighting"
-    href="/docs/tbd"
+    title="Talentos" 
+    href="/docs/character-creation/05" 
   />
-  <Card icon={<LinkIcon />} title="Next.js Link" href="/docs/tbd" />
-  <Card icon={<PictureIcon />} title="Next.js Image" href="/docs/tbd" />
-  <Card icon={<LightningIcon />} title="Next.js SSG" href="/docs/tbd" />
-  <Card icon={<GlobeIcon />} title="Next.js I18n" href="/docs/tbd" />
-  <Card icon={<BrushIcon />} title="Custom CSS" href="/docs/tbd" />
-  <Card icon={<DropperIcon />} title="Advanced" href="/docs/tbd" />
-  <Card
-    icon={<BoxIcon />}
-    title="Built-in Components"
-    href="/docs/tbd"
+  <Card 
+    icon={<ArrowRightIcon />} 
+    title="Fuentes y Derivadas" 
+    href="/docs/character-creation/06" 
   />
+  <Card 
+    icon={<GlobeIcon />} 
+    title="Skillpacks y Habilidades" 
+    href="/docs/character-creation/07" 
+  />
+  <Card 
+    icon={<BrushIcon />} 
+    title="Historiales" 
+    href="/docs/character-creation/08" 
+  />
+  <Card 
+    icon={<BoxIcon />} 
+    title="Equipo" 
+    href="/docs/character-creation/09" 
+  />
+{/* 
+  <Card 
+    icon={<ChevronRightIcon />} 
+    title="Equipo" 
+    href="/docs/character-creation/09" 
+  />
+  <Card 
+    icon={<LinkIcon />}
+    title="Equipo" 
+    href="/docs/character-creation/09" 
+  />
+  <Card 
+    icon={<WarningIcon />} 
+    title="Equipo" 
+    href="/docs/character-creation/09" 
+  />
+  <Card 
+    icon={<PictureIcon />} 
+    title="Equipo" 
+    href="/docs/character-creation/09" 
+  />
+  <Card 
+    icon={<LightningIcon />} 
+    title="Equipo" 
+    href="/docs/character-creation/09" 
+  />
+  <Card 
+    icon={<DiagramIcon />} 
+    title="Equipo" 
+    href="/docs/character-creation/09" 
+  />
+*/}
 </Cards>
-
-

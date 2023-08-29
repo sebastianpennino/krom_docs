@@ -16,7 +16,9 @@
     "resolveJsonModule": true,
     "baseUrl": ".",
     "paths": {
-      "@components/*": ["components/*"]
+      "@components/*": ["components/*"],
+      "@public/*": ["public/*"],
+      "@assets/*": ["public/assets/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

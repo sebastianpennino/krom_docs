@@ -1,3 +1,0 @@
-# Parts overview
-
-TBD.

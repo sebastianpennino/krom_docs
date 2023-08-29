@@ -1,14 +1,206 @@
-import { ChevronRightIcon } from '@components/icons'
-import { Callout, Card, Cards } from 'nextra/components'
+import {
+  BoxIcon,
+  ChevronRightIcon,
+  GearIcon,
+  RowsIcon
+} from '@components/icons'
+import { Card, Cards } from 'nextra/components'
+import { Feature, Features } from "@components/features";
+import Image from "next/image";
+import docsCardDark from "@assets/card-1.dark.png";
+import docsCard from "@assets/card-1.png";
 
-# Kromsys Blog Theme
+## Clases y Subclases
 
-<Callout type="warning">Docs for this theme is under construction.</Callout>
+Las `Subclases` representan arquetipos de vida. Una subclase es un conjunto 
+de decisiones que tu personaje a realizado hasta llegar a su edad actual, 
+todo simplificado y con un bonito nombre. Las subclasees se agrupan en categorias,
+esas categorias se llaman `Clases`; Por ejemplo el 
+[Pirata](/docs/list-classes/ruffian/pirate) es una subclase de Rufián, así como 
+un [Caballero](/docs/list-classes/warrior/knight) es una subclase de la Clase 
+Guerrero. 
 
-<Cards>
-  <Card
-    icon={<ChevronRightIcon />}
-    title="Get Started"
-    href="/docs/tbd"
-  ></Card>
-</Cards>
+Elegir la subclase y especie son las desiciones más determinantes de todo el juego.
+Algunas clases o subclases requieren mucho más tiempo de preparación que otras, 
+por lo tanto requieren tener más prioridad (ver 
+[Estableciendo Prioridades](/docs/character-creation/02)), así por ejemplo todas
+las subckases de Mago requiere que se le de prioridad A; es decir se sacrifica 
+la mayor prioridad en aprender a ser mago (realmente requiere esfuerzo manejar 
+la poderosa magia de Kromsys).
+
+Para elegir a conciencia recomiendo leer cada sección subclase en Kromsys. A 
+diferencia de otros sistemas, en Kromsys todas las subclasees son accesibles 
+para cualquier especie, aunque esto deja abierta la posiblidad de combinaciones 
+desfavorables (como elegir una especie orientada al combate y tomar una subclase
+orientada a la magia), pero eso queda a criterio de cada jugador.
+
+## Rufianes
+{/* 
+[Pirata](/docs/list-classes/ruffian/pirate), 
+[Sicario](/docs/list-classes/ruffian/assasin),
+[Ladron](/docs/list-classes/ruffian/thief). 
+*/}
+
+<Features className="species-list">
+  <Feature className="species-card" index={0} id="pirate-card" href="/docs/list-classes/ruffian/pirate">
+    <Image src={docsCard} alt="Background Pirata (Dark)" loading="eager" />
+    <h3>Pirata</h3>
+  </Feature>
+  <Feature className="species-card" index={1} id="assasin-card" href="/docs/list-classes/ruffian/assasin">
+    <Image src={docsCardDark} alt="Background Asesino (Dark)" loading="eager" />
+    <h3>Sicario</h3>
+  </Feature>
+  <Feature className="species-card" index={2} id="feral-card" href="/docs/list-classes/ruffian/thief">
+    <Image src={docsCard} alt="Background Ladrón (Dark)" loading="eager" />
+    <h3>Ladrón</h3>
+  </Feature>
+</Features>
+
+## Guerreros
+{/* 
+[Duelista](/docs/list-classes/warrior/duelist),
+[Bárbaro](/docs/list-classes/warrior/barbarian), 
+[Caballero](/docs/list-classes/warrior/knight).
+*/}
+
+<Features className="species-list">
+  <Feature className="species-card" index={0} id="duelist-card" href="/docs/list-classes/warrior/duelist">
+    <Image src={docsCard} alt="Background Duelista (Dark)" loading="eager" />
+    <h3>Duelista</h3>
+  </Feature>
+  <Feature className="species-card" index={1} id="barb-card" href="/docs/list-classes/warrior/barbarian">
+    <Image src={docsCardDark} alt="Background Barbaro (Dark)" loading="eager" />
+    <h3>Bárbaro</h3>
+  </Feature>
+  <Feature className="species-card" index={2} id="knight-card" href="/docs/list-classes/warrior/knight">
+    <Image src={docsCard} alt="Background Caballero (Dark)" loading="eager" />
+    <h3>Caballero</h3>
+  </Feature>
+</Features>
+
+## Monjes
+{/* 
+[Marcial](/docs/list-classes/monk/martial),
+[Sanador](/docs/list-classes/monk/healer).
+*/}
+
+<Features className="species-list">
+  <Feature className="species-card" index={0} id="martial-card" large href="/docs/list-classes/monk/martial">
+    <Image src={docsCard} alt="Background Marcial (Dark)" loading="eager" />
+    <h3>Marcial</h3>
+  </Feature>
+  <Feature className="species-card" index={1} id="healer-card" href="/docs/list-classes/monk/healer">
+    <Image src={docsCardDark} alt="Background Sanador (Dark)" loading="eager" />
+    <h3>Sanador</h3>
+  </Feature>
+</Features>
+
+## Explorador
+{/* 
+[Montaraz](/docs/list-classes/explorer/ranger).
+*/}
+<Features className="species-list">
+  <Feature className="species-card" index={0} id="ranger-card" extralarge href="/docs/list-classes/explorer/ranger">
+    <Image src={docsCard} alt="Background Montaraz (Dark)" loading="eager" />
+    <h3>Montaraz</h3>
+  </Feature>
+</Features>
+
+## Mago-Guerreros
+{/* 
+[Paladin](/docs/list-classes/w-mage/paladin), 
+[Suplicante Oscuro](/docs/list-classes/w-mage/dark-supplicant),
+[Cazamagos](/docs/list-classes/w-mage/mage-hunter)
+*/}
+
+<Features className="species-list">
+  <Feature className="species-card" index={0} id="paladin-card" href="/docs/list-classes/w-mage/paladin">
+    <Image src={docsCard} alt="Background Volkari (Dark)" loading="eager" />
+    <h3>Paladin</h3>
+  </Feature>
+  <Feature className="species-card" index={1} id="ds-card" href="/docs/list-classes/w-mage/dark-supplicant">
+    <Image src={docsCardDark} alt="Background Suplicante Oscuro (Dark)" loading="eager" />
+    <h3>Suplicante Oscuro</h3>
+  </Feature>
+  <Feature className="species-card" index={2} id="mh-card" href="/docs/list-classes/w-mage/mage-hunter">
+    <Image src={docsCard} alt="Background Cazamagos (Dark)" loading="eager" />
+    <h3>Cazamagos</h3>
+  </Feature>
+</Features>
+
+## Shamanes
+{/* 
+[Brujo](/docs/list-classes/shaman/witch),
+[Clerigo](/docs/list-classes/shaman/cleric), 
+[Druida](/docs/list-classes/shaman/druid).
+*/}
+
+<Features className="species-list">
+  <Feature className="species-card" index={0} id="witch-card" href="/docs/list-classes/shaman/witch">
+    <Image src={docsCard} alt="Background Brujo (Dark)" loading="eager" />
+    <h3>Brujo</h3>
+  </Feature>
+  <Feature className="species-card" index={1} id="claric-card" href="/docs/list-classes/shaman/cleric">
+    <Image src={docsCardDark} alt="Background Clerigo (Dark)" loading="eager" />
+    <h3>Clerigo</h3>
+  </Feature>
+  <Feature className="species-card" index={2} id="druid-card" href="/docs/list-classes/shaman/druid">
+    <Image src={docsCard} alt="Background Druida (Dark)" loading="eager" />
+    <h3>Druida</h3>
+  </Feature>
+</Features>
+
+## Magos
+{/* 
+[Elemental](/docs/list-classes/mage/elemental),
+[Verde](/docs/list-classes/mage/green), 
+[Nigromante](/docs/list-classes/mage/necro), 
+[Psiquico](/docs/list-classes/mage/psi).
+*/}
+
+<Features className="species-list">
+  <Feature className="species-card" index={0} id="elemental-card" href="/docs/list-classes/mage/elemental">
+    <Image src={docsCard} alt="Background Elemental (Dark)" loading="eager" />
+    <h3>Elemental</h3>
+  </Feature>
+  <Feature className="species-card" index={1} id="green-card" large href="/docs/list-classes/mage/green">
+    <Image src={docsCardDark} alt="Background Verde (Dark)" loading="eager" />
+    <h3>Verde</h3>
+  </Feature>
+  <Feature className="species-card" index={2} id="necro-card" large href="/docs/list-classes/mage/necro">
+    <Image src={docsCard} alt="Background Nigromante (Dark)" loading="eager" />
+    <h3>Nigromante</h3>
+  </Feature>
+    <Feature className="species-card" index={3} id="psi-card" href="/docs/list-classes/mage/psi">
+    <Image src={docsCard} alt="Background Psiquico (Dark)" loading="eager" />
+    <h3>Psiquico</h3>
+  </Feature>
+</Features>
+
+<style jsx>{`
+    :global(.species-list) {
+      margin-top: 1rem;
+    }
+    :global(.species-card) {
+      color: #fff;
+      text-shadow: 0 0 1rem rgba(0,0,0,0.1);
+      min-height: 8rem;
+    }
+    :global(.species-card h3) {
+      color: #fff;
+      text-shadow: 0 0 1rem rgba(0,0,0,1);
+    }
+    :global(.species-card img) {
+      object-fit: cover;
+      object-position: left;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      height: 100%;
+      z-index: 0;
+      user-select: none;
+      pointer-events: none;
+    }
+`}</style>

@@ -42,6 +42,14 @@ export function Feature({
   )
 }
 
-export function Features({ children }: { children: ReactNode }) {
-  return <div className={styles.features}>{children}</div>
+// { children: ReactNode }
+export function Features({ children, className }) {
+  return (
+    <div className={cn(
+      styles.features,
+      className
+    )}>
+      {children}
+    </div>
+  )
 }
