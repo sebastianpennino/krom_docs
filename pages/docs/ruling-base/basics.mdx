@@ -1,0 +1,201 @@
+import { Callout, Card, Cards } from 'nextra/components'
+
+# Generales [#reglas-gnral]
+
+## Tiradas [#tiradas]
+### Reglas de oro [#oro]
+* Siempre se debe obtener **al menos un éxito** para que algo suceda.
+* Si no hay un valor de éxito (VE) definido, **éste es VE 6 (seis).**
+* Si algo no aclara que tipo de contienda es, **usa contienda simple.**
+
+### Tirada standard [#tirada-std]
+<Callout type="info">La magia narrativa usa otro método, **llamado Kane-Cris**</Callout>
+1. Se retiran de la mesa los fallos (dados que no llegaron a ser éxitos).
+2. Cada pifia se lleva un éxito (retira de la mesa las pifias y éxitos en pares); 
+(Las pifias son dados con un uno).
+3. Solo quedan en mesa éxitos o pifias, se cuentan.
+
+### Tirada Kane-Cris (magia narrativa) [#tirada-kc]
+Solo la magia narrativa usa Kane-cris, un ataque magico usa standard.
+
+1. Se lanzan los dados. Se identifican pifias, fallos, exitos
+2. Se cuentan los éxitos (ignorando todo lo demás por ahora)
+3. Se analiza el resultado:
+  - Si no hay ningún éxito y **hay al menos una pifia:** -> `botch` (pifia)
+  - Si hay éxitos y **se llegó a los requeridos:** -> `hit` (éxito)
+  - Caso contrario es un `miss` (fallo)
+
+## Contiendas [#contiendas]
+Kromsys aborda las acciones "enfrentadas" a través de las contiendas. Para 
+comprenderlas mejor, sumerjámonos en una situación típica:
+> Dromo, el astuto ladrón, se ha infiltrado en una mansión durante la noche, 
+> pero no sabe que hay guardias patrullando. De todos modos Dromo decide usar 
+> su habilidad de sigilo. El director usa [TR1 - General](/docs/resolution-tables/TR1) 
+> ajustando la dificultad de actuar con sigilo debido a la presencia de guardias 
+> (determina que es "esforzado" VE 7). A su vez, el director sabe que Dromo 
+> está peligrosamente cerca de Ermindel (el jefe de la guardia) por lo que opta 
+> además por hacer contienda entre la percepción del guardia y lo obtenido con 
+> sigilo.
+
+> Dromo tiene 4 en sigilo, s/dj `VE7 (esforzado)`, lanza y obtiene 3 éxitos.
+> Ermindel tiene 4 en percepcion, s/dj `VE5 (fácil)`, obtiene 1 exito.
+> Restando sus exitos `3 - 1 = 2` => Dromo obtiene 2 exitos que TR1 dice ser 
+> "Exito moderado funcional / con lo justo", no ha sido detectado y podrá avanzar.
+
+* **Cuándo:** Las contiendas surgen cuando `dos acciones` crean un `conflicto` que 
+necesita ser resuelto mediante tiradas de dados.
+
+* **Cómo:** Se compara el número de éxitos entre las dos acciones (cada acción puede 
+llevarse a cabo en tablas separadas, con diferentes Valores de Éxito, en definitiva
+lo que importa son los éxitos obtenidos).
+
+### Tipos de contiendas [#tipos-contiendas]
+En este contexto se define como `acción` a una acción tomada por un personaje
+"A" y `reacción` a la respuesta (contra esa acción) ejercida por un personaje "B".
+
+<Callout type="info">Recuerda que si algo no aclara que tipo de contienda es, 
+**es contienda simple.**</Callout>
+
+* **Contienda (también llamada "contienda simple"):** es la más usada, se comparan
+dos tiradas y se cancelan los exitos entre sí. Aquél que quedé con más exitos (y 
+esos exitos restantes a su vez, satisfacen sus requirimientos, sucede).
+
+* **Contienda a igualar:** en estos casos el que "reacciona" debe _al menos 
+igualar_ en exitos a la acción original, y si lo hace su reacción suplanta ó 
+supera a la acción.
+
+* **Contienda (+N):** es como la contienda a igualar, pero con mayor dificultad. 
+Lo usual es una contienda (+1), lo cual implica obtener un éxito más que 
+la acción original.
+
+* **Contienda parcial:** en esta contienda a pesar de no igualar o superar los
+éxitos del otro, cada éxito obtenido "resta" disminuyendo los efectos de lo que 
+sea que la acción original. Es la que más favorece a los que reaccionan ya que
+aún sin _cancelar o reemplazar_ la acción original, la debilitan de todos modos.
+
+## Chequeos de características o derivadas [#chequeos]
+
+Los chequeos de características son **siempre solicitados por el director, nunca 
+por el jugador.** Deben emplearse como respuesta a las acciones de los jugadores
+y solo cuando sean necesarios. 
+
+> Por ejemplo, se pueden realizar al levantar un objeto pesado, reaccionar a un 
+> acontecimiento repentino, buscar una puerta secreta en el suelo, entre otros. 
+> En esencia, se trata del uso de una habilidad que el jugador no posee o de 
+> **evaluar una situación que parece relevante**.
+
+<Callout type="error" emoji="⚠️">**El director** debe ejercer un juicio cuidadoso al 
+**decidir cuándo y cómo** aplicar estos chequeos, ya que su abuso puede ralentizar 
+significativamente la partida.</Callout>
+ 
+El error más común radica en obligar a realizar una tirada de percepción cada 
+vez que el jugador desea observar algo. En cambio, es más efectivo proporcionar 
+una descripción general y recurrir a la tirada de percepción solo si se 
+busca ver algún detalle específico (es decir con una pregunta con un propósito).
+
+* **Utiliza:** la [TR1 - General](/docs/resolution-tables/TR1), se lanzan dados
+(generalmente VE6) se ve que sucede.
+* **Modo de uso:** El director establece un Valor de Éxito (VE) en función de la 
+dificultad de la tarea en cuestión. Luego, el jugador lanza una cantidad 
+de dados equivalente a los puntos en su característica o derivada relevante.
+
+
+## Las Resistencias [#resistencias]
+Las resistencias son derivadas pero mucho más abarcativas, por eso merecen su
+propia sección. En `Kromsys`, existen tres tipos de resistencias fundamentales: 
+`Física`, `Mágica` y `Mental`.
+
+* La **Resistencia Física** se emplea tanto como sinónimo de esfuerzos corporales 
+específicos (como derribar a un oponente o evitar ser derribado) como para medir
+la salud del personaje (en situaciones como enfrentar enfermedades o toxinas).
+* La **Resistencia Mental** abarca cualquier afectación a la mente, ya sea provocada
+por medios físicos o por medio de la magia que influye en la mente.
+* La **Resistencia Mágica** está diseñada específicamente para resistir hechizos
+o efectos que alteran la realidad.
+
+### Utilización [#resist-uso]
+Se pueden utilizar de dos formas:
+
+* **(A)** Para *resistir un efecto explícito,* usando la **contienda parcial.**
+> Consideremos el ejemplo clásico de "Alex" lanzando una maldición sobre "Bruno". 
+> Mientras Alex efectúa su tirada, Bruno llevará a cabo una tirada de resistencia; 
+> cada éxito de Bruno disminuirá las chances de Alex. Luego de substraer los éxitos
+> de Bruno, si Alex no logra alcanzar la cantidad necesaria de éxitos para su hechizo, 
+> esto significa que Bruno pudo resistirlo.
+
+* **(B)** como cualquier derivada, usando [TR 1 - General](/docs/resolution-tables/TR1)
+ (es decir deberá obtener al menos 2 éxitos!)
+
+<Callout type="warning">Importante: En ambos casos el pedido viene de parte 
+del **Director**.</Callout>
+
+Si bien el jugador puede recordar a su director de la presencia o no de sus 
+resistencias, en ultima instancia queda completamente al criterio del director
+si lo tiene en cuenta o no.
+
+<Callout type="info">Sin embargo, cada hexágono de [lista de hexágonos](/docs/list-hexagons) 
+aclara si requieren tiradas de resistencia.</Callout>
+
+## Habilidades [#habilidades]
+Las habilidades (comunes, de armas y de magias) representan aptitudes, conocimientos 
+y saberes específicos del personaje. Su valor inicial dependerá de las características
+e irá [aumentando con su uso](/docs/ruling-base/progression).
+
+### Habilidades de armas y magias [#hab-armas-magias]
+* _Las habilidades de armas_ permiten manejar un tipo de arma (a veces es una
+categoria como ser "Espadas Largas" o aveces es especifica como ser "Kerambit"), 
+son usadas en la [TR2 - Combate](/docs/resolution-tables/TR2) para inflingir daño 
+o [hacer maniobras durante el combate](/docs/ruling-combat/05).
+* _Las habilidades de magias_ **(se conocen como [hexágonos](/docs/list-hexagons))** 
+permiten al personaje realizar hechizos con [el sistema de magia espontánea](/docs/ruling-magic)
+(y algunas permiten realizar ataques magicos en la [TR2 - Combate](/docs/resolution-tables/TR2) )
+
+<Callout type="info">Las armas y magias de un personaje, dependen exclusivamente
+ de la selección de [clase y subclase](/docs/list-classes).</Callout>
+
+### Habilidades Adrenales [#hab-adrenal]
+Las habilidades comunes, pueden ser "estáticas" o "adrenales". **Son adrenales 
+si implican esfuerzo físico.**
+
+<Callout type="error" emoji="⚠️">Las habilidades **estáticas** no pueden usarse en
+combate (requieren cierto grado de concentración!).</Callout>
+
+Cuando se usa una **habilidad adrenal** el personaje puede comprar dados gastando
+adrenalina (10 -> 1 dado). Puede comprar pero **hasta tres dados ó el valor de 
+la habilidad, él que sea mayor**.
+
+<Callout type="info">Adrenales: puede comprar **hasta el valor de su habilidad**
+(pero siempre puede comprar hasta 3!)</Callout>
+
+> Por ejemplo: Tom, el asesino esta siendo perseguido por las terrazas de la 
+> ciudad, y durante el escape, desea saltar desde una terraza hacia otra. 
+> Tom tiene una habilidad de `saltar` con `valor 2`. El director define 
+> usando [TR 1 - General](/docs/resolution-tables/TR1) un `VE 7`.
+> Tom decide comprar 3 dados (gasta 30 de adrenalina -> 3 dados, ya que siempre
+> puede comprar hasta 3 por más que su habilidad le hubiese dejado comprar hasta
+> solo dos dados), y obtiene 2 exitos. Asi que salta y llega a la otra terraza 
+> "con lo justo".
+
+Las habilidades **adrenales** además pueden **combinarse en una mega-acción.**
+Obteniendo el pool de dados combinados.
+
+> Por ejemplo: Tom esta siendo perseguido por las terrazas de la ciudad, 
+> desea saltar desde una terraza hacia otra terraza vecina. 
+> Tom tiene una habilidad de `saltar` con `valor 4` y una habilidad de `esprintar`
+> con `valor 5`. El director le ofrece la opción de dividir la acción en una 
+> carrera seguida de un salto ó intentar ambos movimientos de manera conjunta 
+> con mayor dificultad. Tom elige la segunda opción y suma sus valores de 
+> saltar y correr, lo que le proporciona `9 dados`. El director fija `VE 8`. 
+> Tom decide gastar 40 puntos de adrenalina (toma la peor de las habilidades
+> de limite) para obtener cuatro dados adicionales, totalizando `13d10` en su
+> lanzamiento de dados. Tras lanzar los dados, obtiene cuatro éxitos 
+> y logra realizar el salto con un movimiento inspirador!.
+
+* **Utiliza:** la [TR 1 - General](/docs/resolution-tables/TR1)
+* **Modo de Uso:** El jugador declara una acción que se relaciona con una 
+habilidad específica. Si la habilidad es considerada "adrenal", se le permite 
+comprar adrenalina (hasta valor de hab ó tres -lo que sea mayor-). El jugador 
+decide si gasta o no adrenalina y luego lanza tantos dados como los puntos en 
+dicha habilidad más dados de la adrenalina.
+Importante: El Valor de Éxito (VE) se comunica al jugador **antes de la tirada** 
+de dados y este puede optar por modificar la acción, volviendo al principio.

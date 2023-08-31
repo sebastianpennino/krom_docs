@@ -1,0 +1,79 @@
+
+
+# Preguntas frecuentes (reglas)
+
+Colección de preguntas o reglas miscelaneas
+
+## Sobre creación de personajes jugadores
+
+export function QABox({ title, children }) {
+  return (
+    <details
+      className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+    >
+      <summary>
+        <strong className="text-lg">{title}</strong>
+      </summary>
+      <div className="nx-p-2">{children}</div>
+    </details>
+  )
+}
+
+<QABox title="Cuáles son las características?">
+  Las características representan rasgos fundamentales de un personaje jugador.
+  Son, **3 físicas:** Fuerza (Fu), Resistencia (Re) y Agilidad (Ag); **3 mentales:** Razón (Ra), Intuición (Intu),
+  Sabiduría (Sab); **3 Miscelaneas:** Social (Soc), Percepción (Per), Voluntad (Vo).
+</QABox>
+
+<QABox title="Cómo?">
+  xxx
+</QABox>
+
+## Sobre juego en general
+
+<QABox title="Puedo usar una habilidad que no tengo?">
+  La regla general es: salvo habilidades excluyentes (como nadar), un personaje
+  puede utilizar una habilidad que no posea y lanzará con el minimo (1d10)
+
+  > Por ejemplo en el caso de nadar, una persona que no sabe nadar no sabe 
+  > (ni siquiera) lo básico como para mantenerse a flote en el agua, por eso se
+  > considera excluyente.
+</QABox>
+
+<QABox title="Que habilidades son excluyentes?">
+  Están marcadas con un (†) en la [lista de habilidades](docs/list-skills), pero 
+  puntualmente son:
+  * Nadar
+  * Leer y escribir
+  * Desarmar (que además es maniobra de combate) 
+  * Montar 
+  * Todas las habilidades de la categoría autocontrol 
+  
+  > El director es libre de considerar excluyentes cuantas habilidades él crea 
+  > imposibles de realizar.
+</QABox>
+
+<QABox title="Cuando se puede subir un skillcheck?">
+  xxx
+</QABox>
+
+
+## Entorno táctico
+
+<QABox title="Desplazamiento normal">
+  xxx
+</QABox>
+
+<QABox title="Pueden dos personajes ocupar la misma casilla?">
+  En entorno tactico dos personajes NO pueden ocupar la misma casilla.
+  El director puede permitir excepciones, por ejemplo que un personaje este caido 
+  y otro "pase por arriba". Pero en general, no se puede ocupar la misma casilla.
+</QABox>
+
+<QABox title="Cual es el rango/alcance de un ataque melee?">
+  El rango normal de ataque melee es 1 casilla (es decir la adyacente).
+</QABox>
+
+<QABox title="Direccionalidad">
+  xxx
+</QABox>

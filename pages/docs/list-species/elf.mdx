@@ -1,34 +1,38 @@
 import { Screenshot } from '@components/screenshot'
 import placeholderImage from '@assets/docs/placeholder-green.jpg'
 import { Bleed } from 'nextra-theme-docs'
+import { VMS } from '@components/vms';
 
 # Elfos
+
+## Fuentes base [#base]
+<VMS v="65" m="110" a="75" />
 
 <Bleed>
   <Screenshot src={placeholderImage} alt="placeholder" full />
 </Bleed>
 
-## Descripción & Lore
+## Descripción & Lore [#lore]
 lorem impsum
 
-## Talentos
+## Talentos [#talentos]
 
-### Innato (1)
+### Innato (1) [#innato]
 > _**Visión lejana:**_ el personaje le avisa al director que va a usar visión lejana, obtiene allí mismo +2 a percepción para ver a más de 50 metros.  
 
-### Adquiribles (3)
+### Adquiribles (3) [#adquiribles]
 
 * _**Afinidad de sentidos (Mayor):**_ siempre hace 1 éxito de percepción automáticamente.  
 * _**Minucioso (Menor):**_ (+1) al valor inicial de todas las habilidades de la categoría percepción  
 * _**Naturalmente sigiloso (Menor):**_ bono (+1) al valor de sigilo (si no tienes esa habilidad, calcula su valor inicial y agrégala)
 
-### Camino de la vida (3):
+### Camino de la vida (3): [#camino-1]
 
 * _**Cooperación botánica (Menor):**_ narrativo, el personaje puede tocar una planta y saber a través de las plantas (arboles, arbustos, cesped, etc) información en forma de sensaciones (ej: sabes que alguien paso por esta puerta hace 10 minutos, o 10 metros para allá hay 3 personas).  
 * _**Amigo de los animales (Menor):**_ todos los animales tienen confianza con el personaje. En lo posible siempre serán amistosos y no agresivos con él. Tener cerca al personaje los tranquiliza y evita que entren en pánico.  
 * _**Entorno natural (Mayor):**_ sus magias se potencian cuando está rodeado de plantas silvestres o en un entorno netamente natural (ver con dj), obtiene un bono (+1) a todas sus magias.
 
-### Camino de la muerte (3):
+### Camino de la muerte (3): [#camino-2]
 
 * _**Consumir cadáveres (Menor):**_ narrativo, el personaje puede consumir parte de un ser vivo (animal o humanoide) obteniendo información como sensaciones, recuerdos (ves imagenes, recuerdos que el director crea convenientes)  
 * _**Percibir emociones ajenas (Menor):**_ puede (usando una tirada de percepcion) ver un aura de color sobre otra criatura que le indica su estado de animo (ej: sabe si esta feliz, enojado, triste, asustado, etc).  

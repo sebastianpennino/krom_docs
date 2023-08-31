@@ -1,0 +1,15 @@
+{
+  "basics": {
+    "title": "Reglas Generales"
+  },
+  "resolution": {
+    "title": "Resolución de acciones"
+  },
+  "progression": {
+    "title": "Progresión",
+    "display": "hidden"
+  },
+  "frecuently-asked": {
+    "title": "FAQ"
+  }
+}

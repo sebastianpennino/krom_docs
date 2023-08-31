@@ -1,3 +1,5 @@
+import { Card, Cards } from 'nextra/components'
+
 ## El sistema
 
 **Kromsys** es un RPG (en inglés [Role Playing Game ↗](https://en.wikipedia.org/wiki/Role-playing_game)) 
@@ -48,8 +50,6 @@ no queden dudas, hemos confeccionado esta pequeña guía de
 
 ## Inicio Rápido
 
-import { Card, Cards } from "nextra/components";
-
 Puedes comenzar yendo a la creación de personajes jugadores (PJ) o ver un pantallazo
 general de los detalles técnicos del sistema y sus sub-partes.
 
@@ -71,8 +71,7 @@ iniciados. Si piensas que tienes una buena pregunta que necesita respuesta
 [crear una discusion](https://github.com/sebastianpennino/krom_docs_nextra/discussions) en nuestro
 repo de github.
 
-{/* 
-export function FAQBox({ title, children }) {
+export function QABox({ title, children }) {
   return (
     <details
       open
@@ -83,10 +82,10 @@ export function FAQBox({ title, children }) {
       </summary>
       <div className="nx-p-2">{children}</div>
     </details>
-  );
+  )
 }
 
-<FAQBox title="Can I use X with Kromsys?">
+<QABox title="Can I use X with Kromsys?">
   The answer is “yes” for most things. Since Kromsys is just a Next.js plugin, almost all the things
   that can be done with React can be done with Kromsys. Here are some examples and guides:
 
@@ -94,11 +93,11 @@ export function FAQBox({ title, children }) {
 - [Use custom CSS and Sass](/docs/tbd")
 - [Use custom fonts](https://nextjs.org/docs/tbd")
 
-</FAQBox>
+</QABox>
 
-<FAQBox title="How can I add a live coding component in Kromsys?">
+<QABox title="How can I add a live coding component in Kromsys?">
   There are libraries like [Sandpack](https://sandpack.codesandbox.io) and
   [react-live](https://github.com/FormidableLabs/react-live) that can help you
   add live coding components to your MDX.
-</FAQBox> 
-*/}
+</QABox> 
+

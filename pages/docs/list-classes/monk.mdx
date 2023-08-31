@@ -1,49 +1,5 @@
-import { LightningIcon, HeartIcon, StarsIcon } from "@components/icons";
-import { Card, Cards, Steps } from "nextra/components";
+import { VMS } from '@components/vms';
 
 # Monjes
 
-<Cards>
-  <Card 
-    icon={<HeartIcon />}
-    
-    title="Vida: XX" 
-    href="#" 
-  />
-  <Card 
-    icon={<StarsIcon />}
-    
-    title="Mana: XX" 
-    href="#" 
-  />
-  <Card 
-    icon={<LightningIcon />}
-    title="Adrenalina: XX" 
-    href="#" 
-  />
-
-</Cards>
-
-<style jsx>{`
-  :global(.nextra-cards .nextra-card:nth-child(1)) {
-    background-color: rgb(159 18 57);
-    color: rgb(251 113 133);
-  }
-  :global(.nextra-cards .nextra-card:nth-child(1) svg) {
-    color: rgb(251 113 133);
-  }
-  :global(.nextra-cards .nextra-card:nth-child(2)) {
-    background-color: rgb(7 89 133);
-    color: rgb(56 189 248);
-  }
-  :global(.nextra-cards .nextra-card:nth-child(2) svg) {
-    color: rgb(56 189 248);
-  }
-  :global(.nextra-cards .nextra-card:nth-child(3)) {
-    background-color: rgb(63 98 18);
-    color: rgb(163 230 53);
-  }
-  :global(.nextra-cards .nextra-card:nth-child(3) svg) {
-    color: rgb(163 230 53);
-  }
-`}</style>
+<VMS v="(+25)" m="(+10)" a="(+10)" />

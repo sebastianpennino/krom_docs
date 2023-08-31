@@ -7,42 +7,39 @@
     "title": "La hoja de personaje",
     "display": "hidden"
   },
-  "-- Lists": {
+  "-- xLists": {
     "type": "separator",
     "title": "Listas"
   },
-  
   "list-species": {
     "title": "Especies"
   },
   "list-classes": {
     "title": "Clases y subclases"
   },
-  "list-skill": {
+  "list-skills": {
     "title": "Habilidades"
   },
   "list-hexagons": {
     "title": "Hexagonos"
   },
-
-  "-- Rules": {
+  "-- xRules": {
     "type": "separator",
     "title": "Reglamento"
   },
-  "rules-general": {
-    "title": "Resolución de acciones"
+  "ruling-base": {
+    "title": "Generales"
   },
-  "rules-combat": {
+  "ruling-combat": {
     "title": "Tratado de Combate"
   },
-  "rules-magic": {
+  "ruling-magic": {
     "title": "Cónclave de la Magia"
   },
   "resolution-tables": {
     "title": "Tablas de resolución"
   },
-
-  "-- Misc": {
+  "-- xMisc": {
     "type": "separator",
     "title": "Misceláneas"
   },
@@ -66,7 +63,6 @@
     "title": "Acerca de...",
     "href": "/about"
   },
-
   "tbd": {
     "type": "page",
     "display": "hidden",
