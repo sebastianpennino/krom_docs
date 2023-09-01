@@ -1,14 +1,197 @@
-import { ChevronRightIcon } from '@components/icons'
-import { Callout, Cards, Card } from 'nextra/components'
+import { ChevronRightIcon } from "@components/icons";
+import { Callout, Cards, Card } from "nextra/components";
 
 # Skillpacks
 
-<Callout type="warning">This is under construction.</Callout>
+Los skillpacks (paquetes de habilidades) son grupos de habilidades que funcionan con cierta sinergia. Engloban habilidades que representan un trasfondo común. Por ejemplo el skillpack "Rural" tiene todas habilidades relacionadas con alguien que ha pasado un tiempo considerable en la intemperie, en un entorno silvestre y esto se ve reflejado en las habilidades del paquete. Debido a que estas habilidades cooperan entre si, avanzan más velozmente que las habilidades sueltas.
 
-<Cards>
-  <Card
-    icon={<ChevronRightIcon />}
-    title="OK"
-    href="/docs/tbd"
-  ></Card>
-</Cards>
+Nota: el valor entre corchetes es la característica que determina el valor inicial de esa habilidad. Por ejemplo, "Acrobacias [Ag]" tendrá su valor inicial igual a la Agilidad del personaje.
+
+<Callout type="info">
+  Las habilidades individuales requieren 4 skillchecks para avanzar
+</Callout>
+
+## Aristócrata / Noble (9) [#pack-noble]
+
+- Etiqueta [Ra/Sab]
+- Diplomacia [Soc]
+- Oratoria [Soc]
+- †Montar [Re/Ag]
+- Tácticas de combate [Fu/Sab]
+- Liderazgo [Vo/Soc]
+- Primeros Auxilios [Sab/Intu]
+- Cazar [Fu/Ra]
+- Heráldica [Sab]
+
+## Acádemico / Erudito (9) [#pack-erudito]
+
+- †Leer y escribir [Ra]
+- Caligrafía [Fu/Re/Ra]
+- Oratoria [Soc]
+- Poesía ó Pintura [Intu/Ra]
+- Tocar instrumento [Vo/Soc/Intu]
+- Conocimiento de Leyes [Ra/Sab]
+- Conocimiento. de Fauna [Sab]
+- Conocimiento de Artefactos mágicos [Intu/Sab]
+- Conoc. de Mecánica [Ra/Sab]
+
+## Herborista (9) [#pack-herborista]
+
+- Conoc.o de flora e hierbas [Sab]
+- Conocim de venenos [Ra/Sab]
+- Primeros Auxilios [Sab/Intu]
+- Supervivencia [Re/Vo]
+- †Meditación [Vo]
+- †Ignorar dolor [Vo]
+- Rastrear [Per]
+- Espeología [Sab/Intu]
+- Orientación celeste [Per/Sab]
+
+## Artesano (8) [#pack-artesano]
+
+- Albañilería (oficio) [Fu/Re/Ra]
+- Tallar la madera o Talabartería [Fu/Re/Ra]
+- Herrería (oficio) [Fu/Re/Ra] o Sigilo [Ag/Intu]
+- †Montar [Re/Ag]
+- Apostar ó Mendigar [Ra/Soc]
+- Armar trampas [Ra/Intu]
+- Cazar [Fu/Ra]
+- Agilidad manual [Ag/Intu]
+
+## Ladronzuelo / Bandido (9) [#pack-bandido]
+
+- Hurgar bolsillos [Intu/Per]
+- Registrar [Per]
+- †Montar [Re/Ag]
+- Abrir cerraduras [Ra/Per]
+- Mezclarse [Ag/Per]
+- Agilidad manual [Ag/Intu]
+- Sigilo [Ag/Intu]
+- Soborno [Soc]
+- Mendigar ó Apostar [Ra/Soc]
+
+## Ritualista (8) [#pack-ritualista]
+
+- Conocimiento de Hechizos y Runas [Intu/Sab]
+- Conoc. de criat. mág. [Intu/Sab]
+- Astronomía (tecnico) [Ra/Sab]
+- †Meditación [Vo]
+- Camuflarse [Ag/Intu]
+- †Leer y escribir [Ra]
+- Detectar sustancia [Per]
+- †Resistir persuasión [Vo]
+
+## Soldado (9) [#pack-soldado]
+
+- Intimidar (liderazgo) [Vo/Soc]
+- Interrogar [Vo/Soc]
+- †Ignorar dolor [Vo]
+- Heráldica [Sab]
+- Primeros aux. [Sab/Intu]
+- Tácticas de combate [Fu/Sab]
+- Instinto callejero [Ra/Intu]
+- †Montar [Re/Ag] ó Artillería (técnico) [Ra/Sab]
+- Camuflaje [Ag/Intu]
+
+## Soldado V2 (Cris-23) (9) [#pack-soldado-v2]
+
+- Intimidar (liderazgo) [Vo/Soc]
+- Esprintar [Fu]
+- †Ignorar dolor [Vo]
+- Heráldica [Sab]
+- Primeros aux. [Sab/Intu]
+- Tácticas de combate [Fu/Sab]
+- †Desarmar (maniobra) [Ag/Fu]
+- †Montar [Re/Ag]
+- Camuflaje [Ag/Intu]
+
+## Comerciante (9) [#pack-comerciante]
+
+- Tasar [Ra/Soc]
+- Instinto callejero [Ra/Intu]
+- Leyes de comercio [Ra/Sab]
+- Soborno [Soc]
+- Oratoria [Soc]
+- Esconderse [Ag/Intu] ó Mezclarse [Ag/Per]
+- Ofuscar [Soc]
+- †Montar [Re/Ag]|Contactos [Soc]
+
+## Arqueólogo (8) [#pack-arqueologo]
+
+- Conocimiento de historia [Sab]
+- Fortificaciones [Ra/Sab]
+- Trepar [Re] | Esprintar [Fu]
+- Espeología [Sab/Intu]
+- Tasación [Ra/Soc] | Cartografía (oficio) [Fu/Re/Ra]
+- Lenguas antiguas [Ra/Sab]
+- †Leer y escribir [Ra]
+- Registrar [Per]
+
+## Rural / Campesino (9) [#pack-rural]
+
+- Supervivencia [Re/Vo]
+- Orientación del clima [Per/Intu]
+- Adiestrar/Domesticar [Fu/Soc]
+- Trepar [Re]ó †Montar [Re/Ag]
+- Esprintar [Fu]
+- †Nadar [Re]
+- Rastrear [Per]
+- Conoc. de Hierbas [Ra/Sab]
+- Preparar trampas [Ra/Intu]
+
+## Marinero (8) [#pack-marinero]
+
+- Navegación y Botes [Fu/Re/Ra]
+- †Nadar [Re]
+- Nudos (Técnico) [Ra/Sab]
+- Trepar [Re]
+- Orientación Celeste [Per/Sab]
+- Tácticas de combate [Ag/Fu]
+- Heráldica (solo Banderas) [Sab]
+- Instinto callejero [Ra/Intu]
+
+## Entretenedor / Bufón (9) [#pack-bufon]
+
+- Actuar [Vo/Soc/Intu]
+- Oratoria [Soc]
+- Caer / Caída [Ag]
+- †Acrobacias [Ag]
+- Saltar/Saltos [Fu]
+- Señas y leer labios [Ra]
+- Tocar instrumento [Vo/Soc/Intu]
+- Imitar sonidos [Vo/Soc/Intu]
+- Disfraz [Ag/Intu]
+
+## Cortesano (9) [#pack-cortesano]
+
+- Ofuscar [Soc]
+- Seducir [Vo/Soc]
+- Ataque silencioso [Re/Intu]
+- Detectar sustancias [Per]
+- Interrogar [Vo/Soc]
+- Instinto callejero [Ra/Intu]
+- Disfraz [Ag/Intu]
+- Sigilo [Ag/Intu]
+- Agilidad manual [Ag/Intu]
+
+## Luchador (8) [#pack-luchador]
+
+- Desenvaine veloz [Ag/Fu]
+- Florituras [Ag/Re]
+- Esprintar [Fu]
+- Sigilo [Ag/Intu]
+- †Montar [Re/Ag]
+- †Desarmar (maniobra) [Ag/Fu]
+- Cazar [Fu/Ra]
+- Trepar [Re]
+
+## Infiltrador (Cris-23) (9) [#pack-infiltrador]
+- Rastrear [Per]
+- Registrar [Per]
+- Detectar sustancia [Per]
+- Interrogar [Vo/Soc]
+- Sigilo [Ag/Intu]
+- Abrir cerraduras [Ra/Per]
+- Disfraz [Ag/Intu]
+- Instinto callejero [Ra/Intu] (búsqueda urbana)
+- Mezclarse [Ag/Per]
