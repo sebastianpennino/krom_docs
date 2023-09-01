@@ -2,91 +2,131 @@ import {
   BoxIcon,
   ChevronRightIcon,
   GearIcon,
-  RowsIcon
-} from '@components/icons'
-import { Card, Cards } from 'nextra/components'
+  RowsIcon,
+} from "@components/icons";
+import { Card, Cards } from "nextra/components";
 import { Feature, Features } from "@components/features";
 import Image from "next/image";
 
-import card1Img from '@assets/card-1.png'
-import grayImg from '@assets/docs/placeholder-gray.jpg'
-import orangeImg from '@assets/docs/placeholder-orange.jpg'
-import redImg from '@assets/docs/placeholder-red.jpg'
-import blueImg from '@assets/docs/placeholder-blue.jpg'
-import yellowImg from '@assets/docs/placeholder-yellow.jpg'
-import greenImg from '@assets/docs/placeholder-green.jpg'
-import purpleImg from '@assets/docs/placeholder-purple.jpg'
+import card1Img from "@assets/card-1.png";
+import grayImg from "@assets/docs/placeholder-gray.jpg";
+import orangeImg from "@assets/docs/placeholder-orange.jpg";
+import redImg from "@assets/docs/placeholder-red.jpg";
+import blueImg from "@assets/docs/placeholder-blue.jpg";
+import yellowImg from "@assets/docs/placeholder-yellow.jpg";
+import greenImg from "@assets/docs/placeholder-green.jpg";
+import purpleImg from "@assets/docs/placeholder-purple.jpg";
 
 ## Las especies
 
-La especie determina mayormente características "externas" de un personaje, 
-como su apariencia física, su vestimenta, y también puede dar un poco de 
-trasfondo a la hora de ser interpretada con su costumbres y cultura. 
+La especie determina mayormente características "externas" de un personaje,
+como su apariencia física y su vestimenta (arquetípica). También puede dar
+un poco de trasfondo a la hora de ser interpretada con su costumbres y cultura.
 
-A nivel juego [modifican las caracteristicas](/docs/character-creation/creation-tables/TC2) 
-(fuerza, resistencia, razonamiento, percepción, etc) y, dependiendo también de 
-la [prioridad que se le haya dado](/docs/character-creation/02) (a talentos) 
-modifica el acceso a determinados talentos (los talentos son ventajas exclusivas
-de una especie que modifican radicalmente el juego, por ejemplo algunas especies
+A nivel juego determina las fuentes base (vida, mana y adrenalina) y [modifican
+las caracteristicas](/docs/character-creation/creation-tables/TC2)
+(fuerza, resistencia, razonamiento, percepción, etc) y, dependiendo también de
+la [prioridad que se le haya dado](/docs/character-creation/02) (a talentos),
+modifica el acceso a los mismos (los talentos son ventajas exclusivas de una
+especie que modifican radicalmente el juego, por ejemplo algunas especies
 podrán respirar bajo el agua, otras podrán desplazarse más sin descanso, etc).
 
-## Lista
+En `Kromsys` existen siete especies pensantes disponibles para personajes
+jugadores y son:
+
+### Lista
 
 <Features className="species-list">
-  <Feature className="species-card" index={0} id="volkari-card" href="/docs/list-species/volkari">
+  <Feature
+    className="species-card"
+    index={0}
+    id="volkari-card"
+    href="/docs/list-species/volkari"
+  >
     <Image src={purpleImg} alt="Background Volkari (Dark)" loading="eager" />
     <h3>Volkari</h3>
   </Feature>
-  <Feature className="species-card" index={1} id="orc-card" href="/docs/list-species/orc">
+  <Feature
+    className="species-card"
+    index={1}
+    id="orc-card"
+    href="/docs/list-species/orc"
+  >
     <Image src={redImg} alt="Background Orco (Dark)" loading="eager" />
     <h3>Orcos</h3>
   </Feature>
-  <Feature className="species-card" index={2} id="feral-card" href="/docs/list-species/feral">
+  <Feature
+    className="species-card"
+    index={2}
+    id="feral-card"
+    href="/docs/list-species/feral"
+  >
     <Image src={yellowImg} alt="Background Feral (Dark)" loading="eager" />
     <h3>Ferales</h3>
   </Feature>
-  <Feature className="species-card" index={3} id="human-card" href="/docs/list-species/human">
+  <Feature
+    className="species-card"
+    index={3}
+    id="human-card"
+    href="/docs/list-species/human"
+  >
     <Image src={grayImg} alt="Background Humans (Dark)" loading="eager" />
     <h3>Humanos</h3>
   </Feature>
-  <Feature className="species-card" index={4} id="treno-card" href="/docs/list-species/treno">
+  <Feature
+    className="species-card"
+    index={4}
+    id="treno-card"
+    href="/docs/list-species/treno"
+  >
     <Image src={blueImg} alt="Background Trenos (Dark)" loading="eager" />
     <h3>Trenos</h3>
   </Feature>
-  <Feature className="species-card" index={5} id="elf-card" href="/docs/list-species/elf">
+  <Feature
+    className="species-card"
+    index={5}
+    id="elf-card"
+    href="/docs/list-species/elf"
+  >
     <Image src={greenImg} alt="Background Elfos (Dark)" loading="eager" />
     <h3>Elfos</h3>
   </Feature>
-  <Feature className="species-card" index={6} extralarge id="drakkars-card" href="/docs/list-species/drakkars">
+  <Feature
+    className="species-card"
+    index={6}
+    extralarge
+    id="drakkars-card"
+    href="/docs/list-species/drakkars"
+  >
     <Image src={orangeImg} alt="Background Drakkars (Dark)" loading="eager" />
     <h3>Drakkars</h3>
   </Feature>
 </Features>
 
 <style jsx>{`
-    :global(.species-list) {
-      margin-top: 1rem;
-    }
-    :global(.species-card) {
-      color: #fff;
-      text-shadow: 0 0 1rem rgba(0,0,0,0.1);
-      min-height: 8rem;
-    }
-    :global(.species-card h3) {
-      color: #fff;
-      text-shadow: 0 0 1rem rgba(0,0,0,1);
-    }
-    :global(.species-card img) {
-      object-fit: cover;
-      object-position: left;
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      height: 100%;
-      z-index: 0;
-      user-select: none;
-      pointer-events: none;
-    }
+  :global(.species-list) {
+    margin-top: 1rem;
+  }
+  :global(.species-card) {
+    color: #fff;
+    text-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    min-height: 8rem;
+  }
+  :global(.species-card h3) {
+    color: #fff;
+    text-shadow: 0 0 1rem rgba(0, 0, 0, 1);
+  }
+  :global(.species-card img) {
+    object-fit: cover;
+    object-position: left;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: 0;
+    user-select: none;
+    pointer-events: none;
+  }
 `}</style>

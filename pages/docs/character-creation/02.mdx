@@ -1,8 +1,188 @@
-import { Callout } from 'nextra/components'
+import { Callout } from "nextra/components";
 
-# Estableciendo Prioridades
+# Asignando Prioridades
 
-<Callout type="warning" emoji="⚠️">Esta sección aún esta en construcción.</Callout>
+## La tabla de prioridades
 
-Una vez elegida la especie y la subclase se procede a la tabla de prioridades. Las categorias de la tabla son cinco: "Clase", "Talentos", "Equipo e Historial", "Habilidades" y "Caracteristicas". Cada una debe tener una prioridad diferente (nota: a exepción de haber elegido como especie hombre, ver más adelante). Cada jugador entonces debe dar una prioridad A, B, C, D y E a cada categoría (si el jugador elegio la especie hombre, en cambio tiene el siguiente esquema A-B-B-D-E, es decir tiene dos prioridades B y ninguna C).
-La primer desición debe ser siempre la Clase; para obtener ciertas subclasees se requiere tomar cierta prioridad de Clase, para ver a que clase pertenece cada subclase ver la sección Clases en Kromsys. Luego de elegida la Clase el resto de las desiciones será mucho más sencilla.
+Una vez elegida la <strong title="Especie" className="nx-text-primary-600">especie</strong>
+y la <strong title="Subclase" className="nx-text-primary-600">subclase</strong>
+se procede a la [tabla de prioridades](/docs/character-creation/creation-tables/TC1).
+
+Las categorias son cinco:
+**Subclase, Talentos, Equipo e Historial, Habilidades y Características.** Debes
+asignar a cada categoria una prioridad (esa prioridad determina que tan poderoso
+será tu personaje en ese aspecto).
+
+<Callout type="info">
+  {" "}
+  Las prioridades son `A-B-C-D-E`. **Debes asignar una categoría a cada letra.**
+</Callout>
+
+<Callout type="error" emoji="⛔">
+  {" "}
+  Esta es la decisión más importante de toda la creación de personaje. **Medítala
+  con cuidado**
+</Callout>
+
+### Humano versátil
+
+Los humanos son diferentes porque vienen con un **talento innato** (es decir que
+viene por defecto) que modifica esta decisión. Su talento innato dice:
+
+> _**Versátil:**_ al repartir prioridades, su prioridad puede ser
+> `A-B-B-D-E` ó `A-B-C-C-E` (en vez de `A-B-C-D-E`)
+
+Así que los humanos tienen doble "B" (perdiendo C), o doble "C" (perdiendo D).
+
+## 1.- Determinar progresión
+
+Cada jugador entonces _debe dar a cada categoría una letra/prioridad._ Los humanos
+además deberan decidir si usan `A-B-B-D-E` ó `A-B-C-C-E` (en vez de `A-B-C-D-E`).
+
+Lo primero que haces es asignar es la **Subclase** que ya tenias elegida previamente.
+Ciertas subclases requieren tomar cierta prioridad, como se ve a continuación:
+
+### Categoría Subclase [#priority-class]
+
+<Callout type="warning">
+  Esta data tiene "media sanción". Podría cambiar en futuras correciones
+</Callout>
+
+| Requieren |                                                                               Subclase                                                                               |
+| :-------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|     A     |                                                              Todos los [Magos](/docs/list-classes/mage)                                                              |
+|     B     |                                                           Todos los [Shamanes](/docs/list-classes/shaman)                                                            |
+|     C     |                             Todos los [Magos-Guerreros](/docs/list-classes/w-mage) y el [Monje: Sanador](/docs/list-classes/monk/healer)                             |
+|     D     |      Todos los [Guerreros](/docs/list-classes/warrior), [Rufianes](/docs/list-classes/ruffian) y el [Explorador: Montaráz](/docs/list-classes/explorer/ranger)       |
+|     E     | [Guerrero: Duelista](/docs/list-classes/warrior/duelist), [Rufián: Pirata](/docs/list-classes/ruffian/pirate) y el [Monje: Marcial](/docs/list-classes/monk/martial) |
+
+Luego de tomada la prioridad de la Subclase el resto de las desiciones será
+mucho más sencilla.
+
+## 2.- Asignar lo demás
+
+Todos estos valores pueden consultarse en la [TC1 - Prioridades](/docs/character-creation/creation-tables/TC1)
+
+### Categoría Características [#priority-stats]
+
+- Los puntos que se reparten en las características **van de 1 a 5**
+  (excepto prioridad E).
+- Luego de repartidos se aplican los [modificadores por especie](/docs/character-creation/creation-tables/TC2)
+  (pero nunca pueden quedar en cero).
+
+<Callout type="info">
+  Nunca una característica (incluso luego de aplicado el modificador) puede
+  quedar en cero.
+</Callout>
+
+| Prioridad |           Reparte puntos y limitaciones            |
+| :-------: | :------------------------------------------------: |
+|     A     |                 Reparte 32 puntos                  |
+|     B     |                 Reparte 28 puntos                  |
+|     C     | Reparte 25 puntos - solo dos pueden llegar a cinco |
+|     D     | Reparte 22 puntos - solo una puede llegar a cinco  |
+|     E     |   Reparte 20 puntos - **Ninguna en cinco!** (\*)   |
+
+(\*)= es decir que aquellos que reparten "E" en características reparten de 1 a 4.
+
+### Categoría Equipo & Historial [#priority-historial]
+
+- **El historial** puede ser visto en la sección especifica de la **subclase ya elegida**
+- **El equipamiento** puede ser comprado en la [TC5 - Equipamiento](/docs/character-creation/creation-tables/TC5).
+
+| Prioridad |            Puntos y dinero            |
+| :-------: | :-----------------------------------: |
+|     A     | 14pt de historial y 100mc para equipo |
+|     B     | 9pt de historial y 100mc para equipo  |
+|     C     |  7pt de historial y 50mc para equipo  |
+|     D     |  5pt de historial y 50mc para equipo  |
+|     E     |  2pt de historial y 25mc para equipo  |
+
+### Categoría Habilidades [#priority-habs]
+
+- Los skillpacks pueden ser elegidos de la [lista de skillpacks](/docs/list-skills/grouped)
+- Las habilidades pueden ser elegidas individualmente
+  de la [lista de habilidades](/docs/list-skills/individual)
+- El valor inicial de cada habilidad será calculado más adelante
+  usando las características
+
+<Callout type="warning">
+  Esta data tiene "media sanción". Podría cambiar en futuras correciones
+</Callout>
+
+| Prioridad |            Skillpacks y sueltas             |
+| :-------: | :-----------------------------------------: |
+|     A     | 1 Skillpack y 8 hab. ó 2 Skillpack y 2 hab. |
+|     B     |         1 Skillpack y 4 habilidades         |
+|     C     |         1 Skillpack y 3 habilidades         |
+|     D     |         1 Skillpack y 2 habilidades         |
+|     E     |          1 Skillpack y 1 habilidad          |
+
+### Categoría Talentos [#priority-talents]
+
+- **Los talentos** pueden ser vistos en la sección especifica de la **especie ya elegida**
+- **Los caminos** son grupos de talentos que solo pueden ser accedidos con cierta prioridad
+- En las especies con multiples caminos, si eliges algo de una lista especifica,
+  no puedes comprar nada de los otros caminos.
+
+<Callout type="warning">
+  Esta data tiene "media sanción". Podría cambiar en futuras correciones
+</Callout>
+
+| Prioridad |               Talentos y caminos               |
+| :-------: | :--------------------------------------------: |
+|     A     |              2 Mayores + 1 Menor               |
+|     B     |              1 Mayor + 2 Menores               |
+|     C     |  1 Mayor + 1 Menor (no puede elegir caminos!)  |
+|     D     | 1 Mayor ó 2 Menores (no puede elegir caminos!) |
+|     E     |       1 Menor (no puede elegir caminos!)       |
+
+## Ejemplos terminados [#examples]
+A continuación unos ejemplos de prioridades asignadas:
+
+<Callout type="info">
+  {" "}
+  Ninguna de estas combinaciones es recomendada, son meramente ejemplos!
+</Callout>
+
+**Harg, el Orco Nigromante** (`A-B-C-D-E`) tendrá estas prioridades:
+
+|                              Categoría                               | Prioridad |
+| :------------------------------------------------------------------: | :-------: |
+|        Subclase - [Nigromante](/docs/list-classes/mage/necro)        |     A     |
+|      Equipo e Historial - 9pt de historial y 100mc para equipo       |     B     |
+| Características - Reparte 25 puntos - solo dos pueden llegar a cinco |     C     |
+|     Talentos - **NO PUEDE** elegir caminos, 1 Mayor ó 2 Menores      |     D     |
+|               Habilidades - 1 Skillpack y 1 habilidad                |     E     |
+
+**Jerry, el Humano Montaraz** (`A-B-C-C-E`) tendrá estas prioridades:
+
+|                         Categoría                          | Prioridad |
+| :--------------------------------------------------------: | :-------: |
+| Equipo e Historial - 14pt de historial y 100mc para equipo |     A     |
+|            Características - Reparte 28 puntos             |     B     |
+| Talentos - **NO PUEDE** elegir caminos, 1 Mayor + 1 Menor  |     C     |
+|    Subclase - [Sanador](/docs/list-classes/monk/healer)    |     C     |
+|          Habilidades - 1 Skillpack y 1 habilidad           |     E     |
+
+**Dromo, el Humano Ladrón** (`A-B-B-D-E`) tendrá estas prioridades:
+
+|                       Categoría                       | Prioridad |
+| :---------------------------------------------------: | :-------: |
+|          Características - Reparte 32 puntos          |     A     |
+|            Talentos - 1 Mayor + 2 Menores             |     B     |
+|         9pt de historial y 100mc para equipo          |     B     |
+| Subclase - [Ladrón](/docs/list-classes/ruffian/thief) |     D     |
+|        Habilidades - 1 Skillpack y 1 habilidad        |     E     |
+
+**Tom, el Volkari Cazamagos** (`A-B-C-D-E`) tendrá estas prioridades:
+
+|                           Categoría                           | Prioridad |
+| :-----------------------------------------------------------: | :-------: |
+|                Talentos - 2 Mayores + 1 Menor                 |     A     |
+|           Habilidades - 1 Skillpack y 4 habilidades           |     B     |
+| Subclase - [Cazamagos](/docs/list-classes/w-mage/mage-hunter) |     C     |
+|   Equipo e Historial - 5pt de historial y 50mc para equipo    |     D     |
+|  Características - Reparte 20 puntos - **Ninguna en cinco!**  |     E     |
+
+
