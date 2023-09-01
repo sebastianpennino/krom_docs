@@ -1,0 +1,45 @@
+import { Callout } from "nextra/components";
+
+# Modificadores por especie
+
+|  Característica  | Volkari | Orco | Feral | Humano | Treno | Elfo | Drakkars |
+| :--------------: | :-----: | :--: | :---: | :----: | :---: | :--: | :------: |
+|   Fuerza (Fu)    |  (+1)   | (+1) |   .   |   .    |   .   |  .   |   (-1)   |
+| Resistencia (Re) |  (+1)   |  .   | (+1)  |   .    |   .   | (-1) |   (-1)   |
+|  Agilidad (Ag)   |  (-1)   |  .   | (+1)  |   .    | (+1)  |  .   |    .     |
+|    Razón (Ra)    |    .    | (-1) | (-1)  |  (+1)  | (+1)  |  .   |   (+1)   |
+| Intuición (Intu) |  (-1)   |  .   |   .   |   .    | (+1)  |  .   |    .     |
+| Sabiduría (Sab)  |    .    |  .   | (-1)  |   .    |   .   | (+1) |   (+1)   |
+|   Social (Soc)   |    .    |  .   |   .   |  (+1)  |   .   |  .   |    .     |
+| Percepción (Per) |    .    | (+1) | (+1)  |   .    | (-1)  | (+1) |    .     |
+|  Voluntad (Vo)   |  (+1)   |  .   |   .   |   .    |   .   |  .   |   (+1)   |
+
+{/*
+| Especie  |  Fu  |  Re  |  Ag  |  Ra  | Intu | Sab  | Soc  | Per  |  Vo  |
+| :------: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+| Volkari  | (+1) | (+1) | (-1) |  .   | (-1) |  .   |  .   |  .   | (+1) |
+|   Orco   | (+1) |  .   |  .   | (-1) |  .   |  .   |  .   | (+1) |  .   |
+|  Feral   |  .   | (+1) | (+1) | (-1) |  .   | (-1) |  .   | (+1) |  .   |
+|  Humano  |  .   |  .   |  .   | (+1) |  .   |  .   | (+1) |  .   |  .   |
+|  Treno   |  .   |  .   | (+1) | (+1) | (+1) |  .   |  .   | (-1) |  .   |
+|   Elfo   |  .   | (-1) |  .   |  .   |  .   | (+1) |  .   | (+1) |  .   |
+| Drakkars | (-1) | (-1) |  .   | (+1) |  .   | (+1) |  .   |  .   | (+1) |
+*/}
+
+## Recordatorios
+
+- Los puntos que se reparten en una característica **van de 1 a 5** (excepto prioridad E).
+- Luego se aplican los modificadores por especie, **pero nunca pueden quedar en cero.**
+
+<Callout type="info">
+  {" "}
+  Esto significa que aquellas especies que tienen un `(-1)` en su modificador, efectivamente
+  deben tener repartido un "2" como mínimo para que `2 - 1 = 1` y así no quede en
+  cero esa característica!
+</Callout>
+
+<Callout type="info">
+  {" "}
+  Esto significa que aquellas especies que tienen un `(+1)` en su modificador, son
+  las unicas que pueden llegar a un total de "6", porque `5 + 1 = 6`
+</Callout>

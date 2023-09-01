@@ -1,11 +1,109 @@
-import { Callout } from 'nextra/components'
+import { Callout } from "nextra/components";
 
-# Repartiendo Caractersiticas
+export function HiddenDiagram({ title, children }) {
+  return (
+    <details className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4">
+      <summary>
+        <strong className="text-lg">{title}</strong>
+      </summary>
+      <div className="nx-p-2">{children}</div>
+    </details>
+  );
+}
 
-<Callout type="warning" emoji="⚠️">Esta sección aún esta en construcción.</Callout>
+# Las características
 
-## Pendiente
+Las caracteristicas definen numéricamente a tu personaje, determinan el valor
+de las [derivadas](/docs/character-creation/creation-tables/TC4) y también el
+valor inicial de todas tus habilidades. **Son extremadamente influyentes para
+el juego.**
 
-- [x] Hacer la sección
-- [ ] Pasado en limpio
+Las nueve características en `Kromsys` son:
 
+- **Fuerza:** fuerza bruta del personaje
+- **Resistencia:** aguante y desarrollo físico
+- **Agilidad:** flexibilidad, reacción
+- **Razón:** inteligencia, razonamiento
+- **Intuición:** instinto y subconsciente
+- **Sabiduría:** capacidad de aprendizaje y retención
+- **Social:** carisma, personalidad, sociabilidad
+- **Percepción:** sentidos, alerta
+- **Voluntad:** fuerza interior, intención y deseo
+
+## Repartiendo las características
+
+- Las caracteristicas se reparten entre valores de **uno a cinco**.
+- Luego se aplican los modificadores por especie, **pero debes cuidar que
+  ninguna quede en cero.**
+
+<Callout type="info">
+  {" "}
+  Esto significa que aquellas especies que tienen un `(-1)` en su modificador, efectivamente
+  deben tener repartido un "2" como mínimo para que `2 - 1 = 1` y así no quede en
+  cero esa característica!
+</Callout>
+
+- Como el máximo posible **a repartir es cinco,** la unica forma de obtener un seis
+  es con un bono de la especie elegida.
+- Si elegiste `prioridad C o D`, recuerda el limite de las que puedes dejar en cinco.
+- La suma total de los puntos repartidos debe coincidir con el máximo permitido
+  por la categoría asignada (cuando se asignaron prioridades).
+
+| Prioridad |       Reparte puntos y limitaciones       |
+| :-------: | :---------------------------------------: |
+|     A     |             Reparte 32 puntos             |
+|     B     |             Reparte 28 puntos             |
+|     C     |   Reparte 25 puntos - solo dos en cinco   |
+|     D     |   Reparte 22 puntos - solo una en cinco   |
+|     E     | Reparte 20 puntos - **Ninguna en cinco!** |
+
+- En el caso de la `prioridad E` no se puede dejar ninguna en cinco (reparte de 1 a 4).
+
+<Callout type="info" emoji="✏️">
+  {" "}
+  Una vez repartidas en la **hoja de personaje** las características, podemos pasar a
+  la [siguiente sección](/docs/character-creation/04).
+</Callout>
+
+## Influencias de cada característica
+
+Cada característica influencia en el valor inicial de las habilidades (puedes
+ver el detalle en la [lista de habilidades](/docs/list-skills/individual)),
+pero más allá de eso, aquí un pequeño mapa mental para entender la influencia de
+cada una de las caracteristicas en las `derivadas`:
+
+<HiddenDiagram title="Diagrama de implicancias">
+```mermaid
+flowchart LR
+	10(["Fuerza"]) --> 1("Golpe")
+  style 10 stroke:#ff0000,color:#ff0000
+	10 --> 2("Golpe Aumentado")
+  10 --> 4("Resistencia Física") --> 44("Sobrecarga")
+	20(["Resistencia"]) --> 5("Máximo TA")
+  style 20 stroke:#ff0000,color:#ff0000
+  20 --> 4("Resistencia Física")
+```
+
+```mermaid
+flowchart LR
+	30(["Agilidad"]) --> 6("Reflejos")
+  style 30 stroke:#ff0000,color:#ff0000
+	40(["Razón"]) --> 7("Resistencia Mágica") --> 8("TA Mágico")
+  style 40 stroke:#0078ff,color:#0078ff
+  40 --> 11("Si se convierte en M1") --> 88("Resistencia Mental")
+  40 --> 12("Si se convierte en M1 ó M2") --> 99("Mística")
+	50(["Intuición"]) --> 6("Reflejos")
+  style 50 stroke:#0078ff,color:#0078ff
+  50 --> 11("Si se convierte en M1") --> 88("Resistencia Mental")
+  50 --> 12("Si se convierte en M1 ó M2") --> 99("Mística")
+	60(["Sabiduría"]) --> 7("Resistencia Mágica")
+  style 60 stroke:#0078ff,color:#0078ff
+  60 --> 11("Si se convierte en M1") --> 88("Resistencia Mental")
+  60 --> 12("Si se convierte en M1 ó M2") --> 99("Mística")
+	80(["Percepción"]) --> 6("Reflejos")
+  style 80 stroke:#0ab100,color:#0ab100
+	90(["Voluntad"]) --> 88("Resistencia Mental")
+  style 90 stroke:#6000b1,color:#6000b1
+```
+
+</HiddenDiagram>

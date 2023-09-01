@@ -1,11 +1,129 @@
-import { Callout } from 'nextra/components'
+import { Callout } from "nextra/components";
 
-# Fuentes y Derivadas
+## Fuentes
 
-<Callout type="warning" emoji="⚠️">Esta sección aún esta en construcción.</Callout>
+Cada fuente representa un aspecto fundamental del personaje: **la Vida** representa la vitalidad (de
+llegar a cero el personaje queda desmayado). **El Maná** es la energia que posibilita la modificación
+de la realidad, cada hechizo realizado gastará cierta cantidad de mana (también debe evitarse llegar
+a cero, ya que el personaje caeria agotado mentalmente). Finalmente **la Adrenalina**, representa la
+reserva de energía que el personaje dispone cuando realiza acciones adrenales (aquellas acciones que
+representan un desgaste físico).
 
-## Pendiente
+<Callout type="info" emoji="✏️">
+  {" "}
+  Usando [TC 3 - Fuentes](/docs/character-creation/creation-tables/TC3) según su
+  especie y clase, anota sus fuentes.
+</Callout>
 
-- [x] Hacer la sección
-- [ ] Pasado en limpio
+Durante el juego un personaje utilizará constantemente las fuentes, descontando y sumando a lo largo
+de la partida, para facilitar esto la hoja de personaje cuenta con un espacio considerable para
+usar lápiz y goma.
 
+# Derivadas
+
+Las derivadas, como su nombre implica, son valores derivados de otros (en este caso de
+las características). Tienen multiples usos en `Kromsys`, a continuación una breve descripción de
+cada una y las fórmulas para calcularlas.
+
+<Callout type="info" emoji="✏️">
+  {" "}
+  Usando las formulas de esta sección y los valores de tus características, calcula
+  cada derivada y anotala en la hoja de personaje.
+</Callout>
+
+## Fórmulas de Derivadas [#derivatives]
+
+- Utiliza las siguientes fórmulas para completar tu hoja de personaje.
+- Se calculan usando las reglas de redondeo standard (si la coma es 5 o más -> se redondea hacia el valor mayor).
+
+#### Golpe [#golpe]
+
+Es el valor utilizado en combate (melee) para inflingir puntos de daño.
+
+- Fórmula: `Fu x 2`
+- Mínimo: 2
+- Máximo: 12
+
+#### Golpe Aumentado (G2M) [#g2m]
+
+Idem Golpe, pero para armas a dos manos
+
+- El `G2M` es `Golpe x 1.5`
+- Mínimo: 3
+- Máximo: 18
+
+### Máx TA [#maxta]
+
+Es el máximo TA (Tipo de Armadura) posible que puede tener encima tu personaje.
+
+- Fórmula: `Re x 2`
+- Mínimo: 2
+- Máximo: 12
+
+### Resistencias
+
+En `Kromsys`, existen tres tipos de resistencias fundamentales:
+`Física`, `Mágica` y `Mental`.
+
+#### Física [#r-fis]
+
+La **Resistencia Física** se emplea tanto como sinónimo de esfuerzos corporales
+específicos (como derribar a un oponente o evitar ser derribado) como para medir
+la salud del personaje (en situaciones como enfrentar enfermedades o toxinas).
+
+- Fórmula: `1 + ( Fu + Re ) / 3`
+- Mínimo: 2
+- Máximo 5
+
+#### Mental [#r-men]
+
+La **Resistencia Mental** abarca cualquier afectación a la mente, ya sea provocada
+por medios físicos o por medio de la magia que influye en la mente.
+
+- Fórmula: `1 + ( M1 + Vo ) / 3`, Donde M1 es la mejor de las "mentales" (Razón, Intuición, Sabiduría)
+- Mínimo: 2
+- Máximo: 5
+
+#### Mágica [#r-mag]
+
+La **Resistencia Mágica** está diseñada específicamente para resistir hechizos
+o efectos que alteran la realidad.
+
+- Fórmula: `1 + ( Ra + Sab ) / 3`
+- Mínimo: 2
+- Máximo: 5
+
+### Sobrecarga [#overload]
+
+La **Sobrecarga** es tu capacidad máxima de inventario, también le da una herramienta al
+director para calcular si puedes o no hacer ciertos esfuerzos fisicos.
+
+- Fórmula: `10x (Resistencia Física)`
+- Mínimo: 20
+- Máximo: 50
+
+### TA Mágico [#tamag]
+
+Es un valor natural de defensa magica. Funciona como el TA (niega daño), pero
+solo contra ataques magicos.
+
+- Fórmula: `(2 x Resistencia Mágica) - 4` donde el mínimo es cero (no puede ser negativo)
+- Mínimo: 0
+- Máximo: 6
+
+### Reflejos [#reflex]
+
+Se utiliza para reaccionar a cosas inesperadas y también se utiliza bajo situaciones
+especificas (por ejemplo para usar la maniobra esquivar en combate).
+
+- Fórmula: `(Intu + Per + Ag) / 4.5`
+- Mínimo: 1
+- Máximo: 4 (nota: para obtener 4 necesita al menos sumar 16 con `Intu + Per + Ag`)
+
+### Mística [#mistica]
+
+Es usado exclusivamente por la magia, usualmente al calcular un ataque mágico.
+
+- Fórmula: `M1 + ( M2 / 2 )`, Donde M1 es la mejor de las "mentales" y M2 la segunda (las mentales son Razón, Intuición, Sabiduría).
+- Mínimo: 2
+- Máximo: 9

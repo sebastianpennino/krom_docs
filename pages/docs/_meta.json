@@ -67,8 +67,7 @@
     "type": "page",
     "display": "hidden",
     "theme": {
-      "timestamp": false,
-      "layout": "raw"
+      "timestamp": false
     }
   }
 }

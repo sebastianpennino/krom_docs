@@ -1,11 +1,14 @@
-import { Callout } from 'nextra/components'
+import { ChevronRightIcon } from '@components/icons'
+import { Callout, Cards, Card } from 'nextra/components'
 
 # Individuales
 
 <Callout type="warning">This is under construction.</Callout>
 
-<Callout>
-  An example of the callout.
-</Callout>
-
-Similar to the [TBD](/docs/tbd), you can lorem ipsum, here.
+<Cards>
+  <Card
+    icon={<ChevronRightIcon />}
+    title="OK"
+    href="/docs/tbd"
+  ></Card>
+</Cards>
