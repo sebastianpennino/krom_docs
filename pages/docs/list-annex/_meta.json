@@ -1,7 +1,16 @@
 {
   "invocation": "Invocaciones",
   "toxins": "Toxinas",
-  "herbs": "Hierbas",  
-  "pets": "Mascotas",
-  "fortification": "Fortificaciones"
+  "herbs": {
+    "title": "Hierbas",
+    "display": "hidden"
+  },
+  "pets": {
+    "title": "Mascotas",
+    "display": "hidden"
+  },
+  "fortifications": {
+    "title": "Fortificaciones",
+    "display": "hidden"
+  }
 }
