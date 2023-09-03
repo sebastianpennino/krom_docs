@@ -4,8 +4,7 @@
     "title": "Creación de Personaje"
   },
   "character-sheet": {
-    "title": "La hoja de personaje",
-    "display": "hidden"
+    "title": "La hoja de personaje"
   },
   "-- xLists": {
     "type": "separator",
@@ -46,14 +45,14 @@
   "list-annex": {
     "title": "Anexos"
   },
-  "glossary": {
-    "title": "Glosario"
-  },
   "to-print": {
     "title": "Para Imprimir"
   },
   "tools": {
     "title": "Herramientas"
+  },
+  "glossary": {
+    "title": "Glosario"
   },
   "parts-overview": {
     "title": "Partes del sistema",

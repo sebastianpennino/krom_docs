@@ -1,7 +1,0 @@
-# Terminlogía
-
-Lorem
-
-# Glosario
-
-Lorem

@@ -1,3 +1,30 @@
-7. Pifias
-Las pifias representan sucesos desafortunados por parte de un personaje cuando intenta realizar una acción. Importante: una pifia nunca puede matar a un personaje: si la pifia define un daño que sería mortal, por situaciones insólitas (que el director podrá o no justificar) quedará siempre en uno de vida, nunca menos (la única excepción son personajes no-jugadores que el director considere “carne de cañón”).
-Existen dos categorías de pifia: usuales y atípicas. Las pifias usuales se dan cuando solo queda un único uno como pifia y las atípicas cuando quedan más. No existen diferenciaciones, es decir obtener “más unos” no hace peor la situación (el director debe mantener la misma severidad).
+import { ArrowRightIcon } from "@components/icons";
+import { Callout, Cards, Card } from "nextra/components";
+
+# 7. Pifias [#7-0]
+
+Las pifias representan sucesos desafortunados por parte de un personaje cuando intenta realizar una acción.
+
+<Callout type="error" emoji="⛔">
+  Importante: una pifia nunca puede matar a un personaje: si la pifia define un
+  daño que sería mortal, por situaciones insólitas (que el director podrá o no
+  justificar) quedará siempre en **uno de vida, nunca menos** (la única excepción
+  son personajes no-jugadores que el director considere “carne de cañón”).
+</Callout>
+
+Existen dos categorías de pifia: **usuales y atípicas.**
+
+Las pifias usuales se dan cuando solo queda un único uno como pifia y las atípicas cuando quedan más. No existen diferenciaciones, es decir obtener “más unos” no hace peor la situación (el director debe mantener la misma severidad).
+
+<Cards>
+  <Card
+    icon={<ArrowRightIcon />}
+    title="Pifias usuales"
+    href="/docs/ruling-combat/07/common"
+  />
+  <Card
+    icon={<ArrowRightIcon />}
+    title="Pifias atípicas"
+    href="/docs/ruling-combat/07/uncommon"
+  />
+</Cards>
