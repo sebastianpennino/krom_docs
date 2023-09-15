@@ -1,14 +1,25 @@
-import {
-  BoxIcon,
-  ChevronRightIcon,
-  GearIcon,
-  RowsIcon
-} from '@components/icons'
-import { Card, Cards } from 'nextra/components'
 import { Feature, Features } from "@components/features";
 import Image from "next/image";
-import docsCardDark from "@assets/card-1.dark.jpg";
-import docsCard from "@assets/card-1.jpg";
+
+import archerPic from "@assets/docs/subclasses/archer_wide.jpg";
+import holyPic from "@assets/docs/subclasses/holy_warrior_focus.jpg"; 
+import barbPic from "@assets/docs/subclasses/barbarian_focus.jpg";
+import martialPic from "@assets/docs/subclasses/martial_focus.jpg";
+import piratePic from "@assets/docs/subclasses/pirate_focus.jpg";
+import assasinPic from "@assets/docs/subclasses/assasin_focus.jpg";
+import druidPic from "@assets/docs/subclasses/druid_focus.jpg";
+import witchPic from "@assets/docs/subclasses/witch_focus.jpg";
+import duelistPic from "@assets/docs/subclasses/duelist_focus.jpg";
+import elementalPic from "@assets/docs/subclasses/elemental_focus.jpg";
+import healerPic from "@assets/docs/subclasses/healer_focus.jpg";
+import hunterPic from "@assets/docs/subclasses/hunter_focus.jpg";
+import knightPic from "@assets/docs/subclasses/knight_focus.jpg";
+import necroPic from "@assets/docs/subclasses/necro_focus.jpg";
+import paladinPic from "@assets/docs/subclasses/paladin_focus.jpg";
+import psyPic from "@assets/docs/subclasses/psy_focus.jpg";
+import supplicantPic from "@assets/docs/subclasses/supplicant_focus.jpg";
+import thiefPic from "@assets/docs/subclasses/thief_focus.jpg";
+import verdePic from "@assets/docs/subclasses/verde_focus.jpg";
 
 # Clases y Subclases
 
@@ -43,15 +54,15 @@ orientada a la magia), pero eso queda a criterio de cada jugador.
 
 <Features className="species-list">
   <Feature className="species-card" index={0} id="pirate-card" href="/docs/list-classes/ruffian/pirate">
-    <Image src={docsCard} alt="Background Pirata (Dark)" loading="eager" />
+    <Image src={piratePic} alt="Background Pirata (Dark)" loading="lazy" />
     <h3>Pirata</h3>
   </Feature>
   <Feature className="species-card" index={1} id="assasin-card" href="/docs/list-classes/ruffian/assasin">
-    <Image src={docsCardDark} alt="Background Asesino (Dark)" loading="eager" />
+    <Image src={assasinPic} alt="Background Asesino (Dark)" loading="lazy" />
     <h3>Sicario</h3>
   </Feature>
   <Feature className="species-card" index={2} id="feral-card" href="/docs/list-classes/ruffian/thief">
-    <Image src={docsCard} alt="Background Ladrón (Dark)" loading="eager" />
+    <Image src={thiefPic} alt="Background Ladrón (Dark)" loading="lazy" />
     <h3>Ladrón</h3>
   </Feature>
 </Features>
@@ -65,15 +76,15 @@ orientada a la magia), pero eso queda a criterio de cada jugador.
 
 <Features className="species-list">
   <Feature className="species-card" index={0} id="duelist-card" href="/docs/list-classes/warrior/duelist">
-    <Image src={docsCard} alt="Background Duelista (Dark)" loading="eager" />
+    <Image src={duelistPic} alt="Background Duelista (Dark)" loading="lazy" />
     <h3>Duelista</h3>
   </Feature>
   <Feature className="species-card" index={1} id="barb-card" href="/docs/list-classes/warrior/barbarian">
-    <Image src={docsCardDark} alt="Background Barbaro (Dark)" loading="eager" />
+    <Image src={barbPic} alt="Background Barbaro (Dark)" loading="lazy" />
     <h3>Bárbaro</h3>
   </Feature>
   <Feature className="species-card" index={2} id="knight-card" href="/docs/list-classes/warrior/knight">
-    <Image src={docsCard} alt="Background Caballero (Dark)" loading="eager" />
+    <Image src={knightPic} alt="Background Caballero (Dark)" loading="lazy" />
     <h3>Caballero</h3>
   </Feature>
 </Features>
@@ -85,12 +96,12 @@ orientada a la magia), pero eso queda a criterio de cada jugador.
 */}
 
 <Features className="species-list">
-  <Feature className="species-card" index={0} id="martial-card" large href="/docs/list-classes/monk/martial">
-    <Image src={docsCard} alt="Background Marcial (Dark)" loading="eager" />
+  <Feature className="species-card" index={0} id="martial-card" href="/docs/list-classes/monk/martial">
+    <Image src={martialPic} alt="Background Marcial (Dark)" loading="lazy" />
     <h3>Marcial</h3>
   </Feature>
   <Feature className="species-card" index={1} id="healer-card" href="/docs/list-classes/monk/healer">
-    <Image src={docsCardDark} alt="Background Sanador (Dark)" loading="eager" />
+    <Image src={healerPic} alt="Background Sanador (Dark)" loading="lazy" />
     <h3>Sanador</h3>
   </Feature>
 </Features>
@@ -101,7 +112,7 @@ orientada a la magia), pero eso queda a criterio de cada jugador.
 */}
 <Features className="species-list">
   <Feature className="species-card" index={0} id="ranger-card" extralarge href="/docs/list-classes/explorer/ranger">
-    <Image src={docsCard} alt="Background Montaraz (Dark)" loading="eager" />
+    <Image src={archerPic} alt="Background Montaraz (Dark)" loading="lazy" />
     <h3>Montaraz</h3>
   </Feature>
 </Features>
@@ -115,15 +126,15 @@ orientada a la magia), pero eso queda a criterio de cada jugador.
 
 <Features className="species-list">
   <Feature className="species-card" index={0} id="paladin-card" href="/docs/list-classes/w-mage/paladin">
-    <Image src={docsCard} alt="Background Volkari (Dark)" loading="eager" />
+    <Image src={paladinPic} alt="Background Volkari (Dark)" loading="lazy" />
     <h3>Paladin</h3>
   </Feature>
   <Feature className="species-card" index={1} id="ds-card" href="/docs/list-classes/w-mage/dark-supplicant">
-    <Image src={docsCardDark} alt="Background Suplicante Oscuro (Dark)" loading="eager" />
+    <Image src={supplicantPic} alt="Background Suplicante Oscuro (Dark)" loading="lazy" />
     <h3>Suplicante Oscuro</h3>
   </Feature>
   <Feature className="species-card" index={2} id="mh-card" href="/docs/list-classes/w-mage/mage-hunter">
-    <Image src={docsCard} alt="Background Cazamagos (Dark)" loading="eager" />
+    <Image src={hunterPic} alt="Background Cazamagos (Dark)" loading="lazy" />
     <h3>Cazamagos</h3>
   </Feature>
 </Features>
@@ -131,21 +142,21 @@ orientada a la magia), pero eso queda a criterio de cada jugador.
 ## Shamanes
 {/* 
 [Brujo](/docs/list-classes/shaman/witch),
-[Clerigo](/docs/list-classes/shaman/cleric), 
+[Clérigo](/docs/list-classes/shaman/cleric), 
 [Druida](/docs/list-classes/shaman/druid).
 */}
 
 <Features className="species-list">
   <Feature className="species-card" index={0} id="witch-card" href="/docs/list-classes/shaman/witch">
-    <Image src={docsCard} alt="Background Brujo (Dark)" loading="eager" />
+    <Image src={witchPic} alt="Background Brujo (Dark)" loading="lazy" />
     <h3>Brujo</h3>
   </Feature>
   <Feature className="species-card" index={1} id="claric-card" href="/docs/list-classes/shaman/cleric">
-    <Image src={docsCardDark} alt="Background Clerigo (Dark)" loading="eager" />
-    <h3>Clerigo</h3>
+    <Image src={holyPic} alt="Background Clérigo (Dark)" loading="lazy" />
+    <h3>Clérigo</h3>
   </Feature>
   <Feature className="species-card" index={2} id="druid-card" href="/docs/list-classes/shaman/druid">
-    <Image src={docsCard} alt="Background Druida (Dark)" loading="eager" />
+    <Image src={druidPic} alt="Background Druida (Dark)" loading="lazy" />
     <h3>Druida</h3>
   </Feature>
 </Features>
@@ -160,19 +171,19 @@ orientada a la magia), pero eso queda a criterio de cada jugador.
 
 <Features className="species-list">
   <Feature className="species-card" index={0} id="elemental-card" href="/docs/list-classes/mage/elemental">
-    <Image src={docsCard} alt="Background Elemental (Dark)" loading="eager" />
+    <Image src={elementalPic} alt="Background Elemental (Dark)" loading="lazy" />
     <h3>Elemental</h3>
   </Feature>
-  <Feature className="species-card" index={1} id="green-card" large href="/docs/list-classes/mage/green">
-    <Image src={docsCardDark} alt="Background Verde (Dark)" loading="eager" />
+  <Feature className="species-card" index={1} id="green-card"  href="/docs/list-classes/mage/green">
+    <Image src={verdePic} alt="Background Verde (Dark)" loading="lazy" />
     <h3>Verde</h3>
   </Feature>
-  <Feature className="species-card" index={2} id="necro-card" large href="/docs/list-classes/mage/necro">
-    <Image src={docsCard} alt="Background Nigromante (Dark)" loading="eager" />
+  <Feature className="species-card" index={2} id="necro-card" href="/docs/list-classes/mage/necro">
+    <Image src={necroPic} alt="Background Nigromante (Dark)" loading="lazy" />
     <h3>Nigromante</h3>
   </Feature>
     <Feature className="species-card" index={3} id="psi-card" href="/docs/list-classes/mage/psi">
-    <Image src={docsCard} alt="Background Psiquico (Dark)" loading="eager" />
+    <Image src={psyPic} alt="Background Psiquico (Dark)" loading="lazy" />
     <h3>Psiquico</h3>
   </Feature>
 </Features>

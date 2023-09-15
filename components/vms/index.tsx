@@ -29,6 +29,9 @@ export function VMS(props: Props) {
           background-color: rgb(159 18 57);
           color: rgb(251 113 133);
         }
+        :global(.nextra-cards .nx-text-gray-700) {
+          color: white;  
+        }
         :global(.nextra-cards .nextra-card:nth-child(1) svg) {
           color: rgb(251 113 133);
         }

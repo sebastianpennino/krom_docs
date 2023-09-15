@@ -11,6 +11,9 @@ const withNextra = nextra({
 
 export default withNextra({
   reactStrictMode: false,
+  images: {
+    unoptimized: true,
+  },
   // i18n: {
   //   locales: ['es', 'en'],
   //   defaultLocale: 'es'
