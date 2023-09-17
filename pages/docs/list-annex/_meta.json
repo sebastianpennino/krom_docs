@@ -2,8 +2,7 @@
   "invocation": "Invocaciones",
   "toxins": "Tóxinas",
   "herbs": {
-    "title": "Hierbas",
-    "display": "hidden"
+    "title": "Hierbas"
   },
   "pets": {
     "title": "Mascotas",

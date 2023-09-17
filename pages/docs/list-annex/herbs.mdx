@@ -1,0 +1,200 @@
+import { Callout } from "nextra/components";
+
+# Hierbas (plantas medicinales)
+
+Este anexo funciona como un generador de hierbas, util tanto para el director como para personajes.
+En caso de querer usarlo como personaje, preguntar al director de antemano.
+
+Para usarlo:
+
+1. Primero determina **Aplicacion / modo de administración** (a elección o tirando 2d10 y sumando resultado)
+2. Luego determina **que forma tiene o que parte de una planta es** (a elección o tirando 3d10 y sumando el resultado)
+3. Finalmente determinamos nombre, como buscar la hierba y que hace usando **dado porcentual** repetidas veces.
+
+<Callout type="info">
+  El dado porcentual es tirar d10 como decena y otro d10 como unidad
+</Callout>
+
+Tirando el dado porcentual:
+
+> - Lanza d10 avisando que será la decena (multiplica x10 el resultado, trata los ceros como ceros)
+> - Lanza otro d10 de unidad (trata los ceros como "diez")
+>
+> Así por ejemplo: obtenitendo 7 en decena y 0 en unidad -> 70 + 10 -> 100
+
+Usa este procedimiento para primero determinar el nombre usando una tirada para Prefijo y otra para Sufijo.
+Luego otra tirada más para determinar "Cuando intentes encontrar, busca..."
+Y finalmente elige Efectos A o B antes de tirar, y vuelve a tirar un porcentual para saber los efectos de la hierba.
+
+## Modo de administración
+
+La hierba se administra...
+
+| Suma 2d10 | Frecuencia |               Modo               |
+| :-------: | :--------: | :------------------------------: |
+|  02, 20   |     2%     |       Ótico (por el Oído)        |
+|    03     |     2%     |             Cenizas              |
+|    04     |     3%     | Ingerir - (Emético / da vomitos) |
+|    05     |     4%     |             Aspirar              |
+|    06     |     5%     |             Inyectar             |
+|    07     |     6%     |             Inhalar              |
+|    08     |     7%     |       Diluir - En alchool        |
+|    09     |     8%     |            Infusionar            |
+|    10     |     9%     |       Ingerir - En ayunas        |
+|  **11**   |  **10%**   |           **Ingerir**            |
+|    12     |     9%     |      Pasta/Ungüento tópico       |
+|    13     |     8%     |         Diluir - En agua         |
+|    14     |     7%     |            Cataplasma            |
+|    15     |     6%     |             Masticar             |
+|    16     |     5%     |              Fumar               |
+|    17     |     4%     |              Frotar              |
+|    18     |     3%     |      Oftálmico (por el Ojo)      |
+|    19     |     2%     | Sublingual (debajo de la lengua) |
+
+## Forma de la planta
+
+La planta es...
+
+| Suma 3d10 | Frecuencia |       Forma        |
+| :-------: | :--------: | :----------------: |
+|  03, 30   |    0.2%    |    Cono (piña)     |
+|    04     |    0.3%    |       Nódulo       |
+|    05     |    0.6%    |        Caña        |
+|    06     |     1%     |       Clavo        |
+|    07     |    1.5%    |       Polen        |
+|    08     |    2.1%    |        Nuez        |
+|    09     |    2.8%    |       Brote        |
+|    10     |    3.6%    |        Alga        |
+|    11     |    4.5%    |       Néctar       |
+|    12     |    5.5%    |       Savia        |
+|    13     |    6.3%    |       Musgo        |
+|    14     |    6.9%    |        Raíz        |
+|    15     |    7.3%    |       Fruta        |
+|  **16**   |  **7.5%**  |      **Flor**      |
+|  **17**   |  **7.5%**  |     **Hierba**     |
+|    18     |    7.3%    |        Hoja        |
+|    19     |    6.9%    |      Semilla       |
+|    20     |    6.3%    |     Champiñón      |
+|    21     |    5.5%    |      Corteza       |
+|    22     |    4.5%    |       Resina       |
+|    23     |    3.6%    |       Espina       |
+|    24     |    2.8%    |       Hongo        |
+|    25     |    2.1%    |       Tallo        |
+|    26     |    1.5%    |       Vaina        |
+|    27     |     1%     |       Cactus       |
+|    28     |    0.6%    | Kelp (Alga marina) |
+|    29     |    0.3%    |       Liquen       |
+
+## Nombre, busqueda, efectos
+
+<Callout type="info">Antes de tirar elige efectos A o B!</Callout>
+
+> Ejemplo: Elige "A" antes de tirar, obtiene: **02-03-22-34**
+>
+> - Nombre de hierba: "Flecha balsámica"
+> - Cuando intentes encontrar, busca: Armadura descartadas.
+> - Posibles efectos secundarios (temporales) A: todo el mundo te parece amistoso
+
+| número | Prefijo  |       Sufijo       |        Cuando intentes encontrar, busca...         |     Posibles efectos secundarios (temporales) A     |      Posibles efectos secundarios (temporales) B       |
+| :----: | :------: | :----------------: | :------------------------------------------------: | :-------------------------------------------------: | :----------------------------------------------------: |
+|   01   | Manzana  |       ámbar        |       1/3 de quimeras son locas por la cosa        |                   visión de elfo                    |                       sudor frío                       |
+|   02   |  Flecha  |      de otoño      |                   un niño ciego                    |                    voz melodiosa                    |                   vegija hiperactiva                   |
+|   03   |   Bola   |     balsámico      |                  un elfo llorando                  |                       miopía                        |                     dolor de nuca                      |
+|   04   | Bálsamo  |       de oso       |      un hombre astuto que conoce los bosques       |   el dedo anular emite luz como un gusano de luz    |                 comezón en las axilas                  |
+|   05   |  Abeja   |       veneno       |     un cerdo bien entrenado que puede olerlos      |              capacidad de oler el oro               |         descamación de la piel de manos y pies         |
+|   06   | Corteza  |   de nacimiento    |               una brújula magnética                |                  cambia el acento                   |                 estornudos frecuentes                  |
+|   07   | Frijoles |       negra        |               un perro de tres patas               |              anosmia (perdida olfato)               |              flatulencias incontrolables               |
+|   08   |  Barba   |     de vejiga      |                 entre la hojarasca                 |        afasia (impedimenta la comunicación)         |             perdida de la motricidad fina              |
+|   09   |   Baya   |        azul        |                 dólmenes antiguos                  |                     mal aliento                     |             rigidez en las articulaciones              |
+|   10   |   Flor   |     de pantano     |    cualquier maestra de cerveza que se respete     |                     sangre azul                     |                    dolor de encias                     |
+|   11   |  Pétalo  |      de hueso      |          graneros alcanzados por un rayo           |         tus pulsaciones son imperceptibles          |           los perros te encuentran atractivo           |
+|   12   |  Bonete  |     de ciervo      |                 colmenas de abejas                 |                manos de mantequilla                 |                  miedo a las alturas                   |
+|   13   |  Enredo  |     chapucero      |   debajo de la línea de flotación de los barcos    | puede contener la respiración tres veces más tiempo |              olor corporal, atraes moscas              |
+|   14   |  Zarza   |     de espiga      |          debajo de las lápidas derribadas          |             puede localizar agua fresca             |               ojos inyectados de sangre                |
+|   15   |   Pan    |   de mantequilla   |                   nidos de aves                    |      ya no puede ver la luna ni las estrellas       |                 ves todo fuera de foco                 |
+|   16   | Aliento  |    de mariposa     |          cerámica rota y leche derramada           |                puede oler la maldad                 |           perdida de la expresividad facial            |
+|   17   |  Brillo  |      del gato      |             entierra un garrote usado              |                 estómago de hierro                  |                calambres en los brazos                 |
+|   18   |  Escoba  |     verdadero      |                 paredes de caverna                 |              a los gatos les encantas               |              provoca incontinencia verbal              |
+|   19   |  Brotes  |      de cono       |        aferrándose a acantilados empinados         |     ver angulos rectos produce dolor de cabeza      |                   babeo involuntario                   |
+|   20   |  Espina  |       de tos       |            entre juntas de albañilería             |          el hierro frío es hiedra venenosa          |          agarafobia (miedo a las multitudes)           |
+|   21   | Arbusto  |      de vaca       |                 cerca de cascadas                  |        compulsión por usar la ropa al revés         |                   labios agrietados                    |
+|   22   | Botones  |      rizados       |               armaduras descartadas                |    despierta compulsion por jugar juegos de azar    |                       hidrofobia                       |
+|   23   |  Gorro   |      demonio       |      nubes de mariposas curiosamente curiosas      |                  hambre constante                   |                     constirpación                      |
+|   24   | Alfombra |    del desierto    |                robledales druídicos                |            tos ocasional y muy dolorosa             |               perdida total del apetito                |
+|   25   |   Moco   |     del diablo     |                 círculos de hadas                  |          desarrollar alergia a las hierbas          |                  ataques de mal humor                  |
+|   26   | Caldero  |       enano        |                   frutas caídas                    |                 desarrollar escamas                 |           perdida de audición (quedas sordo)           |
+|   27   |   Apio   |      anciano       |                  felinos feroces                   |   endurecimiento de la piel, se torna como cuero    |              ansiolitico (tranquilizante)              |
+|   28   |  Cereza  |        elfa        |                 jardines salvajes                  |                     somnolencia                     |           acumulación de cera en las orejas            |
+|   29   |  Garra   |       de ojo       |           flores parcialmente sumergidas           |                      boca seca                      |                sedativo (produce sueño)                |
+|   30   |  Reloj   |      de hadas      |      flores que se vuelven para mirarte pasar      |           sensibilidad extrema al sonido            |                 sensibilidad al calor                  |
+|   31   |  Clavo   |     de fiebre      |                 zorros que hablan                  |                 gusanos en el oído                  |              alucinogeno (solo auditivo)               |
+|   32   |  Trébol  |      de dedo       |        reflejos de la luna llena en charcos        |                  todo es hilarante                  |                      expectorante                      |
+|   33   |  Berro   |      de pulga      |                     pleno sol                      |              todo sabe demasiado dulce              |                      sed excesiva                      |
+|   34   |  Corona  |     de jardín      |          montículos de hormigas gigantes           |          todo el mundo te parece amistoso           |                    antiinflamatorio                    |
+|   35   | Delicia  |      gigante       |                       gnomos                       |               cambio de color de ojos               |            antiespasmódico y anticonvulsivo            |
+|   36   |  Orejas  |     solitaria      |            montones de desechos goblin             |                       desmayo                       |                 dolor de cabeza agudo                  |
+|   37   |   Higo   |      de cabra      |                    cementerios                     |               miedo a las herraduras                |            sensación de felicidad y euforia            |
+|   38   |   Dedo   |       dorado       |               creciendo en estiércol               |                 crecimiento de uñas                 |             focusin - ayuda a concentrarse             |
+|   39   | Follaje  |       verde        |           creciendo en orejas de treant            |                ataques de mal humor                 |           perdida del tacto en manos y pies            |
+|   40   |  Grano   |     de corazón     |                tumbas del ahorcado                 |                 tolerancia al fuego                 |     incapacidad de recordar más de una hora atrás      |
+|   41   |   Uva    |     de gallina     | resaca sobre el hogar de las viviendas campesinas  |             fluidez en un nuevo idioma              |                    dificulta mentir                    |
+|   42   |  Hierba  |       santa        |               senderos de cazadores                |                       olvido                        |              produce incapacidad de soñar              |
+|   43   |   Miel   |       verde        |            en lugares con mucho dinero             |              hormigueo en extremidades              |  baja el sentido de alerta, incrementa la efusividad   |
+|   44   |   Goma   |     de cuerno      |            en ramos de bodas de dríades            |                amigo de los trasgos                 |                  perdida del cabello                   |
+|   45   |   Pelo   |     de caballo     |               guaridas de tiburones                |           bocio (bultos cerca del cuello)           |                 erupción en la espalda                 |
+|   46   |   Baya   |     de sabueso     |                   granito grande                   |                     escalofríos                     |                      presión baja                      |
+|   47   | Avellano |     de hierro      |           despensas de la gente lagarto            |                 creces dos pulgadas                 |                  nariz congestionada                   |
+|   48   |  Cabeza  |      de joya       |               tesoros de mantícoras                |                 pérdida de cabello                  |                fiebre fuerte, malestar                 |
+|   49   |  Brezo   |     de ganado      |              montones de heno mohoso               |                    alucinaciones                    |                  incremento de líbido                  |
+|   50   |  Casco   |      de nudo       |                 caminos embarrados                 |                       acidez                        |                lloras color rojo sangre                |
+|   51   |  Hierba  |     de lavanda     |                colonias de insectos                |                        hipos                        |              antifebril, antiinflamatorio              |
+|   52   | Capucha  |      de limón      |               manantiales naturales                |                       cuernos                       |           estimulante (contrario a sedante)            |
+|   53   |  Hiedra  |      del león      |            cerca de fosos de castillos             |                     hidrofobia                      |             pierde percepcion del peligro              |
+|   54   | Caldera  |     de pulmón      |             cerca de puertas planares              |            inmunidad a venenos naturales            |                       embriaguez                       |
+|   55   |   Hoja   |    de doncella     |           tierras de cultivo descuidadas           |            perdida de la motricidad fina            |           te mueves mas lento que lo normal            |
+|   56   |  Lirio   |     de pantano     |               lado sur de esculturas               |          incapacidad para decir la verdad           |              sensación de ser perseguido               |
+|   57   |   Amor   |       alegre       |               jardines de conventos                |                      insomnio                       |                      hemorroides                       |
+|   58   | Lecheras |      antiguo       |          campos de batalla del lado justo          |         da muchisima tolerancia al alcohol          |          incrementa comportamientos obsesivos          |
+|   59   |   Alga   |      de monje      |            cercas viejas y deterioradas            |                     embriaguez                      |       palidez general, especialmente de la cara        |
+|   60   |  Manto   |       lunar        |                 solo al anochecer                  |             invisibilidad ante no-vivos             |              simplemente muy, muy amargo               |
+|   61   |  Menta   |      de madre      |                excrementos de buhos                |           miedo irracional al color azul            |              tienes calor todo el tiempo               |
+|   62   |  Musgo   |     de montaña     |   lugares a los que los caballos se niegan a ir    |            rigidez en las articulaciones            |      la parte blanca del ojo se torna amarillenta      |
+|   63   | Mostaza  |      antigua       |         lugares donde ha pisado una ninfa          |            simplemente muy, muy picante             |             vasodilatador bajo la cintura              |
+|   64   | Arrayán  |     de pasión      |  lugares donde se han firmado pactos con diablos   |              calambres en las piernas               | no puedes parar de tropezar si intentas moverte rapido |
+|   65   |  Collar  |    de peniques     |      donde anuncien los sueños premonitorios       |                 pérdida de apetito                  |      diuretico (promueve la producción de orina)       |
+|   66   |  Ortiga  |      de cerdo      |    lugares de caza restringidos por la realeza     |                conserva las migrañas                |            suspende el pensamiento crítico             |
+|   67   | Cebolla  |      espinosa      |              moho en troncos podridos              |                diarrea incontrolable                |               sensibilidad a los olores                |
+|   68   | Orquídea |   del sacerdote    |                  tumbas de santos                  |              la música suena terrible               |                 melancolia y cansancio                 |
+|   69   | Perejil  |       morado       |                  playas arenosas                   |             licantropía de una sola vez             |            perdida de orientación espacial             |
+|   70   |   Real   |     perejiloso     |       restos chamuscados por fuego de dragón       |                    palpitaciones                    |                      aracnofobia                       |
+|   71   |   Pera   |   de la realeza    |                 colinas sombreadas                 |               agradable olor corporal               |                     impide llorar                      |
+|   72   | Pimiento |     de ruptura     |             donde les guste masticarlo             |                   repele insectos                   |               emético (provoca vomitos)                |
+|   73   |   Pino   | de Nombre de Santo | especia extranjera silenciosa y fuertemente oculta |       los mercaderes te cobran todo más caro        |       pierdes la capacidad de reconocer rostros        |
+|   74   | Ciruela  |      de arena      |      estantes de especias de la pequeña gente      |             desaparición de cicatrices              |   incrementa la empatía y la sensibilidad emocional    |
+|   75   | Amapola  |     escarlata      |      alguien que ha ayunado durante ocho días      |                  estómago sensible                  |                    acidez estomacal                    |
+|   76   |  Patata  |       de mar       |     libros de hechizos dejados abiertos al sol     |             sensibilidad a la luz solar             |                atrae insectos pequeños                 |
+|   77   | Limpieza |      de oveja      |               brotando de la carroña               |   te crece un bigote / cambia la forma del bigote   |  leve afasía verbal (confusión de palabras al hablar)  |
+|   78   |  Bolsa   |     de cráneo      |             en las plantas de los pies             |       inmunidad al frío y las trampas de púas       |              caspa y picazon en la cabeza              |
+|   79   |  Rábano  |     deslizante     |             ojos irritados y llorosos              |                 hablar solo en rima                 |                   todo sabe insípido                   |
+|   80   |  Varas   |      de lanza      |            los sarcófagos de las momias            |       pérdida de capacidad de lanzar hechizos       |               alucinogeno (solo visual)                |
+|   81   |   Raíz   |    de primavera    |                 el aroma revelador                 |     extrañas marcas aparecen por todo el cuerpo     |          pupilas dilatadas, fotosensibilidad           |
+|   82   |   Rosa   |      estelar       |    la sabia anciana a la que todos llaman bruja    |     tus colmillos se alargan y salen de tu boca     |        se marcan las ojeras y te sientes debil         |
+|   83   |  Sello   |    de mal olor     |                       sapos                        |         susceptible a súplicas apasionadas          |          la luz del sol te hace arder la piel          |
+|   84   | Semilla  |     de piedra      |               árboles de dosel alto                |         cambia tu mano habil a la contraria         |                      somnolencia                       |
+|   86   | Resbalón |      de sudor      |             bancos de nieve inmaculada             |         los dientes caen, vuelven a crecer          |                   perdida de líbido                    |
+|   87   |  Sorrel  |       dulce        |              bajo árboles sombreados               |            tercer ojo con Segunda Vista             |                    hambre constante                    |
+|   88   | Chupador |    de antorcha     |            bajo los aleros de mausoleos            |                   amor verdadero                    |                       boca seca                        |
+|   89   |   Rama   |      rastrero      |                grutas subterráneas                 |                erupción desagradable                |          todos los sonidos se oyen más graves          |
+|   90   |   Cola   |     aromatico      |                 claros inesperados                 |                 malestar estomacal                  |        fobia a los numeros, especialmente el 13        |
+|   91   |    Té    |   de crepúsculo    |                 santuarios impíos                  |                   pérdida de voz                    |                         hipos                          |
+|   92   |  Cardo   |       mojado       |           donde haya guijarros uniformes           |     tu saliva se vuelve verde, las pociones 50%     |                       estornudos                       |
+|   93   |  Espino  |       blanco       |    santuarios descuidados de deidades populares    |                      verrugas                       |     sensación de estar dentro de un juego de mesa      |
+|   94   |  Tomate  |     silvestre      |                  ataúdes añejados                  |               melancolia y cansancio                |               verrugas dentro de la boca               |
+|   95   |   Vid    |    de invierno     |            donde un gigante fue abatido            |           cuando te cortas, sangras miel            |                  desmayo (de golpe!)                   |
+|   96   |   Uña    |      de bruja      |           donde los dioses han escupido            |        te vuelves magnético para las llaves         |                 incremento de apetito                  |
+|   97   |  Hierba  |      de lobo       |           cumbres azotadas por el viento           |           puedes saltar 1 metro más lejos           |                  sensibilidad al frío                  |
+|   98   |  Madera  |       lanuda       |                Los Jardines de Ynn                 |     instintivamente conoces el Verdadero Norte      |     claustrofobia (miedo a los espacios reducidos)     |
+|   99   |  Hierba  |     de gusano      |            platos de la lejana Voivodja            |         tus lágrimas curan 1 punto de vida          |     inflamación de la lengua que te impide hablar      |
+|  100   | Castillo |    del caminar     |                 Elige de la lista                  |                  Elige de la lista                  |                   Elige de la lista                    |
+
+{/* d4caltrops */}
