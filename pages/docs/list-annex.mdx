@@ -2,16 +2,17 @@
 
 Los anexos contienen información detallada sobre cosas especificas.
 
-Son referenciados por otras tablas y textos a travez de `Kromsys`.
+Son referenciados por otras tablas y textos a través de `Kromsys`.
 
 import {
   PlantIcon,
   StarsIcon,
   DropperIcon,
+  SkullIcon,
   AnimalIcon,
   CastleIcon,
-} from '@components/icons'
-import { Card, Cards } from 'nextra/components'
+} from "@components/icons";
+import { Card, Cards } from "nextra/components";
 
 <Cards>
   <Card
@@ -20,15 +21,12 @@ import { Card, Cards } from 'nextra/components'
     href="/docs/list-annex/invocation"
   />
   <Card
-    icon={<DropperIcon />}
-    title="Tóxinas"
-    href="/docs/list-annex/toxins"
+    icon={<SkullIcon />}
+    title="Reanimación"
+    href="/docs/list-annex/reanimate"
   />
-  <Card
-    icon={<PlantIcon />}
-    title="Hierbas"
-    href="/docs/list-annex/herbs"
-  />
+  <Card icon={<DropperIcon />} title="Tóxinas" href="/docs/list-annex/toxins" />
+  <Card icon={<PlantIcon />} title="Hierbas" href="/docs/list-annex/herbs" />
   {/*
   <Card
     icon={<AnimalIcon />}

@@ -1,0 +1,43 @@
+import { Callout } from "nextra/components";
+
+# Reanimación
+
+<Callout type="info">
+  Nota: esta sección necesita más trabajo, es por ahora un borrador avanzado
+</Callout>
+
+<Callout type="warning">
+  Importante: Un hechicero nunca puede controlar a la vez más unidades que el
+  valor de Reanimar (x2)
+</Callout>
+
+## Reanimación Tipo Montura
+
+| Tipo |   Nombre   |       Vida        |               Requiere cadáveres...                |                 La montura                 |     Velocidad máxima     |
+| :--: | :--------: | :---------------: | :------------------------------------------------: | :----------------------------------------: | :----------------------: |
+|  2   |   Debil    |   10 + mistica    |           de caballos, pony o similares            |    transporta al nigromante y sus cosas    | Velocidad máxima: 20km/h |
+|  3   | Intermedio | 15 + (2x mistica) | de criaturas de transporte usual o animales grande | puede llevar cargas pesadas o acompañantes | Velocidad máxima: 40km/h |
+|  4   |   Fuerte   | 20 + (2x mistica) |          de criaturas grandes o poderosas          | puede llevar acompañantes y cargas pesadas | Velocidad máxima: 40km/h |
+
+## Reanimación Tipo Utilitario
+
+| Tipo |         Nombre         |                                       Requiere cadáveres...                                       |                                         Ordenes posibles                                          |
+| :--: | :--------------------: | :-----------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: |
+|  1   |   Diminuto / "Torpe"   |                     Insectos, roedores chicos, aves pequeñas, pececitos, etc.                     |                                      Solo lleva o trae algo                                       |
+|  2   |   Pequeño / "Simple"   |                          Criatura no más grande que un animal doméstico                           |                       Quieto, muévete, llevar/traer, alertar, interponerse                        |
+|  3   | Mediano / "Intermedio" |                         Desde un animal domestico hasta menor a un humano                         |  Puedes pedirle utilizar herramientas simples / accionar dispositivos (ej: abrir una cerradura)   |
+|  4   |  Grande / "Avanzado"   | Tamaño grande (como un tigre, león, un dragón de komodo, un oso de montaña) o de un ser humanoide | Cualquier tipo de orden compleja, puede conservar una habilidad propia del ser cuando estaba vivo |
+
+## Reanimación Tipo Soldado (sólo en combate)
+
+- Los soldados reanimados se agrupan en una turba, que se mueve y ataca como una unica "ficha" en el tablero.
+- Cuando son atacados sin embargo, son considerados individuos (es decir cada uno es targeteado por separado)
+- Los soldados no tienen PA ni PR, todos los turnos hacen lo mismo (ver "todos los turnos intentan")
+- Cuando atacan, se hace una única tirada de ataque por turba (ver "tirada de ataque") y si sucede el resultado es un único ataque (ver "su ataque será")
+- El ataque pueden ser replicado (se replica como si fuese un único ataque)
+
+| Tipo |   Nombre    |     Vida     |     Todos los turnos intentan...     |       Tirada de ataque       |  Su ataque será  |
+| :--: | :---------: | :----------: | :----------------------------------: | :--------------------------: | :--------------: |
+|  2   |   Debiles   | 5 (x unidad) | mover al menos una casilla y atacar  |      2d10 (1 exito VE6)      | 5 + (1 x unidad) |
+|  3   | Intermedios | 5 (x unidad) | mover al menos una casilla y atacar  |      3d10 (1 exito VE6)      | 5 + (2 x unidad) |
+|  4   |   Fuertes   | 8 (x unidad) | mover al menos dos casillas y atacar | d10 = Reanimar (1 exito VE6) | 8 + (2 x unidad) |
