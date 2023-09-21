@@ -47,7 +47,7 @@ const config: DocsThemeConfig = {
   project: {
     link: "https://github.com/sebastianpennino/krom_docs_nextra",
   },
-  docsRepositoryBase: "https://github.com/sebastianpennino/krom_docs_nextra/tree/main/pages/docs",
+  docsRepositoryBase: "https://github.com/sebastianpennino/krom_docs_nextra/tree/main/",
   primaryHue: 33,
   search: {
     error: 'Error!...',
