@@ -10,6 +10,8 @@ import {
   DropperIcon,
   SkullIcon,
   AnimalIcon,
+  WorldIcon,
+  HorseIcon,
   CastleIcon,
 } from "@components/icons";
 import { Card, Cards } from "nextra/components";
@@ -34,10 +36,15 @@ import { Card, Cards } from "nextra/components";
     href="/docs/list-annex/pets"
   />
   */}
-  <Card icon={<AnimalIcon />} title="Monturas" href="/docs/list-annex/mounts" />
+  <Card icon={<HorseIcon />} title="Monturas" href="/docs/list-annex/mounts" />
   <Card
     icon={<CastleIcon />}
     title="Fortificaciones"
     href="/docs/list-annex/fortifications"
+  />
+  <Card
+    icon={<WorldIcon />}
+    title="Planos de existencia"
+    href="/docs/list-annex/realities"
   />
 </Cards>
