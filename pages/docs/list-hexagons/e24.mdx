@@ -1,8 +1,46 @@
-import { Callout } from 'nextra/components'
-
-<Callout type="warning">**Totems** está aún en construcción.</Callout>
-
 # Totems
 
+## Descripción
 
+El hechicero manifiesta un tótem de un elemento de donde temporalmente surgen efectos mágicos
 
+## Limitaciones
+
+- Solo puede haber un único tótem activo por hechicero (si se hace un segundo hechizo, el primero desaparece)
+- Son inteligentes (curan aliados, dañan enemigos)
+- Como base dispone de cuatro tótems: tierra, fuego, agua, aire, los demás deben ser comprados
+- Si utilizó el historial “sacrificio de tótem” puede haber perdido alguno y ganado un beneficio
+- El “radio” de los tótems es igual al valor del hexágono sobre dos (redondeado hacia arriba) en casillas
+
+## Específicos
+
+El hechicero puede manifestar en el alcance deseado una de estas esculturas hechas del elemento (debe poder tener el tótem disponible, es decir no haberlo sacrificado usando el historial “Sacrificio de tótem”), cada tótem hace su efecto en el radio que es siempre igual al valor del hexágono sobre dos (redondeado hacia arriba) en casillas.
+
+### Modo tactico:
+
+- _Tótem Ígneo:_ hace daño a todos los enemigos en el área afectada (utiliza daño de tótem para ajustar su dificultad)
+- _Tótem Hídrico:_ cura a todos los aliados en el área afectada (utiliza curación de tótem para ajustar su dificultad)
+- _Tótem Eólico:_ dificulta a enemigos el movimiento en el área afectada. Moverse cuesta 1 PA adicional (demás acciones que no implican movimiento no cuestan PA adicionales).
+- _Tótem Terráneo:_ el suelo tiembla al comienzo de cada asalto, cada enemigo en el área afectada debe hacer un chequeo contra derribo (se supera haciendo 2 éxitos VE según dificultad)
+- _Tótem Verde:_ (solo obtenible por historial) el radio se convierte en un suelo lleno de arbustos y plantas que brindan (+1) a intentos de esconderse de los aliados y quitan (-1) a intentos de usar sigilo de los enemigos (además de facilitar las plantas para el hechicero)
+
+### Modo narrativo:
+
+- _Tótem Ígneo:_ una pequeña fogata de una sola casilla (no escala)
+- _Tótem Hídrico:_ lluvia en el área
+- _Tótem Eolico:_ rafagas de aire hacia afuera (repelen)
+- _Tótem Terráneo:_ arena movediza o temblor que hace vibrar el suelo
+- _Tótem Verde:_ idem tactico
+
+## Resistencias
+
+No hay tiradas de resistencia
+
+## Utiliza
+
+Usa alcance (distancia al tótem) y duración.
+No usa volumen en la cuenta, pero su radio está limitado por el valor del hexágono sobre dos (redondeado hacia arriba) en casillas.
+
+## Guia de dificultad
+
+El valor de éxito determina los daños y curaciones (ver tótems en la tabla de magia)
