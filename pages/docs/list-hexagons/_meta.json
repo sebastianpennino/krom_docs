@@ -5,15 +5,15 @@
   "e04": "Bendiciones y Maldiciones",
   "e22": "Brazo Fantasma",
   "e07L1": "Camuflage Mágico",
-  "e27": "Clima",
   "e12": "Contramagia",
-  "e26": "Conversión Animal",
+  "e27": "Control Climático",
   "e18": "Curaciones",
   "e06": "Delirios",
   "e16": "Disfraz Mágico",
   "e17": "Emoturgia",
   "e25": { "title": "Espiritu Guardian", "display": "hidden" },
   "e03": "Flora",
+  "e26": "Forma Animal",
   "e28": "Gritos",
   "e01L2": "Humo",
   "e05": "Invocar y Controlar",
@@ -23,7 +23,6 @@
   "e01": "Magias Elementales",
   "e21": "Medium",
   "e11": "Percibir el poder",
-  "e29": { "title": "Hexagono 29", "display": "hidden" },
   "e19": "Protecciones",
   "e07": "Proyecciones Ilusorias",
   "e20": "Reanimar",
@@ -34,5 +33,5 @@
   "e24": "Totems",
   "e15L1": "Tóxinas magicas",
   "e15": "Toxificación",
-  "e23": "Visión extracorpórea"
+  "e23": "Visión Astral"
 }
