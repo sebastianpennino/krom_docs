@@ -1,4 +1,5 @@
 import { Screenshot } from "@components/screenshot";
+import { Pill } from "@components/pill";
 import { Bleed } from "nextra-theme-docs";
 import { Callout } from "nextra/components";
 import witchPic from "@assets/docs/subclasses/witch_wide.jpg";
@@ -14,27 +15,12 @@ import witchPic from "@assets/docs/subclasses/witch_wide.jpg";
 <Callout type="warning" emoji="🔎">
   Necesita revisión
 </Callout>
-El brujo deriva sus poderes de lo oculto, una fuerza desconocida los incita a seguir
-aprendiendo. Su curiosidad no conoce limites, su sed de conocimientos lo lleva a
-aprender de olvidados tomos con hechizos arcanos, tomando riesgos y aveces experimentando
-consigo mismo, perdiendo progresivamente su sanidad mental y volviendose cada vez
-más poderoso.
+El brujo extrae sus poderes de las profundidades del ocultismo. Impulsos de memorias ancestrales lo invitan a explorar lo desconocido. Su curiosidad no tiene límites; su sed de conocimiento lo guía hacia polvorientos tomos que contienen hechizos arcanos, asumiendo riesgos y a veces experimentando consigo mismo. 
 
-## Historial (11) [#historial]
-- (x) **Sabiondo:** elige y agrega una habilidad de conocimientos magicos que no poseas (conocimientos sobre hechizos, criaturas magicas o artefactos magicos). Bono (+1) al valor inicial de las habilidades de esa categoría.
-- (x) **Ritual de Purificación:** (poder único, 1 vez por mesa) le lleva al hechicero una hora, disipa maldiciones, delirios, posesiones (espirituales o control mental) en un objetivo.
-- (x) **Hechizos de sangre mayores:** (acción especial) puede pagar con vida sus hechizos (cada 10 de vida obtiene un dado)
-- (x) **Hedor de la culpa:** (tarjeta) puedes percibir la culpa de las personas como si fuese un olor. La mayoría de las personas apenas se huelen, pero algunos llevan un hedor insoportable, lo más peligrosos sin embargo son aquellos que no despiden olor alguno.
-- (x) **Muñecos Vudú:** puede construir un muñeco vudú (necesitará algo de la persona a afectar, como ser partes de prendas o pelos, uñas, sangre o algo que pertenezca al afectado y una hora libre para crear un muñeco de algún material). El muñeco le permite realizar [Maldiciones](/docs/list-hexagons/e04) hacia el afectado como si estuviese ahí mismo (el hechizo se hace hacia el muñeco a distancia de contacto, pero el afectado sufre las consecuencias del hechizo donde sea que esté). Puede tener como máximo un muñeco vudú a la vez.
-- (x) **Maldiciones ponzoñosas:** (pasivo, mejorar magia) cuando el brujo haga una maldición exitosa que tenga objetivos, cada objetivo recibe daño igual a los éxitos remanentes (es decir aquellos que quedaron versus cualquier resistencia o contienda) por dos.
-- (x) **Maldiciones debilitantes:** (pasivo, mejorar magia) mientras cualquier enemigo tenga al menos una de tus maldiciones activa, reduce en dos su TA mágico (no stackeable)
-- (x) **Maldiciones contagiosas:** (pasivo, mejorar magia) en combate, siempre que una maldición estuviese por terminar, si un enemigo afectado tiene al menos otro aliado (es decir otro enemigo como el) adyacente, la maldición pasa a este nuevo afectado y se mantiene durante 2 asaltos.
-- (x) **Búho espectral:** (acción especial, una vez por mesa) puede gastar 30 de maná, invocar un búho espectral (invocación tipo utility - T2) para realizar una tarea específica por 30 minutos como máximo.
-- (x) **Memoria idílica y lectura veloz:** (tarjeta) el personaje puede puede recordar a la perfección algo que haya visto durante unos tres segundos (también se lo conoce como memoria fotográfica). Además puede leer libros a razón de 6 paginas por minuto
-- (x) **Sueño profético:** (tarjeta) el brujo puede prepararse antes de dormir para recibir un sueño profético. Puede pedir ver el futuro inmediato o a largo plazo (queda a criterio del director que es lo que experimenta, pero debe contener pistas o simbolismos sobre eventos futuros que sucederían si el brujo continúa su actual camino)
+En su búsqueda incesante, sacrifica su cordura gradualmente para alcanzar un poder inigualable. Cada ritual aprendido es un paso hacia lo sobrenatural, donde su mente se desvanece y su poder crece sin límites. Este camino lo convierte en un maestro de las maldiciones, capaz de desatar el caos con solo un susurro y manipular las fuerzas del más allá para lograr sus cometidos. En su travesía, descubre secretos insospechados, seres insondables y se convierte en un canal entre el mundo terrenal y el reino de los espiritus. Sus ojos brillan con una luz sobrenatural y su risa resuena con la sabiduría de las edades. En cada hechizo lanzado, en cada tomo aprendido, el brujo se adentra más en el abismo, desafiando los límites de lo posible y explorando los recovecos más oscuros para asegurar su supremacía con los mortales y más allá.
 
 ## Armas y Magias
-Sus armas comienzan en dos y sus magias en tres
+Sus armas comienzan en 2 y sus magias en 3
 
 ### Armas (2) [#armas]
 
@@ -47,3 +33,16 @@ Sus armas comienzan en dos y sus magias en tres
 - [Maldiciones](/docs/list-hexagons/e04)
 - [Proyecciones Ilusorias](/docs/list-hexagons/e07)
 - [Visión Astral](/docs/list-hexagons/e23)
+
+## Historial (11) [#historial]
+- (x) **Sabiondo:** elige y agrega una habilidad de conocimientos magicos que no poseas (conocimientos sobre hechizos, criaturas magicas o artefactos magicos). Bono (+1) al valor inicial de las habilidades de esa categoría.
+- (x) **Ritual de Purificación:** <Pill type="s"/><Pill type="eo"/> le lleva al hechicero aproximadamente una hora. Disipa maldiciones, delirios, posesiones (espirituales o control mental) en un objetivo o área.
+- (x) **Hechizos de sangre mayores:** <Pill type="s"/> puede pagar con vida sus hechizos (cada 10 de vida obtiene un dado)
+- (x) **Hedor de la culpa:** <Pill type="c"/> puedes percibir la culpa de las personas como si fuese un olor. La mayoría de las personas apenas se huelen, pero algunos llevan un hedor insoportable, sin embargo, los más peligrosos son aquellos que no despiden olor alguno.
+- (x) **Muñecos Vudú:** <Pill type="s"/> puede construir un muñeco vudú (necesitará algo de la persona a afectar, como ser partes de prendas o pelos, uñas, sangre o algo que pertenezca al afectado y le lleva al hechicero aproximadamente una hora crear un muñeco de algún material). El muñeco le permite realizar [Maldiciones](/docs/list-hexagons/e04) hacia el afectado como si estuviese ahí mismo (el hechizo se hace hacia el muñeco a distancia de toque, pero el afectado sufre las consecuencias del hechizo donde sea que esté). Puede tener como máximo un muñeco vudú a la vez.
+- (x) **Maldiciones ponzoñosas:** <Pill type="p"/><Pill type="u"/> cuando el brujo realice una maldición exitosa que tenga objetivos, cada objetivo recibe daño igual a los éxitos remanentes por dos. Los éxitos remanentes son aquellos que quedaron versus cualquier resistencia o contienda.
+- (x) **Maldiciones debilitantes:** <Pill type="p"/><Pill type="u"/> mientras cualquier enemigo tenga al menos una de tus maldiciones activa, reduce en 2 su TA mágico (no stackeable)
+- (x) **Maldiciones contagiosas:** <Pill type="p"/><Pill type="u"/> en combate, al terminar una maldición, si el enemigo afectado tiene al menos otro enemigo adyacente, la maldición pasa a este nuevo afectado y se mantiene durante 2 asaltos.
+- (x) **Búho espectral:** <Pill type="s"/><Pill type="eo"/> gastando 30 de maná, invoca a un búho espectral ([Invocación tipo utility - T3](/docs/list-annex/invocation#util)) para realizar una tarea específica por 30 minutos como máximo.
+- (x) **Memoria idílica y lectura veloz:** <Pill type="c"/> el personaje puede puede recordar a la perfección algo que haya visto durante unos tres segundos (también se lo conoce como memoria fotográfica). Además puede leer libros a razón de 6 paginas por minuto
+- (x) **Sueño profético:** <Pill type="eo"/> el brujo puede prepararse antes de dormir para recibir un sueño profético. Puede pedir ver el futuro inmediato o a largo plazo (queda a criterio del director que es lo que experimenta, pero debe contener pistas o simbolismos sobre eventos futuros que sucederían si el brujo continúa su actual camino)
