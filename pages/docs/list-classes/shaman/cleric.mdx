@@ -1,4 +1,5 @@
 import { Screenshot } from "@components/screenshot";
+import { Pill } from "@components/pill";
 import { Bleed } from "nextra-theme-docs";
 import { Callout } from "nextra/components";
 import holyWarriorPic from "@assets/docs/subclasses/holy_warrior_wide.jpg";
@@ -14,23 +15,15 @@ import holyWarriorPic from "@assets/docs/subclasses/holy_warrior_wide.jpg";
 <Callout type="warning" emoji="🔎">
   Necesita revisión
 </Callout>
-El clérigo deriva sus poderes de la luz y el orden. Sigue un camino de ferviente 
-adoración a su deidad, adoptando los preceptos de la deidad que este sige 
-(cabe aclarar que no son necesariamente «buenos» o «justos», sino que siguen los 
-preceptos de esa deidad al pie de la letra).
+El clérigo canaliza su poder de la luz y el orden divinos. Se embarca en una senda
+de devoción a su deidad, abrazando los preceptos que esta dicta, los cuales pueden
+no ser necesariamente "buenos" o "justos", sino que son seguidos al pie de la letra.{" "}
 
-## Historial (7) [#historial]
-
-- (x) **Lux sacra:** (pasivo, mejora magias) sus hechizos de luz adicionalmente revelan ilusiones y maldiciones (las ilusiones se transparentan y las maldiciones se ven como un contorno oscuro alrededor de lo afectado)
-- (x) **Revitalizar:** (pasivo, mejora magias) cuando haces un hechizo de [Protección](/docs/list-hexagons/e19) exitoso, puedes decidir que 5 o 10 de esos puntos sean ganados como puntos de adrenalina
-- (x) **Cargar heridas ajenas:** (mejora magias) cuando use protección para curar puede remover una herida/condición/estado y el hechicero se coloca una herida de sangrado (pierde -1 de vida por asalto) sobre si mismo
-- (x) **Última salvación:** (poder único, acción especial, unico uso) el clérigo se sacrifica pero toda su curación se manifiesta una última vez: todos los aliados caidos en este combate, en un radio de su voluntad x 10 mts reviven con toda su salud. Si lo usa, el cuerpo del clérigo se disolverá en un haz de luz.
-- (x) **Resurrección:** (poder único) solo una vez por semana, el Clérigo puede usando su magia de medium junto con curación, traer a la vida alguien recientemente fallecido (debe estar junto al cadáver y a una hora como máximo del momento de su muerte), el proceso agota inmediatamente al clérigo el cual quedará sin mana independientemente del resultado. Si lo logra, el afectado quedará desmayado pero con 1 punto de vida.
-- (x) **Presencia pacífica:** (poder único, acción especial) una vez por mesa el clérigo puede causar con su presencia un aura de calma en un radio igual a su voluntad ×10 en metros. Los afectados sentirán una necesidad de tranquilizarse y cesar cualquier actividad violenta (se resiste con un chequeo de resistencia mental contra un VE de 6).
-- (x) **Restos de familiar:** comienza con una bolsa de restos de un familiar a elección.
+Con una fe inquebrantable, el clérigo se convierte en el vínculo viviente. Su conexión con la deidad le otorga el don de la sanación y la protección, pero también la capacidad de disipar los impíos con su contramagia. A medida que profundiza en su fe, sus poderes crecen, permitiéndole realizar milagros y enfrentar a las fuerzas enemigas con valentía. Su fortaleza, determinación y su devoción incuestionable lo convierten en un faro de esperanza y cordura en un mundo de caos y sombras.
 
 ## Armas y Magias
-Sus armas comienzan en dos y sus magias en tres
+
+Sus armas comienzan en 2 y sus magias en 3
 
 ### Armas (2) [#armas]
 
@@ -41,6 +34,16 @@ Sus armas comienzan en dos y sus magias en tres
 
 - [Luz](/docs/list-hexagons/e01)
 - [Bendiciones](/docs/list-hexagons/e04)
-- [Protección](/docs/list-hexagons/e19) (similar curar)
+- [Protección](/docs/list-hexagons/e19)
 - [Contramagia](/docs/list-hexagons/e12)
 - [Medium](/docs/list-hexagons/e21)
+
+## Historial (7) [#historial]
+
+- (x) **Lux sacra:** <Pill type="p"/><Pill type="u"/> sus hechizos de luz adicionalmente revelan ilusiones y maldiciones (las ilusiones se transparentan y las maldiciones se ven como un contorno oscuro alrededor de lo afectado)
+- (x) **Revitalizar:** <Pill type="u"/><Pill type="s"/> cuando el clérigo cura exitosamente a un objetivo, puedes decidir que exactamente 5 ó 10 de esos puntos sean ganados como puntos de adrenalina en vez de puntos de vida
+- (x) **Tomar heridas ajenas:** <Pill type="u"/><Pill type="s"/> siempre que el clérigo use [Protección](/docs/list-hexagons/e19) para curar puede decidir remover una única herida/condición/estado y el clérigo se coloca una herida de [sangrado](/docs/ruling-combat/06/common) (pierde -1 de vida por asalto) sobre sí mismo.
+- (x) **Última salvación:** <Pill type="s"/> el clérigo se sacrifica y toda su curación se manifiesta una última vez: todos los aliados caidos en este combate, en un radio igual a su voluntad ×10 en metros reviven con toda su salud. El cuerpo del clérigo se disolverá en un haz de luz.
+- (x) **Resurrección:** <Pill type="s"/><Pill type="eo"/> el Clérigo puede traer de nuevo a la vida a alguien recientemente fallecido (debe estar junto al cadáver y a una hora como máximo del momento de su muerte), el proceso agota inmediatamente al clérigo el cual quedará sin mana. El "revivido" quedará desmayado pero con 1 punto de vida.
+- (x) **Presencia pacífica:** <Pill type="s"/><Pill type="eo"/> el clérigo puede causar un aura de calma en un radio igual a su voluntad ×10 en metros. Los afectados sentirán una necesidad de tranquilizarse y cesar cualquier actividad violenta. Para resistirlo, todos deben superar en [TR 1 - General](/docs/resolution-tables/TR1) una tirada de resistencia magica VE 6.
+- (x) **Restos de familiar:** comienza con una bolsa de restos de un familiar a elección.
