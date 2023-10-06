@@ -1,5 +1,6 @@
 import { Screenshot } from "@components/screenshot";
 import hunterPic from "@assets/docs/subclasses/hunter_wide.jpg";
+import { Pill } from "@components/pill";
 import { Bleed } from "nextra-theme-docs";
 import { Callout } from "nextra/components";
 
@@ -14,29 +15,13 @@ import { Callout } from "nextra/components";
 <Callout type="warning" emoji="🔎">
   Necesita revisión
 </Callout>
-A diferencia de otras subclases, los cazamagos no nacen, se hacen: solo unos
-pocos sobreviven el duro entrenamiento, donde los fuertes son adoctrinados (sus mentes
-y poderes alterados) hasta volverse maquinas de detección mágica. Los cazamagos son
-una figura de autoridad conocida, que se dedican a la persecución de entidades mágicas,
-ya sea demonios u otros usuarios mágicos. Son los jueces, cazadores y verdugos de
-la magia, todos los grandes reinos tienen al menos uno trabajando en sus confines.
+En el vasto mundo de la magia, la subclase de cazamagos se erige como una élite formidable y única. A diferencia de otras subclases, los cazamagos no nacen, sino que se forjan a través de un proceso de transformación implacable. Solo unos pocos individuos excepcionales sobreviven al entrenamiento extremadamente riguroso, donde los fuertes son sometidos a un adoctrinamiento intenso que altera tanto sus mentes como sus poderes. Este proceso los convierte en auténticas máquinas de detección mágica, capaces de percibir las más sutiles vibraciones del mundo arcano.
 
-## Historial (11) [#historial]
-
-- (x) **Redirección:** (pasivo, poder único, mejora magias) cuando una [Contramagia](/docs/list-hexagons/e12) es exitosa contra un hechizo que tiene objetivos o un área/volumen, en vez de contrarrestarlo, puedes redirigirlo: elige nueva área u objetivos (respeta las condiciones del hechizo original y el punto de referencia para alcance es el hechicero original), además de eso puede cambiar el concepto de aliados / enemigos y sustituirlo por los tuyos.
-- (x) **Ataque supresor:** (poder único, acción especial) siempre que haga un ataque cuerpo a cuerpo, si hace un crítico de filo, puede reemplazar el efecto por el siguiente “el objetivo del ataque no puede lanzar hechizos por el resto de la ronda”.
-- (x) **Torcer el destino:** (poder unico, acción especial) al comienzo de la mesa tira 1d10, anota su resultado. Este dado es llamado a partir de ahora “dado del destino”. Durante cualquier tirada de dados para hacer magia (narrativa o de ataque) propia o de hechiceros en un rango de 2x casillas (2mt) como valor en voluntad, gastando 10 de mana, puedes intercambiar un dado por el de destino (es decir, el dado seleccionado pasa a ser el nuevo “dado del destino” y el anterior pasa a tomar el lugar del dado reemplazado). El reemplazo debe ser realizado antes de cualquier cálculo.
-- (x) **Percibir fuerza vital:** (pasivo, mejora magias) [Percibir poder](/docs/list-hexagons/e11) puede ser usado para percibir seres vivos (le dará al hechicero la cantidad y ubicación aproximada en el radio del hechizo).
-- (x) **Debilitar seres percibidos:** (requiere percibir fuerza vital) (acción especial) cuando se use [Percibir poder](/docs/list-hexagons/e11) junto con percibir fuerza vital, el cazamagos puede decidir debilitar a los seres detectados, restandoles un dado de resistencia mágica durante los próximos 30 minutos (o 3 asaltos si es utilizado en combate).
-- (x) **Magia persuasiva:** (pasivo, mejora magias) cuando el cazamagos usa [Legerencia](/docs/list-hexagons/e09) en un único objetivo, antes de usarlo baja en (-1) la resistencia mental del objetivo.
-- (x) **Implacable:** bono (+1) a habilidades existentes de interrogar e intimidar
-- (x) **Sabiondo:** elige y agrega una habilidad de conocimientos magicos que no poseas (conocimientos sobre hechizos, criaturas magicas o artefactos magicos). Bono (+1) al valor inicial de las habilidades de esa categoría.
-- (x) **Detector de verdad:** (tarjeta) debido a su naturaleza escrutadora, el cazamagos puede, haciendo un chequeo de intuición, saber con certeza si alguien está diciendo o no la verdad.
-- (x) **TA mágico mejorado:** (permanente) eleva tu TA Mágico a exactamente 4. Si tu TA mágico fuese igual o mayor, en vez de eso obtiene un bono (+1) al TA Mágico.
-- (x) **Duelista mágico:** (pasivo) obtiene un bono (+3) a su Mística cuando el objetivo de su hechizo es único (y no es el mismo hechicero).
+Los cazamagos no son meros buscadores de conocimiento; son figuras de autoridad veneradas y temidas en igual medida. Se dedican incansablemente a la persecución de entidades mágicas, desde demonios a otros usuarios de magia oscura. Son los jueces imperturbables, los cazadores astutos y los verdugos indomables de la magia en todas sus formas. En los confines de todos los grandes reinos, al menos uno de estos cazadores incansables vela por la seguridad, erradicando cualquier amenaza mágica que se atreva a alzarse. Su presencia infunde tanto respeto como temor, y su determinación es inquebrantable en la búsqueda de mantener el equilibrio entre el mundo de la magia y los no-magicos.
 
 ## Armas y Magias
-Debe elegir: Sus armas comienzan en dos y sus magias en tres, o viceversa
+
+Debe elegir: Sus armas comienzan en 2 y sus magias en 3, o viceversa
 
 ### Armas (3) [#armas]
 
@@ -46,7 +31,21 @@ Debe elegir: Sus armas comienzan en dos y sus magias en tres, o viceversa
 
 ### Hexágonos (4) [#magias]
 
-- [Percibir poder](/docs/list-hexagons/e11)
+- [Percibir el poder](/docs/list-hexagons/e11)
 - [Contramagia](/docs/list-hexagons/e12)
 - [Arma magica](/docs/list-hexagons/e14)
 - [Legerencia](/docs/list-hexagons/e09)
+
+## Historial (11) [#historial]
+
+- (x) **Redirección:** <Pill type="p"/><Pill type="u"/> cuando el cazamagos utiliza exitosamente [Contramagia](/docs/list-hexagons/e12), en vez de contrarrestar, puede redirigir: elige nuevos objetivos o área (respeta las condiciones del hechizo original y toma de punto de referencia para alcance es el hechicero original), además de eso puede cambiar el concepto de aliados / enemigos y sustituirlo por los tuyos. El hechizo a redirigir debe tener objetivos o area.
+- (x) **Ataque supresor:** <Pill type="u"/> siempre que haga un ataque cuerpo a cuerpo con al menos un crítico de filo, puede reemplazar el efecto obtenido por este otro: “el objetivo del ataque no puede lanzar hechizos por el resto de la ronda”.
+- (x) **Torcer el destino:** <Pill type="s"/> al comienzo de la partida lanza 1d10 y anota el resultado. A partir de ahora este dado será llamado “dado del destino”. Siempre que en un radio de 10 casillas con respecto al cazamagos se lance un hechizo, el cazamagos puede, gastando 10 puntos de maná, intercambiar un dado a elección por el "dado del destino" (es decir, el dado seleccionado pasa a ser el nuevo “dado del destino” y el anterior pasa a tomar el lugar del dado reemplazado). Cualquier reemplazo debe ser realizado antes que que cálculos de éxito.
+- (x) **Percibir fuerza vital:** <Pill type="u"/> [Percibir el poder](/docs/list-hexagons/e11) puede ser usado para percibir seres vivos (el hechicero percibe la cantidad y ubicación aproximada en el radio del hechizo).
+- (x) **Debilitar seres percibidos:** (requiere: percibir fuerza vital) <Pill type="s"/> cuando el cazamagos utiliza [Percibir poder](/docs/list-hexagons/e11) junto con percibir fuerza vital, el cazamagos puede decidir debilitar a los seres detectados, restandoles un dado de resistencia mágica durante los próximos 30 minutos (o 3 asaltos si es utilizado en combate). Este efecto no stackea.
+- (x) **Magia persuasiva:** <Pill type="p"/><Pill type="u"/> cuando el cazamagos utiliza [Legerencia](/docs/list-hexagons/e09) resta (-1) a la resistencia mental de el objetivo.
+- (x) **Implacable:** bono (+1) a habilidades existentes de interrogar e intimidar
+- (x) **Sabiondo:** elige y agrega una habilidad de conocimientos magicos que no poseas (conocimientos sobre hechizos, criaturas magicas o artefactos magicos). Bono (+1) al valor inicial de las habilidades de esa categoría.
+- (x) **Detector de verdad:** <Pill type="c"/><Pill type="s"/> debido a su naturaleza escrutadora, el cazamagos puede, haciendo un chequeo de intuición, saber con certeza si alguien está diciendo o no la verdad.
+- (x) **TA mágico mejorado:** <Pill type="p"/> eleva tu TA Mágico a exactamente 4. Si tu TA mágico fuese igual o mayor, en vez de eso obtiene un bono (+1) permanente al TA Mágico.
+- (x) **Duelista mágico:** <Pill type="c"/> cuando el objetivo de su hechizo es único, obtiene un bono (+3) a su `Mística`
