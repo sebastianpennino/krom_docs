@@ -1,4 +1,5 @@
 import { Screenshot } from "@components/screenshot";
+import { Pill } from "@components/pill";
 import supplicantPic from "@assets/docs/subclasses/supplicant_wide.jpg";
 import { Bleed } from "nextra-theme-docs";
 import { Callout } from "nextra/components";
@@ -14,57 +15,16 @@ import { Callout } from "nextra/components";
 <Callout type="warning" emoji="🔎">
   Necesita revisión
 </Callout>
-El suplicante oscuro es guerrero cuya devoción ferviente en las deidades de la oscuridad,
-lo llevo a sacrificar parte de si mismo para obtener poderes. Siempre llevan una
+El suplicante oscuro es guerrero cuya ferviente devoción por las deidades de la oscuridad,
+lo llevo a sacrificar parte de sí mismo para obtener beneficios. Siempre llevan una
 marca mágica (por ejemplo un pedazo de su cuerpo puede tener apariencia demoníaca,
 una cicatriz incurable o algún tipo de cualidad extraña que solo la magia podría
-producir). Son especialistas en armas que infligen dolor y a diferencia de los paladines,
-no tienen clanes o agrupaciones.
+producir). Son especialistas en infligir dolor y dominar artes ocultas.
 
-## Historial (6) [#historial]
-
-- (x) **Sádico:** (pasivo, poder único, acción especial) estando en un combate, siempre que alguien (aliado, enemigo o el suplicante) reciba un ataque que tenga al menos un crítico, suma un dado a su reserva de “dados de dolor” (el suplicante puede acumular como máximo 3 de estos dados). Cuando el suplicante lo desee, puede decidir utilizarlos (todos juntos) solo para una tirada de ataque o ataque mágico. Estos dados no se conservan fuera del combate.
-- (x) **Sanguinario:** (permanente) si hace un crítico de filo o perforación de un único cero, hace sangrado (no tira random)
-- (x) **Hechizos de sangre menores:** (acción especial) puede pagar con vida sus hechizos (cada 20 de vida obtiene un dado)
-- (x) **Inmune al miedo:** (tarjeta) los efectos que producen miedo o pánico no lo afectan
-- (x) **Presencia del incitador:** (poder único, acción especial) una vez por mesa el suplicante puede causar un aura de intolerancia y paranoia (todos deben superar resistencia mental contra un ve de 6) con su presencia en un radio igual a su voluntad ×10 en metros. Los afectados sentirán una desconfianza irracional hacia los otros, cualquier discusión subirá de tono y si puede desencadenará en pelea.
-- (x) **Desvanecerse:** (poder único, si se usa en combate es extenuante) el personaje puede disolverse a una realidad paralela llamada [La Penumbra](/docs/list-annex/realities#umbra) desplazarse y volver a nuestra realidad (sufre daño por asalto, ver anexo). Puede llevar pasajeros mientras estos sean voluntarios, conscientes y estén tocando al personaje.
-
-## Historial - Pactos (6)
-- Cada pacto tiene una ventaja y una desventaja. 
-- Solo puede tener hasta 3 (sumando los mayores y menores) como máximo.
-- Debe obligadamente comprar al menos uno.
-
-### Pactos Mayores (3)
-
-Los pactos mayores afectan sus magias (son excluyentes, solo puede elegir uno!)
-
-- (X) **Boca de demoniaca:** obtiene el hexágono de [Brazo fantasma](/docs/list-hexagons/e22). 
-Sus dientes son negros y afilados, sus labios son de un violeta oscuro y su lengua es bifida.
-Un horrible hedor emana de su boca y nadie puede dormir en un radio de 5 metros del suplicante, 
-ya que tienen terribles pesadillas. 
-Obtiene (-1) a cualquier tirada que implique interacción con otros seres pensantes 
-(puede evitarlo cubriendo su boca).
-- (X) **Sangre de sierpe:** obtiene el hexágono de [Hielo](/docs/list-hexagons/e01).
-Las venas de todo su cuerpo se pueden ver ya que se translucen como si llevasen un liquido negruzco.
-Es helado al tacto y siempre que esté quieto en un lugar cerca del agua, pequeñas escarchas se formarán.
-Cualquier intento de curarlo (pociones o magias, hace 50% del efecto).
-Obtiene (-1) a cualquier tirada que implique interacción con otros seres pensantes
-(puede evitarlo cubriendo su piel, o maquillandola a la vista).
-- (X) **Piel incinerada:** obtiene el hexágono de [Fuego](/docs/list-hexagons/e01).
-Su piel está derretida por haber sufrido quemaduras intensas y es horrible a la vista lo que produce 
-un (-1) a cualquier tirada que implique interacción con otros seres pensantes 
-(puede evitarlo cubriendo su piel de la vista).
-
-### Pactos Menores (3)
-
-Eelección libre, pero siempre respetar máximo de pactos.
-
-- (y) **Pies bestiales:** (+1) a resistir un derribo, obtiene los beneficios de «corredor silencioso» y además puede caminar descalzo sin miedo a sufrir cortes o quemaduras en los pies. Desventajas: sus piernas terminan en pezuñas, su caminar es extraño por más que lleve calzado.
-- (y) **Ojos huecos:** obtiene la habilidad ignorar dolor con un bono (+2) y podrá ver de noche como si fuese de día. Desventajas: sus ojos no están ahí y cada tanto llora sangre involuntariamente (durante unos minutos al día). Recibe un (-2) a cualquier tirada que implique interacción con otros seres. Los animales y otros seres naturales intentarán evitarlo o entrarán en pánico al ver el hueco de sus ojos (puede evitarlo no dejando ver sus ojos).
-- (y) **Manos de Lych:** obtiene un (+1) al valor inicial de sus tres de sus magias. Desventajas: sus manos son descarnadas (huesudas, sin carne, con grandes uñas puntiagudas), torpes y más grandes de lo que deberían, cada vez que use sus manos (incluso al atacar) lanza con un dado menos de lo que debería (esto se aplica a cualquier situación que utilice sus manos excepto con magia), si ven sus manos las interacciones sociales obtienen un (-1) de penalización.
+{/* (<Pill type="p"/><Pill type="u"/><Pill type="s"/><Pill type="h"/><Pill type="c"/><Pill type="ex"/><Pill type="eo"/>)  */}
 
 ## Armas y Magias
+
 Debe elegir: Sus armas comienzan en dos y sus magias en tres, o viceversa
 
 ### Armas (3) [#armas]
@@ -78,4 +38,41 @@ Debe elegir: Sus armas comienzan en dos y sus magias en tres, o viceversa
 - [Auras de Maldiciones](/docs/list-hexagons/e04B)
 - [Arma magica](/docs/list-hexagons/e14)
 - [Sombra y tinieblas](/docs/list-hexagons/e01)
-- (Aqui puede ir una magia obtenida por un pacto mayor)
+- (Aquí puede ir una magia que obtenga por un pacto mayor)
+
+## Historial (6) [#historial]
+
+- (x) **Sádico:** <Pill type="p"/><Pill type="s"/> durante el combate, siempre que un aliado, enemigo o el propio suplicante reciba un ataque que tenga al menos un crítico, suma un dado a su reserva de “dados de dolor” (el suplicante puede acumular como máximo 3 de estos dados). Cuando el suplicante lo desee, puede decidir utilizar los dados (todos juntos) para una única tirada de ataque o de ataque mágico. Los dados de dolor no se conservan fuera del combate.
+- (x) **Sanguinario:** <Pill type="u"/> siempre que haga un crítico de filo o perforación de un único cero, hace [sangrado](/docs/ruling-combat/06/common) (el enemigo pierde 1 pto de vida por Asalto -stackeable- por el resto del combate)
+- (x) **Hechizos de sangre menores:** <Pill type="s"/> puede pagar con vida sus hechizos (cada 20 de vida obtiene un dado)
+- (x) **Inmune al miedo:** <Pill type="c"/> los efectos que producen miedo o pánico no lo afectan
+- (x) **Presencia del incitador:** <Pill type="s"/><Pill type="eo"/> el suplicante puede causar un aura de intolerancia y paranoia en un radio igual a su voluntad ×10 en metros. Los afectados sentirán una desconfianza irracional hacia los otros, cualquier discusión subirá de tono y si puede, desencadenará en una pelea. Para resistirlo, todos deben superar en [TR 1 - General](/docs/resolution-tables/TR1) una tirada de resistencia mental VE 6
+- (x) **Desvanecerse:** <Pill type="s"/>, si se usa en combate es <Pill type="ex"/>. El suplicante puede disolverse a una [realidad paralela llamada "la Penumbra"](/docs/list-annex/realities#umbra), desplazarse allí y luego volver a esta realidad (la penumbra es peligrosa, ver anexo). Puede llevar pasajeros mientras estos sean voluntarios, conscientes y estén tocando al suplicante al momento de intentar desvanecerse.
+
+## Historial - Pactos (6)
+
+- Cada pacto tiene una ventaja y una desventaja
+- Solo puede tener hasta tres como máximo (sumando mayores y menores) 
+- Está **obligado** a comprar al menos uno
+
+### Pactos Mayores (3)
+
+Los pactos mayores afectan sus magias y son excluyentes (solo puede elegir uno)
+
+- (X) **Boca demoníaca:** obtiene el hexágono de [Brazo fantasma](/docs/list-hexagons/e22).
+  _Desventajas:_ sus dientes son negros y afilados, sus labios son de un violeta oscuro y su lengua es bífida. Un horrible hedor emana de su boca y dormir en un radio de 5 metros del suplicante provoca terribles pesadillas. Obtiene (-1) a cualquier tirada que implique interacción con otros seres pensantes
+  (puede evitarlo cubriendo su boca).
+- (X) **Sangre de sierpe:** obtiene el hexágono de [Hielo](/docs/list-hexagons/e01).
+  _Desventajas:_ las venas de todo su cuerpo se pueden ver ya que se translucen como si llevasen un liquido negruzco. Es helado al tacto y siempre que esté cerca de agua calma se formarán escarchas. Cualquier intento de curarlo (como ser pociones o magias) hace 50% del efecto. Obtiene (-1) a cualquier tirada que implique interacción con otros seres pensantes
+  (puede evitarlo cubriendo su piel, o maquillandola a la vista).
+- (X) **Piel incinerada:** obtiene el hexágono de [Fuego](/docs/list-hexagons/e01).
+  _Desventajas:_ su piel está derretida por haber sufrido quemaduras intensas y es horrible a la vista lo que produce un (-1) a cualquier tirada que implique interacción con otros seres pensantes
+  (puede evitarlo cubriendo su piel de la vista).
+
+### Pactos Menores (3)
+
+Elección libre, pero siempre debe respetar el número máximo de pactos.
+
+- (y) **Pies bestiales:** obtiene (+1) a resistir derribos y los beneficios de "corredor silencioso" y además puede caminar descalzo sin miedo a sufrir cortes o quemaduras en los pies. _Desventajas:_ sus piernas terminan en pezuñas, su caminar es extraño por más que lleve calzado.
+- (y) **Ojos huecos:** obtiene la habilidad ignorar dolor con un bono (+2) y podrá ver de noche como si fuese de día. _Desventajas:_ sus ojos no están ahí y cada tanto llora involuntariamente sangre por unos segundos. Recibe un (-2) a cualquier tirada que implique interacción con otros seres. Los animales y otros seres naturales intentarán evitarlo o entrarán en pánico al ver el hueco de sus ojos (puede evitarlo no dejando ver sus ojos).
+- (y) **Manos de Lych:** obtiene un (+1) al valor inicial de tres de sus magias. _Desventajas:_ sus manos son descarnadas (huesudas, sin carne, con grandes uñas puntiagudas), torpes y más grandes de lo que deberían, cada vez que use sus manos (incluso al atacar) lanza con un dado menos de lo que debería (esto se aplica a cualquier situación que utilice sus manos excepto con magia), si ven sus manos las interacciones sociales obtienen un (-1) de penalización.

@@ -1,0 +1,23 @@
+.pill {
+  color: currentColor;
+  padding: 0 7px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 2px;
+  font-size: 0.866em;
+  /* cursor: help; */
+}
+
+@media (prefers-color-scheme: light) {
+  .pill {
+    /* border: 1px solid var(--lcolor); */
+    border: 1px solid grey;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .pill {
+    /* border: 1px solid var(--dcolor); */
+    border: 1px solid grey;
+  }
+}
