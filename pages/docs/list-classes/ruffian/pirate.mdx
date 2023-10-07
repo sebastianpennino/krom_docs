@@ -1,4 +1,5 @@
 import { Screenshot } from "@components/screenshot";
+import { Pill } from "@components/pill";
 import { Bleed } from "nextra-theme-docs";
 import { Callout } from "nextra/components";
 import piratePic from "@assets/docs/subclasses/pirate_wide.jpg";
@@ -14,30 +15,26 @@ import piratePic from "@assets/docs/subclasses/pirate_wide.jpg";
 <Callout type="warning" emoji="🔎">
   Necesita revisión
 </Callout>
-Amas el viento en tu rostro, la luz del sol pegando de lleno y el olor a salino del
-mar. Ya has pasado al menos una década viajando en barcos tripulados. Eres veloz
-con la espada, te defiendes bastante bien en combate y estás acostumbrado a una vida
-en alta mar, siempre en constante movimiento, yendo de puerto a puerto, viviendo
-de los negocios clandestinos.
-
-## Historial (11) [#historial]
-
-- (x) **Presumido:** (tarjeta) puede usar florituras mientras ataca (solo tiene que declararlo, no hay tiradas de floritura, ni se agrega la habilidad)
-- (x) **Contactos en el puerto:** si no tienes la habilidad contactos, agrégala. Obtiene un bono (+2) a tiradas de contactos en puertos (o asentamientos portuarios). De querer viajar junto con su party utilizando el puerto, puede hacerlo sin costo (en el caso de que la tirada haya sido exitosa)
-- (x) **Contra viento y marea:** (pasivo) cuenta los enemigos visibles al comienzo del combate, si la cantidad es mayor a la party del pirata. Bono (+1) (para todo) por el resto del combate.
-- (x) **Abusivo:** (pasivo) cuenta los enemigos visibles al comienzo del combate, si la cantidad es menor a la party del pirata. Bono (+1) (para todo) por el resto del combate.
-- (x) **Derribo certero:** (pasivo) agrega un éxito a tiradas de derribar si el enemigo está [flanqueado](/docs/ruling-combat/02#2-5-1)
-- (x) **Golpe de empuñadura:** usando un arma de filo, cuando hace crítico puede decidir usar criticos de impacto
-- (x) **Alcohólico atrevido:** si está alcoholizado obtiene un bono (+1) a influencia, acrobacias, trepar, nadar y caída/equilibrio
-- (x) **Casanova:** bono (+2) a tiradas de seducción (agrégala si no la tienes)
-- (x) **Parley:** bono (+1) a habilidades existentes de diplomacia y oratoria
-- (x) **Marinero experimentado:** (tarjeta) su trayectoria es conocida por sus marineros, cualquier tripulación bajo su mando jamás se amotinará mientras esté bajo su influencia. Tiene un bono (+3) a habilidades de navegar y nadar (agrégalas si no las tienes)
-- (x) **Pelea sucia:** (acción especial) cuando derriban a un enemigo y está a tu alcance, puedes (si lo deseas) hacer un ataque de oportunidad sin ningún costo
+Tu amor por el viento en tu rostro, la caricia cálida del sol sobre tu piel y el aroma salino del mar son tus verdaderas pasiones. Has dedicado al menos una década a navegar en barcos tripulados, forjando tu vínculo con los océanos y sus secretos. Eres un maestro del sigilo, un hábil espadachín y defiendes tus intereses con ferocidad en la batalla. La vida en alta mar se ha convertido en tu hogar, un reino de movimiento perpetuo donde cada día es una nueva aventura. Navegando de puerto en puerto, te has convertido en un hábil negociante clandestino, manejando tratos oscuros y secretos con astucia. Tu reputación como pirata es temida y respetada en los mares, y cada ola que rompe en la orilla es un recordatorio de tus hazañas audaces y tu determinación inquebrantable. La vida como pirata puede ser peligrosa, pero para ti, cada desafío es una oportunidad para demostrar tu valentía y astucia en la lucha por la libertad y la riqueza en los vastos horizontes del océano.
 
 ## Armas y Magias
-Sus armas comienzan en tres
+Sus armas comienzan en 3
 
 ### Armas (2) [#armas]
 
 - Espadas cortas
 - Espadas medias
+
+## Historial (11) [#historial]
+
+- (x) **Presumido:** <Pill type="c"/> puede usar florituras mientras ataca (solo tiene que declararlo, no hay tiradas de floritura, ni se agrega la habilidad)
+- (x) **Contactos en el puerto:** <Pill type="p"/><Pill type="s"/> si no tienes la habilidad contactos, agrégala. Obtiene un bono (+2) a tiradas de contactos en puertos (o asentamientos portuarios). De querer viajar junto con su party utilizando el puerto, puede hacerlo sin costo (en el caso de que la tirada haya sido exitosa)
+- (x) **Contra viento y marea:** <Pill type="p"/> cuenta los enemigos visibles al comienzo del combate, si la cantidad es mayor a la party del pirata. Bono (+1) (para todo) por el resto del combate.
+- (x) **Abusivo:** <Pill type="p"/> cuenta los enemigos visibles al comienzo del combate, si la cantidad es menor a la party del pirata. Bono (+1) (para todo) por el resto del combate.
+- (x) **Derribo certero:** <Pill type="u"/> agrega un éxito a tiradas de derribar si el enemigo está [flanqueado](/docs/ruling-combat/02#2-5-1)
+- (x) **Golpe de empuñadura:** <Pill type="u"/> usando un arma de filo, cuando hace crítico puede decidir usar criticos de impacto
+- (x) **Alcohólico atrevido:** <Pill type="c"/><Pill type="u"/> si está alcoholizado obtiene un bono (+1) a influencia, acrobacias, trepar, nadar y caída/equilibrio
+- (x) **Casanova:** bono (+2) a tiradas de seducción (agrégala si no la tienes)
+- (x) **Parley:** bono (+1) a habilidades existentes de diplomacia y oratoria
+- (x) **Marinero experimentado:** <Pill type="c"/> su trayectoria es conocida por sus marineros, cualquier tripulación bajo su mando jamás se amotinará mientras esté bajo su influencia. Tiene un bono (+3) a habilidades de navegar y nadar (agrégalas si no las tienes)
+- (x) **Pelea sucia:** <Pill type="s"/>cuando derriban a un enemigo y está a tu alcance, puedes hacer un ataque de oportunidad sin ningún costo

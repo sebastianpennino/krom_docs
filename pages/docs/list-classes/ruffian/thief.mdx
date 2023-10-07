@@ -1,4 +1,5 @@
 import { Screenshot } from "@components/screenshot";
+import { Pill } from "@components/pill";
 import thiefPic from "@assets/docs/subclasses/thief_wide.jpg";
 import { Bleed } from "nextra-theme-docs";
 import { Callout } from "nextra/components";
@@ -14,32 +15,14 @@ import { Callout } from "nextra/components";
 <Callout type="warning" emoji="🔎">
   Necesita revisión (copiado de "pícaro")
 </Callout>
-Robando bolsillos y tomando lo que podías para sobrevivir, esa fue siempre tu realidad. 
-Nunca fuiste buen peleador, pero si buen corredor, así que aprendiste a evitar el 
-combate lo más posible. Más de grande, quizá bajo algún mentor, aprendiste a abrir 
-cerraduras y allí tu fascinación por los mecanismos comenzó: conoces de cerraduras,
-puertas, trampas y mecanismos en general. Un artista del sigilo urbano, eres un ladrón 
-de guante blanco que sabe pasar desapercibido, tomando lo necesario para sobrevivir.
+Desde temprana edad, te viste obligado a tomar lo que podías para sobrevivir, extrayendo lo esencial de los bolsillos desprevenidos. Nunca fuiste un hábil guerrero, pero tus habilidades como corredor excepcional te permitieron eludir el conflicto siempre que fuera posible. Con el tiempo, bajo la tutela de un mentor, refinaste tus habilidades, enfocándote en abrir cerraduras y descubriendo un fascinante mundo de mecanismos. Tu pasión por los intricados engranajes te llevó a dominar el arte de manipular cerraduras, puertas, trampas y otros dispositivos ingeniosos.
 
-## Historial (14) [#historial]
+Eres un maestro del sigilo urbano, un ladrón de guante blanco que se desplaza por las sombras con una gracia silenciosa. Posees un conocimiento profundo de los mecanismos que mantienen a salvo tesoros y secretos, y utilizas esta sabiduría para deslizarte sin ser detectado. Cada movimiento es calculado, cada cerradura es un desafío emocionante y cada robo es una obra maestra de precisión y destreza.
 
-- (x) **Sigiloso:** bono a (+1) sigilo y esconderse (y agrégalas si no lo tienes)
-- (x) **Escurridizo:** (pasivo) no recibe ataques de oportunidad
-- (x) **Parkour:** bono (+1) a habilidades existentes de acrobacias, salto, caída y trepar
-- (x) **Velocista:** (acción especial) al comienzo del combate (pidiendo al director amablemente) y sin modificar su turno ni gastar PA, puede hacer una tirada de esprintar
-- (x) **Sonido:** obtienes el hexágono [Sonido](/docs/list-hexagons/e02L1)
-- (x) **Toxinas Mágicas:** obtienes el hexágono [Tóxinas mágicas](/docs/list-hexagons/e15L1)
-- (x) **Ballesta:** obtienes la categoría de arma: "ballesta" y una ballesta calidad QC
-- (x) **Detector viviente:** (tarjeta) puede percibir trampas en un radio de 2 metros (1 casilla adyacente) (sin tirar dados)
-- (x) **Kit del ladrón:** comienza con: un kit de cerrajería (bono (+2) a abrir cerraduras, uso infinito), una soga de 5 metros de muy buena calidad y un Kerambit calidad QC
-- (x) **Mercado negro:** obtiene **$(TBD)** para comprar items del [mercado negro (TBD)](/docs/character-creation/creation-tables/TC5#black-market)
-- (x) **Disimular arma:** (habilidad única) proporciona esta habilidad que pertenece a la categoría de subterfugio defensivo [Ag/Intu]. Sirve para cualquier intento de ocultar un arma en el cuerpo/ropas del personaje
-- (x) **Corredor silencioso:** (tarjeta) puede correr sigilosamente, hace mucho menos ruido que lo normal
-- (x) **Pícaro:** (+1) Bono a habilidades existentes de agilidad manual, regatear, mezclarse y ofuscar
-- (x) **Imitador nato:** (tarjeta) puede imitar a la perfección los gestos, voces, forma de caminar, manierismos y expresiones de una persona si la observa durante unos minutos (no necesita hacer tirada)
+A pesar de tus métodos menos ortodoxos, sigues un código ético propio y solo tomas lo necesario para sobrevivir. Tu habilidad para pasar desapercibido en medio de la multitud y tu destreza para sortear los sistemas de seguridad más sofisticados te convierten en un recurso valioso para cualquier grupo que busque infiltrarse en lugares prohibidos o recuperar objetos valiosos. Eres un ladrón con corazón, siempre en busca de la próxima aventura y del desafío que pondrá a prueba tus habilidades al máximo.
 
 ## Armas y Magias
-Sus armas y magias comienzan en 2
+Sus armas comienzan en 3 y magias comienzan en 2
 
 ### Armas (1 + 1)
 
@@ -52,3 +35,21 @@ Sus armas y magias comienzan en 2
 - [Lapsus mentales](/docs/list-hexagons/e06L1)
 - [Tóxinas mágicas](/docs/list-hexagons/e15L1) (solo accedible por historial) 
 - [Sonido](/docs/list-hexagons/e02L1) (solo accedible por historial) 
+
+## Historial (14) [#historial]
+
+- (x) **Sigiloso:** bono a (+1) sigilo y esconderse (y agrégalas si no lo tienes)
+- (x) **Escurridizo:** <Pill type="c"/> no recibe ataques de oportunidad
+- (x) **Parkour:** bono (+1) a habilidades existentes de acrobacias, salto, caída y trepar
+- (x) **Velocista:** <Pill type="s"/><Pill type="ex"/> al comienzo del combate y sin modificar su turno ni gastar PA, puede hacer una tirada de esprintar
+- (x) **Sonido:** obtienes el hexágono [Sonido](/docs/list-hexagons/e02L1)
+- (x) **Toxinas Mágicas:** obtienes el hexágono [Tóxinas mágicas](/docs/list-hexagons/e15L1)
+- (x) **Ballesta:** obtienes la categoría de arma: "ballesta" y una `ballesta calidad QC`
+- (x) **Detector viviente:** <Pill type="c"/> puede percibir trampas en un radio de 2 metros (1 casilla adyacente) (sin tirar dados)
+- (x) **Kit del ladrón:** comienza con: un kit de cerrajería (bono (+2) a abrir cerraduras, uso infinito), una soga de 5 metros de muy buena calidad y un Kerambit calidad QC
+- (x) **Mercado negro:** obtiene **$(TBD)** para comprar items del [mercado negro (TBD)](/docs/character-creation/creation-tables/TC5#black-market)
+- (x) **Disimular arma:** <Pill type="h"/> proporciona esta habilidad que pertenece a la categoría de subterfugio defensivo [Ag/Intu]. Sirve para cualquier intento de ocultar un arma en el cuerpo/ropas del personaje
+- (x) **Corredor silencioso:** <Pill type="c"/> puede correr sigilosamente, hace mucho menos ruido que lo normal
+- (x) **Pícaro:** (+1) Bono a habilidades existentes de agilidad manual, regatear, mezclarse y ofuscar
+- (x) **Imitador nato:** <Pill type="c"/> puede imitar a la perfección los gestos, voces, forma de caminar, manierismos y expresiones de una persona si la observa durante unos minutos (no necesita hacer tirada)
+

@@ -1,4 +1,5 @@
 import { Screenshot } from "@components/screenshot";
+import { Pill } from "@components/pill";
 import assasinPic from "@assets/docs/subclasses/assasin_wide.jpg";
 import { Bleed } from "nextra-theme-docs";
 import { Callout } from "nextra/components";
@@ -14,30 +15,10 @@ import { Callout } from "nextra/components";
 <Callout type="warning" emoji="🔎">
   Necesita revisión
 </Callout>
-Años de entrenamiento en infiltración te han vuelto sigiloso y mortífero, te mueves
-en la ciudad como un animal en su hábitat natural, sabes manejar una daga como nadie
-y has aprendido a usarla sin ser detectado. Tus servicios son muy solicitados
-en las urbes más pobladas, eres un especialista en eliminación, el asesino sueldo
-por preferencia.
-
-## Historial (13) [#historial]
-
-- (x) **Deslizarse por las sombras:** (poder único, acción especial) como respuesta a un ataque puede gastar un 1PA 1PR, si lo hace aparece en una casilla adyacente a un enemigo a elección que este en un radio máximo de 5 casillas, y obtiene un bono (+1) dado a su siguiente ataque contra ese enemigo
-- (x) **Suertudo:** (pasivo) obtiene un dado adicional contra ataques de oportunidad
-- (x) **Rodar con venganza:** siempre que haga [Rodar](/docs/ruling-combat/05#5-5) exitoso, obtiene un bono (+1) al próximo ataque contra ese enemigo (pero solo si su siguiente acción es un ataque!)
-- (x) **Disimular arma:** (habilidad única) proporciona esta habilidad que pertenece a la categoría de subterfugio defensivo [Ag/Intu]. Sirve para cualquier intento de ocultar un arma en el cuerpo/ropas del personaje
-- (x) **Lanzador:** al arrojar un arma no-arrojadiza se obtiene el total de la fuerza del arma ([lo normal es la mitad de la fuerza del arma](/docs/ruling-combat/04#4-7))
-- (x) **Corredor silencioso:** (tarjeta) puede correr sigilosamente, hace mucho menos ruido que lo normal
-- (x) **Pelea a ciegas:** (tarjeta) está entrenado para poder pelear sin el sentido de la vista
-- (x) **Resiste torturas:** (tarjeta) está entrenado para no ceder información bajo tortura
-- (x) **Ataque furtivo:** (tarjeta, acción especial) gastando 10 de adrenalina mientras ataca, se asegura que su ataque es silencioso y que su víctima tampoco hará ruido en caso de ser un ataque mortal (no necesita tirar dados ni requiere habilidad)
-- (x) **Entrenamiento ambidiestro:** habilita [dual wielding](/docs/ruling-combat/04#4-5)
-- (x) **Ataque penetrante:** (extenuante) cuando realices un ataque exitoso puedes gastar 30 de adrenalina, ese ataque “traspasa” el TA (ignora el TA) del enemigo
-- (x) **Traicionero:** (pasivo) bono (+1) a tiradas contra enemigos [flanqueados](/docs/ruling-combat/02#2-5-1). Si se combina con Ataque furtivo, en lugar de eso agrega un éxito a su tirada
-- (x) **Mejorar arma:** mejora en un grado (ejemplo: QD -> QC), la calidad de un arma inicial a elección (se puede comprar multiples veces, pero sólo una vez por arma)
+Años de entrenamiento en las artes de la infiltración te han transformado en una sombra mortal, un sicario que se desplaza por la ciudad con la misma facilidad que un animal en su hábitat natural. Posees una habilidad inigualable con la daga, aprendiendo a manejarla con destreza y letalidad, todo sin dejar rastro alguno. Tu habilidad para eliminar objetivos sin ser detectado es legendario, y tus servicios son altamente solicitados en las urbes más pobladas. Eres el asesino a sueldo preferido, un especialista en la eliminación sigilosa, capaz de desvanecerte en las sombras después de cada trabajo. Tu reputación se cimienta en la precisión de tus golpes y en tu capacidad para cumplir misiones sin dejar testigos. Eres un maestro en el arte de la muerte silenciosa, siempre un paso adelante de tus presas y una sombra ins esperada para aquellos que te contratan. Tu habilidad para desaparecer en la multitud y llevar a cabo tus operaciones sin levantar sospechas te convierte en un recurso inigualable para aquellos que buscan eliminar a sus enemigos de manera discreta y efectiva. En las ciudades más grandes, tu nombre es susurrado con temor y respeto, y tu mera presencia es suficiente para sembrar el pánico entre aquellos que conocen tu reputación.
 
 ## Armas y Magias
-Sus armas comienzan en tres y sus magias en dos
+Sus armas comienzan en 3 y sus magias en 2
 
 ### Armas (3) [#armas]
 
@@ -49,3 +30,20 @@ Sus armas comienzan en tres y sus magias en dos
 
 - [Toxificación](/docs/list-hexagons/e15) (ex Veneno mágico)
 - [Humo](/docs/list-hexagons/e01L2)
+
+## Historial (13) [#historial]
+
+- (x) **Deslizarse por las sombras:** <Pill type="s"/> como respuesta a un ataque puede gastar un 1PA 1PR, si lo hace aparece en una casilla adyacente a un enemigo a elección que este en un radio máximo de 5 casillas, y obtiene un bono (+1) dado a su siguiente ataque contra ese enemigo
+- (x) **Suertudo:** <Pill type="p"/>  obtiene un dado adicional contra ataques de oportunidad
+- (x) **Rodar con venganza:** <Pill type="u"/>  siempre que haga [Rodar](/docs/ruling-combat/05#5-5) exitoso, obtiene un bono (+1) al próximo ataque contra ese enemigo (pero solo si su siguiente acción es un ataque!)
+- (x) **Disimular arma:** <Pill type="h"/> proporciona esta habilidad que pertenece a la categoría de subterfugio defensivo [Ag/Intu]. Sirve para cualquier intento de ocultar un arma en el cuerpo/ropas del personaje
+- (x) **Lanzador:** <Pill type="u"/>  al arrojar un arma no-arrojadiza se obtiene el total de la fuerza del arma ([lo normal es la mitad de la fuerza del arma](/docs/ruling-combat/04#4-7))
+- (x) **Corredor silencioso:** <Pill type="c"/>  puede correr sigilosamente, hace mucho menos ruido que lo normal
+- (x) **Pelea a ciegas:** <Pill type="c"/>  está entrenado para poder pelear sin el sentido de la vista
+- (x) **Resiste torturas:** <Pill type="c"/>  está entrenado para no ceder información bajo tortura
+- (x) **Ataque furtivo:** <Pill type="c"/><Pill type="s"/> gastando 10 de adrenalina mientras ataca, se asegura que su ataque es silencioso y que su víctima tampoco hará ruido en caso de ser un ataque mortal (no necesita tirar dados ni requiere habilidad)
+- (x) **Entrenamiento ambidiestro:** habilita [dual wielding](/docs/ruling-combat/04#4-5)
+- (x) **Ataque penetrante:** <Pill type="s"/><Pill type="ex"/> cuando realices un ataque exitoso puedes gastar 30 de adrenalina, ese ataque ignora el TA del enemigo
+- (x) **Traicionero:** <Pill type="p"/>  bono (+1) a tiradas contra enemigos [flanqueados](/docs/ruling-combat/02#2-5-1). Si se combina con Ataque furtivo, en lugar de eso agrega un éxito a su tirada
+- (x) **Mejorar arma:** <Pill type="u"/> mejora en un grado, la calidad de un arma inicial a elección (se puede comprar multiples veces, pero sólo una vez por arma) (por ejemplo: QD -> QC)
+
