@@ -10,14 +10,12 @@
 
 @media (prefers-color-scheme: light) {
   .pill {
-    /* border: 1px solid var(--lcolor); */
     border: 1px solid grey;
   }
 }
 
 @media (prefers-color-scheme: dark) {
   .pill {
-    /* border: 1px solid var(--dcolor); */
     border: 1px solid grey;
   }
 }

@@ -39,7 +39,6 @@ const colorMap: Record<ValidType, [string, string]> = {
 export function Pill({ type = "s" }: Props) {
   return (
     <span
-      style={{ "--lcolor": colorMap[type][0], "--dcolor": colorMap[type][1] }}
       className={styles.pill}
       title={descMap[type]}
     >
