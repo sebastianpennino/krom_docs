@@ -1,4 +1,5 @@
 import { Screenshot } from "@components/screenshot";
+import { Pill } from "@components/pill";
 import psyImage from "@assets/docs/subclasses/psy_wide.jpg";
 import { Bleed } from "nextra-theme-docs";
 import { Callout } from "nextra/components";
@@ -14,34 +15,27 @@ import { Callout } from "nextra/components";
 <Callout type="warning" emoji="🔎">
   Necesita revisión
 </Callout>
-El psíquico es el mago de la mente, como su nombre
-lo sugiere maneja todas las llamadas magias de la mente. En algún punto de su vida
-las conversaciones se vuelven aburridas, las mentiras evidentes y de pronto se encuentran
-a si mismos una posición extraña, siendo algo nuevo, incomprendidos, suelen auto
-excluirse y volverse distantes, como observadores.
-
-## Historial (11) [#historial]
-
-- (x) **Autotelekinesis:** el psíquico puede usar telekinesis en sí mismo, pero limitada sólo a duración: fugaz
-- (x) **Empatía oscura:** reemplaza [Delirios](/docs/list-hexagons/e06) con [Ematurgia](/docs/list-hexagons/e17) (controlar emociones ajenas)
-- (x) **Pensamientos intrusivos:** usando un hechizo de [Legeremancia](/docs/list-hexagons/e09) el hechicero puede sugerir un pensamiento intrusivo: el objetivo no necesariamente acatará el pensamiento pero lo considerará propio. Debe ser una idea concreta y breve.
-- (x) **Lógico:** (pasivo) siempre que el director pida un chequeo de percepción, puede usar los dados de Razón en vez de eso
-- (x) **Presencia del mentalista:** una vez por día el psíquico puede causar un aura de negación y olvido (todos deben superar resistencia mental contra un ve de 6) con su presencia en un radio igual a su voluntad ×10 en metros. Todos los afectados sentirán confusión, y les costará recordar los últimos 5 minutos olvidando cualquier conversación o acción que haya sucedido durante ese tiempo
-- (x) **Imitador nato:** puede imitar a la perfección los gestos, voces, manierismos y expresiones de una persona si la observa durante unos minutos (no necesita hacer tirada).
-- (x) **Reflexión de daño:** siempre que alguien te ataque, recibe daño igual a la resistencia mental del psíquico
-- (x) **Pensamientos ponzoñosos:** cada vez que el psíquico haga un hechizo de [Delirios](/docs/list-hexagons/e06) o [Ematurgia](/docs/list-hexagons/e17) de forma exitosa, el objetivo recibe daño igual a los éxitos remanentes (es decir aquellos que quedaron versus cualquier resistencia o contienda) por dos
-- (x) **Máscara psíquica:** el psíquico es capaz de inventar un alter ego en su mente en caso de que otro ser o entidad intente leer sus pensamientos o en caso de sufrir interrogaciones
-- (x) **Pregunta ineludible:** una vez por mesa, puede preguntarle a un personaje no jugador una de las siguientes preguntas: _“¿Cuál es tu mayor miedo”,_ _“¿Cuál es tu posesión material más valiosa?”,_ _“¿Quién es la persona que más te importa?”_ y éste estará obligado a contestar con la verdad
-- (x) **Compartir el don:** el psíquico puede compartir cualquier información que esté obteniendo mediante telepatía o legeremancia con otro ser pensante (el afectado sentirá lo mismo que el psíquico) mientras lo esté tocando y este acceda voluntariamente.
-
+El psíquico, el mago de la mente, como su nombre indica, domina todas las artes místicas
+relacionadas con la psique. En algún punto de su vida, las conversaciones mundanas
+se vuelven tediosas, las mentiras se vuelven transparentes y, de repente, se encuentran
+en una posición peculiar. Son seres nuevos, incomprensibles para los demás. Suelen
+autoexcluirse y adoptan una posición distante, convirtiéndose en observadores silenciosos
+del mundo que los rodea. Este distanciamiento es más que una simple preferencia;
+es una necesidad, ya que su conexión con las profundidades de la mente humana y más
+allá, los separa del común de las personas. Son testigos de pensamientos ocultos
+y emociones no expresadas, explorando los recovecos de la conciencia humana con habilidades
+que pocos pueden comprender. Esta soledad autoimpuesta es su santuario, un lugar
+desde el cual desentrañan los misterios del alma, pero también una carga, ya que
+deben cargar con el peso de lo que saben, a menudo en silencio y sin comprensión
+por parte de los demás.
 
 ## Armas y Magias
+
 Sus armas comienzan en dos y sus magias en tres
 
 ### Armas (2) [#armas]
 
-- Chaco (palo una sola mano)
-- Báculo (palo a dos manos)
+- Cetro (palo una mano)
 
 ### Hexágonos (5) [#magias]
 
@@ -50,3 +44,17 @@ Sus armas comienzan en dos y sus magias en tres
 - [Delirios](/docs/list-hexagons/e06)
 - [Telepatía](/docs/list-hexagons/e10)
 - [Disfraz mágico](/docs/list-hexagons/e16)
+
+## Historial (11) [#historial]
+
+- (x) **Autotelekinesis:** <Pill type="u"/> el psíquico puede usar telekinesis en sí mismo, pero limitada sólo a duración: "fugaz"
+- (x) **Empatía oscura:** reemplaza [Delirios](/docs/list-hexagons/e06) con [Ematurgia](/docs/list-hexagons/e17) (controlar emociones ajenas)
+- (x) **Pensamientos intrusivos:** <Pill type="u"/> usando un hechizo de [Legeremancia](/docs/list-hexagons/e09) el hechicero puede sugerir un "pensamiento intrusivo" el objetivo no necesariamente acatará el pensamiento pero lo considerará propio. Debe ser una idea concreta y breve.
+- (x) **Lógico:** <Pill type="c"/> siempre que el director pida un chequeo de `Percepción`, puede usar los dados de `Razón` en vez de eso
+- (x) **Presencia del mentalista:** <Pill type="s"/><Pill type="eo"/> el psíquico puede causar un aura de negación y olvido en un radio igual a su voluntad ×10 en metros. Los afectados sentirán confusión, y les costará recordar los últimos 5 minutos olvidando cualquier conversación o acción que haya sucedido durante ese tiempo. Para resistirlo, todos deben superar en [TR 1 - General](/docs/resolution-tables/TR1) una tirada de resistencia mental VE 6
+- (x) **Imitador nato:** <Pill type="c"/> puede imitar a la perfección los gestos, voces, manierismos y expresiones de una persona si la observa durante unos minutos (no necesita hacer tirada).
+- (x) **Reflexión de daño:** <Pill type="p"/> siempre que alguien te ataque, recibe daño igual a la resistencia mental del psíquico
+- (x) **Pensamientos ponzoñosos:** <Pill type="u"/> cada vez que el psíquico haga un hechizo de [Delirios](/docs/list-hexagons/e06) o [Ematurgia](/docs/list-hexagons/e17) de forma exitosa, el objetivo recibe daño igual a los éxitos remanentes (es decir aquellos que quedaron versus cualquier resistencia o contienda) por dos
+- (x) **Máscara psíquica:** <Pill type="c"/> el psíquico es capaz de inventar un alter ego en su mente en caso de que otro ser o entidad intente leer sus pensamientos o en caso de sufrir interrogaciones
+- (x) **Pregunta ineludible:** <Pill type="s"/><Pill type="eo"/> el psíquico puede preguntarle a un personaje no-jugador una de las siguientes preguntas: _“¿Cuál es tu mayor miedo”, “¿Cuál es tu posesión material más valiosa?”, “¿Quién es la persona que más te importa?”_ y ese personaje estará obligado a contestar con la verdad
+- (x) **Compartir el don:** <Pill type="s"/> el psíquico puede compartir cualquier información que esté obteniendo mediante telepatía o legeremancia con otro ser pensante mientras lo esté tocando y este acceda voluntariamente (el afectado sentirá lo mismo que el psíquico).
