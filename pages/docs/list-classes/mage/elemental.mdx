@@ -1,4 +1,5 @@
 import { Screenshot } from "@components/screenshot";
+import { Pill } from "@components/pill";
 import elementalImage from "@assets/docs/subclasses/elemental_wide.jpg";
 import { Bleed } from "nextra-theme-docs";
 import { Callout } from "nextra/components";
@@ -14,28 +15,26 @@ import { Callout } from "nextra/components";
 <Callout type="warning" emoji="🔎">
   Necesita revisión
 </Callout>
-Un mago elemental domina los elementos más poderosos
-de todos: el agua y el fuego. Estos elementos le confieren al mago elemental un poder
-masivo siendo grandes magos, reconocidos en todos los reinos. Al llegar
-a su adolescencia los magos elementales son reclutados y llevados a escuelas especificas,
-donde desarrollan sus habilidades al máximo.
+El mago elemental es un maestro de los elementos más poderosos: el agua y el fuego.
+Estos dones ancestrales confieren al mago elemental un poder inigualable, siendo
+reverenciados en todos los reinos conocidos. Desde temprana edad, estos prodigios
+son cuidadosamente identificados y llevados a escuelas especializadas, donde su talento
+es moldeado.
 
-## Historial (10) [#historial]
+En estas escuelas, son sometidos a rigurosos entrenamientos que despiertan y
+perfeccionan sus habilidades. Bajo la tutela de maestros venerados, aprenden a
+dominar las furias del agua y el ardor del fuego. Su destreza mágica crece con c
+ada desafío superado, cada conjuro lanzado con precisión y cada secreto revelado.
 
-- (x) **Magia Caótica:** cada vez que lanza un hechizo de ataque mágico lanza primero un 1d10 extra que llamaremos “dado de caos”, en esa tirada se chequea si llego o no al valor de éxito (VE = puntos de fuga), si es exitoso sumas un punto de fuga y tiras el hechizo de forma normal, caso contrario “se desencadena” (el hechizo que estabas haciendo no sucede). Cada dos puntos de fuga acumulado suma un (+1) a tu mística. Los puntos de fuga NO se acumulan entre combates. Cuando se desencadena una explosión de energía elemental (que afecta a todos, aliados y enemigos por igual) en un radio igual a la mitad de los puntos de fuga (casillas) y hace un ataque mágico (restar TA mágico a cada objetivo) igual a su mística
-- (x) **Entornos favorables:** (tarjeta) siempre que el entorno sea favorable para su magia de fuego (por ejemplo cerca de un volcán, un incendio, forjas, hornos, etc) o su magia de agua (por ejemplo cerca de un río, lagos, cascadas, etc) o intente invocar seres de fuego o agua en dichas condiciones obtiene un dado adicional para lanzar hechizos de esas magias.
-- (x) **Inmunidad de Fuego:** es inmune al calor y a las quemaduras (los ataques mágicos de estos elementos igual te hacen daño)
-- (x) **Inmunidad de Agua:** puede respirar mágicamente bajo al agua y es inmune al frío (los ataques mágicos de estos elementos igual te hacen daño)
-- (x) **Reabsorber invocación:** (en combate) si un elemental invocado por vos está aún dentro del tiempo de la invocación puede decidir reabsorberlo ganando 10 de maná
-- (x) **Sinergia:** todos los ataques de agua “dejan mojado” a los afectados por este asalto y el siguiente. Mientras alguien esté “mojado” un ataque de electricidad hacen el ulti con dos ceros en vez de con tres (recordar que los críticos deben tener un único objetivo c/u), y recibe (+2) al daño a cada objetivo.
-- (x) **Sabiondo de lo oculto:** bono (+1) al valor inicial de cualquier habilidad de la categoría conocimientos mágicos que ya posea (conocimientos sobre hechizos, criaturas magicas o artefactos magicos).
-- (x) **De alta alcurnia:** bono (+3) a tiradas de contactos relacionados con la nobleza o los poderosos en ciudades o urbes.
-- (x) **Memoria idílica y lectura veloz (tarjeta):** el mago elemental puede puede recordar a la perfección (también se lo conoce como memoria fotográfica) algo que haya visto durante unos tres segundos. Además puede leer libros a razón de 6 paginas por minuto.
-- (x) **Último aliento:** cuando el mago elemental muere o llega a cero de vida, todo su poder se manifiesta una última vez. Puede hacer un hechizo, como si estuviese vivo, con todo su maná disponible y no tuviese ningún limitante para comprar dados (dadas las circunstancias el director puede decidir bajar la dificultad a pesar de que el planteo sea absurdo). Si lo usa, el cuerpo del mago elemental es destruido en el proceso.
-
+Estos magos, al convertirse en guardianes de los elementos, son símbolos de poder
+y conocimiento, cuyas hazañas se cuentan en leyendas y cuyas decisiones moldean
+el destino de los reinos. La combinación de su destreza y sabiduría los hace
+formidables, y su presencia en el campo de batalla o en las cortes reales es
+siempre un augurio de cambios significativos en el mundo.
 
 ## Armas y Magias
-Sus armas comienzan en dos y sus magias en tres
+
+Sus armas comienzan en 2 y sus magias en 3
 
 ### Armas (1) [#armas]
 
@@ -47,3 +46,19 @@ Sus armas comienzan en dos y sus magias en tres
 - [Agua](/docs/list-hexagons/e01)
 - [Electricidad](/docs/list-hexagons/e01)
 - [Invocación y Control de Elementales](/docs/list-hexagons/e05)
+
+## Historial (10) [#historial]
+
+- (x) **Magia Caótica:** <Pill type="s"/> los ataques magicos del mago elemental acumulan "puntos de fuga", cada dos puntos de fuga aumenta la mistica del mago en (+1), a continuación como calcularlos:
+  > 1. Al comenzar un combate tiene cero puntos de fuga. Antes de una tirada de ataque magico, lanza un 1d10 aparte.
+  > 2. Si el resultado es igual o mayor a tus puntos de fuga: suma un punto de fuga y lanza tu ataque magico normalmente.
+  > 3. Caso contrario (tu magia se desencadena): una explosión de energía elemental en un radio (casillas) igual a la mitad de los puntos de fuga, brota desde el mago. La explosión afecta aliados y enemigos por igual, haciendo un ataque igual a la `Mistica` del mago elemental a cada objetivo (y a sí mismo!). Tus puntos de fuga vuelven a cero.
+- (x) **Entornos favorables:** <Pill type="c"/> siempre que el entorno sea favorable para la magia de fuego (por ejemplo cerca de un volcán, un incendio, forjas, hornos, etc) o para la magia de agua (por ejemplo cerca de un río, lagos, cascadas, etc) o se intente invocar seres de fuego o agua en dichas condiciones, el mago elemental obtiene un dado adicional para lanzar hechizos de esas magias.
+- (x) **Inmunidad de Fuego:** <Pill type="c"/> el mago elemental es inmune al calor y a las quemaduras (los ataques mágicos de estos elementos igual hacen daño)
+- (x) **Inmunidad de Agua:** <Pill type="c"/> el mago elemental puede respirar mágicamente bajo al agua y es inmune al frío (los ataques mágicos de estos elementos igual hacen daño)
+- (x) **Reabsorber invocación:** <Pill type="s"/> durante el combate, el mago elemental puede decidir reabsorber un elemental que haya invocado, cancelando el hechizo y obteniendo 10 de maná
+- (x) **Sinergia:** <Pill type="p"/><Pill type="u"/> al realizar un ataque magico de electricidad con objetivos "mojados" hace 2 puntos de daño adicional, y requiere solo dos ceros para hacer el [critico de electrocución](/docs/ruling-combat/06/ultimate). Todos los ataques de agua “dejan mojado” a los afectados por este asalto y el siguiente.
+- (x) **Sabiondo de lo oculto:** bono (+1) al valor inicial de cualquier habilidad de la categoría conocimientos mágicos que ya posea (conocimientos sobre hechizos, criaturas magicas o artefactos magicos).
+- (x) **De alta alcurnia:** <Pill type="c"/> bono (+3) a tiradas de contactos relacionados con la nobleza o los poderosos en ciudades o urbes.
+- (x) **Memoria idílica y lectura veloz:** <Pill type="c"/> el mago elemental puede puede recordar a la perfección (también se lo conoce como memoria fotográfica) algo que haya visto durante unos tres segundos. Además puede leer libros a razón de 6 paginas por minuto.
+- (x) **Último aliento:** <Pill type="s"/> cuando el mago elemental muere o llega a cero de vida, todo su poder se manifiesta una última vez. Puede hacer un hechizo, como si estuviese vivo, con todo su maná disponible y no tuviese ningún limitante para comprar dados (dadas las circunstancias el director puede decidir bajar la dificultad a pesar de que el planteo sea absurdo). Si lo usa, el cuerpo del mago elemental es destruido en el proceso.
