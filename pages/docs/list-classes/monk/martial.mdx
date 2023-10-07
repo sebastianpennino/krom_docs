@@ -1,4 +1,5 @@
 import { Screenshot } from "@components/screenshot";
+import { Pill } from "@components/pill";
 import { Bleed } from "nextra-theme-docs";
 import { Callout } from "nextra/components";
 import martialImage from "@assets/docs/subclasses/martial_wide.jpg";
@@ -14,31 +15,35 @@ import martialImage from "@assets/docs/subclasses/martial_wide.jpg";
 <Callout type="warning" emoji="🔎">
   Necesita revisión
 </Callout>
-Entrenando por tu cuenta o bajo la tutela de algún maestro, durante años fuiste superando
-tus limitaciones físicas hasta instancias insospechadas, dominando así las técnicas
-de mano vacía (la defensa sin armas). Tus altos niveles de autocontrol te permiten
-realizar proezas físicas que los demás consideran increíbles, eres un artista marcial
-dicho y hecho: tus mejores armas son tus piernas y brazos,
+Entrenando incansablemente, ya sea de manera solitaria o bajo la sabia tutela de
+un maestro, has superado tus limitaciones físicas hasta alcanzar instancias insospechadas.
+Con dedicación y disciplina, has dominado las técnicas de mano vacía, la defensa
+sin armas. Tu autocontrol excepcional te permite realizar proezas físicas que para
+otros son simplemente increíbles. Eres un verdadero artista marcial, y tu destreza
+se manifiesta a través de tus piernas y brazos, tus armas más poderosas en la búsqueda
+de la excelencia en el combate cuerpo a cuerpo.
 
-## Historial (10) [#historial]
-
-- (x) **Desplazamiento triple:** (acción especial) por 2PA y 10 de adrenalina puede moverse hasta 3 casillas
-- (x) **Lluvia de golpes:** (poder único, acción especial) puede realizar dos ataques de artes marciales a la vez (con distintos o el mismo objetivo), gastando 2 PA (el/los oponente(s) pueden replicar a c/u de los ataques). El efecto de los críticos y/o pifias se resuelven en simultáneo al final de los dos ataques
-- (x) **Pelea a ciegas:** (tarjeta) está entrenado para poder pelear sin el sentido de la vista
-- (x) **Golpe con Ki:** (poder único, acción especial) gastando 20 de maná puede atacar a 1 casilla más de distancia usando artes marciales. Si se combina con lluvia de golpes, solo paga una unica vez
-- (x) **Parar misil:** (acción especial) el monje puede usar “parar” contra flechas, pivotes y armas arrojadizas (no puede utilizarse contra ataques mágicos)
-- (x) **Golpe concentrado:** (poder único, acción especial) atacando a un solo objetivo y gastando 20 de adrenalina, el valor de crítico se convierte en 9
-- (x) **Ataque en cadena:** (pasivo) cada ataque consecutivo exitoso al mismo objetivo obtiene un bono (+1) acumulativo al golpe (ej: luego del primer ataque tendrá +1, luego del segundo +2, y así…). El efecto se pierde (regresa a cero) si no ataca durante un turno o cambia de objetivo
-- (x) **Ritual de Intercambio:** (poder único, solo fuera de combate) el monje se sienta comodamente en la posición del loto y se concentra. Si tienes 40 o menos de tu adrenalina, puedes gastar 30 de maná para recuperar hasta 30 de adrenalina (nunca puedes superar tu máximo)
-- (x) **Resiliencia:** bono (+1) a ignorar crítico/dolor (agrégala si no la tienes)
-- (x) **Temple mental:** (tarjeta) el personaje tiene la capacidad de mantener la calma, la claridad y el control emocional en situaciones desafiantes o estresantes. Es capaz de manejar las emociones y los pensamientos de manera adecuada, incluso en momentos de presión, conflicto o incertidumbre (no recibe penalizaciones ni está obligado a rolear esas emociones). [A diferencia del resto](/docs/ruling-base/basics#hab-adrenal), puede hacer acciones estáticas en combate.
+Tus movimientos son fluidos y precisos, reflejando años de práctica y perfección. Tu cuerpo es un templo de fuerza y agilidad, una herramienta mortal en manos de un maestro Marcial como tú. Posees el conocimiento ancestral que se necesita para desarmar a cualquier oponente, confiando en la habilidad y gracia en lugar de armas tradicionales. Eres la personificación de la fuerza interior y el control, y tu mera presencia en el campo de batalla infunde temor en los corazones de tus enemigos. En tus manos, los movimientos aparentemente simples se convierten en técnicas mortales, y tu capacidad para adaptarte a cualquier situación hace de ti un guerrero inigualable en el mundo de las artes marciales.
 
 ## Armas y Magias
 
-Sus armas comienzan en tres
+Sus armas comienzan en 3
 
 ### Armas (3) [#armas]
 
 - Artes marciales
 - Palo
 - Palos a dos manos
+
+## Historial (10) [#historial]
+
+- (x) **Desplazamiento triple:** <Pill type="s"/> por 2PA y 10 de adrenalina puede moverse hasta 3 casillas
+- (x) **Lluvia de golpes:** <Pill type="s"/> puede realizar dos ataques de artes marciales a la vez (con distintos o el mismo objetivo), gastando 2 PA (el/los oponente(s) pueden replicar a c/u de los ataques). El efecto de los críticos y/o pifias se resuelven en simultáneo al final de los dos ataques
+- (x) **Pelea a ciegas:** <Pill type="c"/> está entrenado para poder pelear sin el sentido de la vista
+- (x) **Golpe con Ki:** <Pill type="s"/> gastando 20 de maná puede atacar a 1 casilla más de distancia usando artes marciales. Si se combina con lluvia de golpes, solo paga una única vez
+- (x) **Parar misil:** <Pill type="s"/> el monje puede usar “parar” contra flechas, pivotes y armas arrojadizas (no puede utilizarse contra ataques mágicos)
+- (x) **Golpe concentrado:** <Pill type="s"/> atacando a un solo objetivo y gastando 20 de adrenalina, el valor de crítico baja a 9
+- (x) **Ataque en cadena:** <Pill type="p"/><Pill type="s"/> cada ataque consecutivo exitoso al mismo objetivo obtiene un bono (+1) acumulativo al golpe (ej: luego del primer ataque tendrá +1, luego del segundo +2, y así…). El efecto se pierde (regresa a cero) si no ataca durante un turno o cambia de objetivo
+- (x) **Ritual de Intercambio:** <Pill type="s"/>, solo fuera de combate. El monje se sienta comodamente en la posición del loto y se concentra. Si tienes 40 o menos de tu adrenalina, puedes gastar 30 de maná para recuperar hasta 30 de adrenalina (nunca puedes superar tu máximo)
+- (x) **Resiliencia:** bono (+1) a ignorar crítico/dolor (agrégala si no la tienes)
+- (x) **Temple mental:** <Pill type="c"/><Pill type="u"/> el personaje tiene la capacidad de mantener la calma, la claridad y el control emocional en situaciones desafiantes o estresantes. Es capaz de manejar las emociones y los pensamientos de manera adecuada, incluso en momentos de presión, conflicto o incertidumbre (no recibe penalizaciones ni está obligado a rolear esas emociones). [A diferencia del resto](/docs/ruling-base/basics#hab-adrenal), puede hacer acciones estáticas en combate.

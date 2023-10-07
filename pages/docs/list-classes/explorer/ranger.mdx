@@ -1,4 +1,5 @@
 import { Screenshot } from "@components/screenshot";
+import { Pill } from "@components/pill";
 import { Bleed } from "nextra-theme-docs";
 import { Callout } from "nextra/components";
 import archerPic from "@assets/docs/subclasses/archer_focus.jpg";
@@ -14,27 +15,16 @@ import archerPic from "@assets/docs/subclasses/archer_focus.jpg";
 <Callout type="warning" emoji="🔎">
   Necesita revisión
 </Callout>
-Eres un experimentando conocedor de valles, ríos y montañas, un gran conocedor de atajos y tierras lejanas. 
-Siempre en movimiento, buscando aventuras, el montaraz es un luchador que sabe sobrevivir por su cuenta,
-recolectando y cazando sus propios alimentos pero solo cuando es necesario: cree en el uso responsable 
-de los recursos naturales.
+Eres un experimentado conocedor de los valles, ríos y montañas, un experto en descubrir
+atajos y explorar tierras lejanas. Siempre en movimiento, el Montaraz es un luchador
+que ha perfeccionado el arte de la supervivencia por cuenta propia. Se sustenta recolectando
+y cazando sus propios alimentos, pero solo cuando es estrictamente necesario; cree
+en el uso responsable y sostenible de los recursos naturales.
 
-## Historial (12) [#historial]
-
-- (x) **Ataque focalizado:** (pasivo) si ataca al último enemigo que atacó (es decir este es el 2do o más ataque consecutivo), el valor de éxito baja uno (es decir si era VE 6 será VE 5) (No acumulativo)
-- (x) **Tiro curvo:** (poder único, acción especial) por 10 mana, de la trayectoria de sus flechas puede curvarse evitando así la penalización por cobertura parcial o total (es decir podes tirar incluso contra fuera de tu visión si sabes que están ahí)
-- (x) **Multiobjetivo:** (poder único, acción especial) por cada 20 de adrenalina lanzará una flecha adicional a un objetivo distinto con su ataque con arco (será una sola tirada, pero que puede tener múltiples réplicas) (los objetivos deben estar dentro de un cono de visión de 90º)
-- (x) **Disparo acorralado:** (acción especial) cuando tenés un enemigo adyacente (es decir normalmente menor al rango de tu arco) gastando 30 de adrenalina, puedes realizar el ataque y te mueves un tile hacia cualquiera de los tres tiles “de tu espalda”.
-- (x) **Rodar y disparar:** (acción especial) inmediatamente luego de un [Rodar](/docs/ruling-combat/05#5-5) exitoso, puedes gastar 1 PA adicional, para ahí mismo, atacar al objetivo que acabas de esquivar (y el objetivo tiene réplica)
-- (x) **La fortuna favorece a los audaces:** (pasivo) obtiene un dado adicional en ataques (melee y rango) contra enemigos que aún tengan todos sus PA
-- (x) **Siempre listo:** (acción especial) al comenzar el combate (mientras no haya sido sorprendido) puede desenvainar automáticamente sin tirada de dados
-- (x) **Experimentado:** (pasivo) toda habilidad no-adrenal y no-excluyente que no poseas se tira con **tres dados en vez de tirar con uno**
-- (x) **Lleno de recursos:** obtiene tres habilidades a elección adicionales (agrégalas y calcula sus valores iniciales)
-- (x) **Montura Normal:** agrega montar a tus habilidades si no la tienes. Comienza con una [montura T2](/docs/list-annex/mounts) (Tipo 2: Caballo normal)
-- (x) **Rural:** bono (+1) a todas sus habilidades existentes de la categoría exteriores (ambas: [entorno](/docs/list-skills/individual#cat-ext-entorno) y [animales](/docs/list-skills/individual#cat-ext-animales))
-- (x) **Camuflaje natural:** (tarjeta) si esta en entorno naturales, objtiene un bono (+2) a camuflaje mágico
+Dotado con un profundo entendimiento de la naturaleza, el Montaraz se desplaza con gracia por terrenos desafiantes y desentraña los secretos ocultos de las regiones más salvajes. Su habilidad para encontrar caminos inexplorados y su resistencia inquebrantable lo convierten en un maestro en la búsqueda de aventuras, siempre listo para enfrentar los desafíos que le esperan en las fronteras del mundo conocido. Con una conexión especial con la tierra, el Montaraz es un guardián apasionado de la naturaleza, comprometido a preservar su belleza y equilibrio para las generaciones futuras.
 
 ## Armas y Magias
+
 Sus armas comienzan en tres y sus magias en dos
 
 ### Armas (3) [#armas]
@@ -48,3 +38,18 @@ Sus armas comienzan en tres y sus magias en dos
 - [Sonomancia](/docs/list-hexagons/e02)
 - [Camouflage mágico](/docs/list-hexagons/e07L1)
 - [Llamas](/docs/list-hexagons/e01L1)
+
+## Historial (12) [#historial]
+
+- (x) **Ataque focalizado:** <Pill type="p"/> si ataca al último enemigo que atacó (es decir este es el 2do o más ataque consecutivo), el valor de éxito baja uno (es decir si era VE 6 será VE 5) (No acumulativo)
+- (x) **Tiro curvo:** <Pill type="s"/><Pill type="u"/> por 10 mana, de la trayectoria de sus flechas puede curvarse evitando así la penalización por cobertura parcial o total (es decir podes tirar incluso contra fuera de tu visión si sabes que están ahí)
+- (x) **Multiobjetivo:** <Pill type="s"/> por cada 20 de adrenalina lanzará una flecha adicional a un objetivo distinto con su ataque con arco (será una sola tirada, pero que puede tener múltiples réplicas). Los objetivos deben estar dentro de un cono de visión de 90º grados.
+- (x) **Disparo acorralado:** <Pill type="s"/> cuando el montaraz tenga un enemigo adyacente (es decir normalmente menor al rango de su arco) gastando 30 de adrenalina puede realizar el ataque y se moverá una casilla hacia cualquiera de las tres tcasillas consideradas “de tu espalda”.
+- (x) **Rodar y disparar:** <Pill type="s"/> inmediatamente luego de un [Rodar](/docs/ruling-combat/05#5-5) exitoso, el montaraz puede gastar 1 PA adicional, para alí mismo atacar al objetivo que acaba de esquivar. Nota: el objetivo tendrá derecho a una replica
+- (x) **La fortuna favorece a los audaces:** <Pill type="p"/> obtiene un dado adicional en ataques (melee y rango) contra enemigos que aún tengan todos sus PA
+- (x) **Siempre listo:** <Pill type="c"/> al comenzar el combate (mientras no haya sido sorprendido) puede desenvainar automáticamente sin tirada de dados
+- (x) **Experimentado:** <Pill type="p"/><Pill type="u"/> toda habilidad no-adrenal y no-excluyente que no posea, **se tira con tres dados** (en vez de lo usual que es tirar con uno)
+- (x) **Lleno de recursos:** obtiene tres habilidades a elección adicionales (agrégalas y calcula sus valores iniciales)
+- (x) **Montura Normal:** <Pill type="u"/> agrega montar a tus habilidades si no la tienes. Comienza con una [montura Tipo 2: Caballo normal](/docs/list-annex/mounts)
+- (x) **Rural:** bono (+1) a todas sus habilidades existentes de la categoría exteriores (ambas: [entorno](/docs/list-skills/individual#cat-ext-entorno) y [animales](/docs/list-skills/individual#cat-ext-animales))
+- (x) **Camuflaje natural:** <Pill type="c"/><Pill type="u"/> si esta en entorno naturales, objtiene un bono (+2) a camuflaje mágico
