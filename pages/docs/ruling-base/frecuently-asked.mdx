@@ -1,111 +1,144 @@
-import { Callout } from 'nextra/components'
+import { Callout } from "nextra/components";
 
 # Preguntas frecuentes (reglas)
 
 Colección de preguntas o reglas miscelaneas
 
-<Callout type="warning">
-  Esta sección aún esta en construcción.
-</Callout>
+<Callout type="warning">Esta sección aún esta en construcción.</Callout>
 
 ## Sobre creación de personajes jugadores
 
 export function QABox({ title, children }) {
   return (
-    <details
-      className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
-    >
+    <details className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4">
       <summary>
         <strong className="text-lg">{title}</strong>
       </summary>
       <div className="nx-p-2">{children}</div>
     </details>
-  )
+  );
 }
 
 <QABox title="Cuáles son las características?">
   Las características representan rasgos fundamentales de un personaje jugador.
-  Son, **3 físicas:** Fuerza (Fu), Resistencia (Re) y Agilidad (Ag); **3 mentales:** Razón (Ra), Intuición (Intu),
-  Sabiduría (Sab); **3 Miscelaneas:** Social (Soc), Percepción (Per), Voluntad (Vo).
+  Son, **3 físicas:** Fuerza (Fu), Resistencia (Re) y Agilidad (Ag); **3
+  mentales:** Razón (Ra), Intuición (Intu), Sabiduría (Sab); **3 Miscelaneas:**
+  Social (Soc), Percepción (Per), Voluntad (Vo).
 </QABox>
 
-### Etiquetas en el historial
+### Historiales
 
-<QABox title="Que significa la etiqueta 'Pasivo'?">
-  Es un efecto continuo que está presente de forma automática.
+<QABox title="Que significa 'Pasivo'?">
+  Es un efecto continuo presente de forma automática.
 </QABox>
 
-<QABox title="Que significa la etiqueta 'Mejora'?">
-  Perfecciona, enriquece o enmienda una mecánica existente. Como ser: maniobras, penalizaciones, tiradas o magias
+<QABox title="Que significa 'Mejora'?">
+  Perfecciona, enriquece o enmienda una mecánica existente. Como ser: maniobras,
+  penalizaciones, tiradas o magias.
 </QABox>
 
-<QABox title="Que significa la etiqueta 'Tarjeta'?">
-  Los historiales tipo "Tarjeta" son cosas que generalmente "solo debes mostrar" a los demás para probar hacer su efecto
-  No requerien tiradas, siempre que se cumplan sus condiciones, suceden.
+<QABox title="Que significa 'Tarjeta'?">
+  <ul>
+    <li>
+      - No requieren tiradas, siempre que se cumplan sus condiciones, suceden.
+    </li>
+    <li>
+      - Se les llama "Tarjeta" porque cuando se cumplen las condiciones es como
+      "mostrar una tarjeta".
+    </li>
+  </ul>
 </QABox>
 
-<QABox title="Que significa la etiqueta 'Extenuante'?">
-  Solo se puede hacer una única vez por combate
+<QABox title="Que significa 'Extenuante'?">
+  Es una acción que solo se puede hacer una única vez por combate.
 </QABox>
 
-<QABox title="Que significa la etiqueta 'Extraordinario'?">
-  Solo se puede hacer una única vez por sesión / mesa de juego
+<QABox title="Que significa 'Extraordinario'?">
+  Es una acción que solo se puede hacer una única vez por sesión / mesa de
+  juego.
 </QABox>
 
-<QABox title="Que significa la etiqueta 'Habilidad-única'?">
- Es una habilidad que solo puede ser obtenida por historial
+<QABox title="Que significa 'Habilidad-única'?">
+  Es una habilidad que solo puede ser obtenida por historial.
 </QABox>
 
-<QABox title="Que significa la etiqueta 'acción especial'?">
- Es una acción activada por el personaje, que se resuelve bajo su propio juego de reglas. Es algo nuevo, que no encaja en ninguna de las acciones usuales (dinamica, estatica, maniobra, magia)
+<QABox title="Que significa 'Acción especial'?">
+  <ul>
+    <li>
+      - Es una acción activada por el personaje, que se resuelve bajo su propio
+      juego de reglas.
+    </li>
+    <li>
+      - Es algo nuevo, que no encaja en ninguna de las acciones usuales
+      (adrenales, estatica, maniobras, magias).
+    </li>
+  </ul>
 </QABox>
-
 
 ## Sobre juego en general
 
 <QABox title="Puedo usar una habilidad que no tengo?">
   La regla general es: salvo habilidades excluyentes (como nadar), un personaje
   puede utilizar una habilidad que no posea y lanzará con el minimo (1d10)
-
-  > Por ejemplo en el caso de nadar, una persona que no sabe nadar no sabe 
+  > Por ejemplo en el caso de nadar, una persona que no sabe nadar no sabe
   > (ni siquiera) lo básico como para mantenerse a flote en el agua, por eso se
   > considera excluyente.
 </QABox>
 
 <QABox title="Que habilidades son excluyentes?">
-  Están marcadas con un (†) en la [lista de habilidades](docs/list-skills), pero 
-  puntualmente son:
-  * Nadar
-  * Leer y escribir
-  * Desarmar (que además es maniobra de combate) 
-  * Montar 
-  * Todas las habilidades de la categoría autocontrol 
-  
-  > El director es libre de considerar excluyentes cuantas habilidades él crea 
-  > imposibles de realizar.
+  Están marcadas con un (†) en la [lista de habilidades](docs/list-skills), pero
+  puntualmente son: **Nadar, Desarmar (que además es maniobra de combate),
+  Montar, Todas las habilidades de la categoría autocontrol** 
+  > Importante: el director es libre de considerar excluyentes cuantas 
+  > habilidades él crea imposibles de realizar.
 </QABox>
 
-<QABox title="Lorem ipsum, Cuando se puede subir un skillcheck?">
-  Lorem
+<QABox title="Qué es un skillcheck?">
+  Un skillcheck es una marca que esta a la derecha de las habilidades (de armas,
+  de magias, comunes) en la hoja de personaje. Cuando todos los skillchecks de
+  una habilidad están llenos, al comienzo de la proxima partida, con la
+  autorización del director, esa habilidad sube de nivel.
+  > Por ejemplo si la habilidad tenia un 2, pasará a un 3 y luego se limpian 
+  > todos los "skillchecks" marcados.
 </QABox>
 
+<QABox title="Cuando se puede subir un skillcheck?">
+  <ul>
+    <li>
+      - Durante la partida el director puede darle skillchecks cuando crea correcto
+      
+      > Lo recomendado es 3 por sesión, cuando el director vea el uso 
+    </li>
+    <li>
+      - Al final de la partida el director puede dar 3 skillchecks adicionales a
+      repartir bajo las condiciones que crea necesarias
+      > Por ejemplo puede dar cierta cantidad de puntos para habilidades de armas, 
+      > de magias, comunes o ciertas habilidades especificas que considere que 
+      > fueron usadas en momentos clave o de manera enriquecedora para la trama)
+    </li>
+  </ul>
+</QABox>
 
 ## Entorno táctico
 
-<QABox title="Lorem Desplazamiento normal">
-  Lorem
+<QABox title="Pueden dos personajes ocupar la misma 'casilla'?">
+  En entorno tactico dos personajes NO pueden ocupar la misma casilla. El
+  director puede permitir excepciones, por ejemplo que un personaje este en el 
+  piso y otro "pase por arriba". Pero en general, **no se puede ocupar la 
+  misma casilla.**
 </QABox>
 
-<QABox title="Pueden dos personajes ocupar la misma casilla?">
-  En entorno tactico dos personajes NO pueden ocupar la misma casilla.
-  El director puede permitir excepciones, por ejemplo que un personaje este caido 
-  y otro "pase por arriba". Pero en general, no se puede ocupar la misma casilla.
-</QABox>
-
-<QABox title="Cual es el rango/alcance de un ataque melee?">
+<QABox title="Cuál es el rango/alcance de un ataque melee?">
   El rango normal de ataque melee es 1 casilla (es decir la adyacente).
 </QABox>
 
-<QABox title="Lorem Direccionalidad">
-  Ipsum
+<QABox title="Que significa cuando un efecto tiene duración 2 Asaltos?">
+  Significa que su efecto se aplicará durante el asalto actual (todo el asalto)
+  y además todo el siguiente
+</QABox>
+
+<QABox title="Cuanto tiempo de duración es algo 'instantáneo'?">
+  Algo instantáneo solo sucede (por ejemplo un ataque magico), o dura hasta el
+  final del asalto actual (si quedan dudas en un caso puntual, es siempre a
+  criterio del director).
 </QABox>

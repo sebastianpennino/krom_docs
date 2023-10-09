@@ -19,9 +19,9 @@ const abbvMap: Record<ValidType, string> = {
 const descMap: Record<ValidType, string> = {
   p: "Efecto continuo que está presente de forma automática",
   u: "Perfecciona, enriquece o enmienda una mecánica existente. Como ser: maniobras, penalizaciones, tiradas o magias",
-  s: "Es una acción activada por el personaje, que se resuelve bajo su propio set de reglas",
+  s: "Es una acción activada por el personaje, que se resuelve bajo su propio juego de reglas",
   h: "Es una habilidad que solo puede ser obtenida por historial",
-  c: "No requerien tiradas, siempre que se cumplan sus condiciones, suceden.",
+  c: "No requieren tiradas, siempre que se cumplan sus condiciones, simplemente suceden",
   ex: "Solo se puede hacer una única vez por combate",
   eo: "Solo se puede hacer una única vez por sesión / mesa de juego",
 };
