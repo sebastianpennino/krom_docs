@@ -44,11 +44,9 @@ const logo = (
 );
 
 const config: DocsThemeConfig = {
-  project: {
-    link: "https://github.com/sebastianpennino/krom_docs_nextra",
-  },
-  docsRepositoryBase: "https://github.com/sebastianpennino/krom_docs_nextra/tree/main/",
   primaryHue: 33,
+  feedback: { content: "" },
+  editLink: { text: "" },
   search: {
     error: 'Error!...',
     placeholder: "Buscar...",
@@ -127,9 +125,6 @@ const config: DocsThemeConfig = {
         />
       </>
     );
-  },
-  editLink: {
-    text: "Editar esta pagina en GitHub →",
   },
   sidebar: {
     titleComponent({ title, type }) {
