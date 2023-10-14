@@ -4,7 +4,7 @@
   "description": "Kromsys Documentation made in Nextra",
   "private": true,
   "engines": {
-    "node": "18.0.0",
+    "node": "18.x",
     "npm": ">=9.0.0"
   },
   "repository": {
