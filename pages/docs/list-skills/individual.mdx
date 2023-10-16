@@ -4,158 +4,172 @@ import { Callout, Cards, Card } from "nextra/components";
 # Individuales
 Las habilidades "sueltas" deben ser escogidas con cuidado ya que avanzan de forma muy lenta (requieren cuatro skillchecks para avanzar envés de tres que es lo normal en habilidades de skillpacks) Cada habilidad pertenece a una categoría o grupo de habilidades, esta categoría por lo general determina como se calcula el valor inicial de dicha habilidad
 
+### Valor inicial
+
+Los valores entre corchetes son la características que determinan el valor inicial de esa habilidad siguiendo estas reglas:
+
+- Aquellas que tengan una sola característica se calculan como `1 + característica / 2` (quedando siempre un número entre 2 y 4)
+- Las habilidades que dependen de dos características se calculan como `1 + (característica A + característica B) / 3`, quedando siempre un número entre 2 y 5
+
+> Por ejemplo, supongamos que un personaje tiene Agilidad en 3 y tiene (`Acrobacias [Ag]`), su valor inicial será 1 + 3 / 2 -> 1 + 1.5 -> 2.5 -> redondeando = 3
+
 <Callout type="info">
   Las habilidades individuales requieren 4 skillchecks para avanzar
 </Callout>
 
-<Callout type="error">
-  Toda esta sección - especialmente las fórmulas - son de una version anterior
-  de Kromsys, seguramente cambien en breve. 
-</Callout>
+## Percepción [Per/Intu] [#cat-percepcion]
 
-## Percepción [Per] [#cat-percepcion]
+- **Rastreo:** Permite seguir un rastro dejado por algo o alguien (ramas rotas, pisadas, trozos de ropa, etc).
+- **Registrar:** Se utiliza para detectar detalles en un área, ser u objeto. Se puede utilizar para registrar a alguien a fondo (un cacheo), para encontrar puertas secretas, trampas ocultas, un objeto que se está buscando, etc.
+- **Detectar sustancias:** Sirve para identificar una sustancia (por ejemplo venenos) y/o estimar una lista de posibles ingredientes (en el caso de que sea un preparado).
 
-- Rastreo
-- Registrar
-- Detectar sustancias
+## Comunicación [Sab/Ra] [#cat-comunicacion]
 
-## Comunicación [Ra] [#cat-comunicacion]
-
-- †Leer y escribir
-- Señas y leer labios
+- **†Lenguas antiguas:** Es la capacidad de interpretar idiomas que han caído en desuso, como el de civilizaciones antiguas o especies que ya no existen.
+- **Señas y leer labios:** Permite comunicarse mediante señas y leer los labios de alguien para interpretar lo que está diciendo (si se conoce el lenguaje) a pesar de no escuchar el contenido de las palabras.
 
 ## Influencia Directa [Vo/Soc] [#cat-influ-directa]
 
-- Liderazgo
-- Interrogación
-- Seducción
+- **Liderazgo / Intimidar:** Es la capacidad de dar órdenes y proyectar respeto. Se puede usar para subir la moral de un grupo, lograr que te obedezcan o que te traten con mayor consideración.
+- **Interrogación:** Es la capacidad de sacar información mediante preguntas y respuestas. Puede usarse como una charla intimidatoria o con preguntas simples. No incluye otro medio de extracción de información que no sea verbal.
+- **Seducción:** Se utiliza cuando se busca manipular a alguien mediante sus emociones o la sensualidad.
 
-## Influencia Sutil [Soc] [#cat-influ-sutil]
+## Influencia Sutil [Soc/Ra] [#cat-influ-sutil]
 
-- Diplomacia
-- Oratoria
-- Soborno
-- Ofuscar
+- **Diplomacia:** Permite manejarse en entornos burocráticos complejos, como la corte de un reino, o negociar entre partes con intereses contrapuestos. La política, los pactos, las alianzas y el engaño son facciones de la diplomacia.
+- **Oratoria:** Es la capacidad de impresionar, entretener, convencer o manipular a un público mediante un discurso.
+- **Soborno:** Permite ofrecer dinero, servicios u otros objetos de valor con el fin de persuadir a una persona a realizar algo a cambio. Una buena tirada garantiza una transacción discreta. También sirve para inferir que tanto alguien puede o no ser sobornado.
+- **Ofuscar:** Sirve para ocultar información en una conversación, mentir de forma convincente, trastornar o confundir las ideas o hacer tiempo mediante la charla. Desviar el foco, cambiar de tema o dar vuelta sobre una misma idea pueden ser técnicas comunes para ofuscar.
 
 ## †Autocontrol [Vo] [#cat-autocontrol]
 
-- Meditación (nueva idea 11/10/23)
-- Concentración (nueva 11/10/23)
+- **†Concentración:** Al utilizarla se debe estar en un entorno tranquilo y medianamente silencioso para poder acceder a los saberes más profundos. En caso de una tirada exitosa (2 éxitos VE6) baja en 1 el VE de las siguientes tiradas de conocimiento.
+- **†Resistir persuasión:** Se utiliza para evitar ser persuadido por un discurso o cualquier otro medio. Funciona como una resistencia sustrayendo éxitos (en caso de desearlo) a tiradas de intimidación, interrogación, seducción, oratoria, soborno u ofuscar.
+- **†Ignorar dolor y aturdimiento:** Cuando se recibe uno de los críticos a continuación listados se puede utilizar esta habilidad para evitar la penalización que introducirán. En caso de una tirada exitosa (2 éxitos VE6) se ignoran los efectos que producirían los críticos de conmoción, aturdir, dolor, daño al sistema nervioso y golpes en puntos de presión. También se puede utilizar de forma narrativa si se considera adecuado, por ejemplo para evitar ceder información en caso de tortura.
 
 ## Conocimientos Generales [Sab] [#cat-con-general]
 
-- Flora
-- Fauna
-- Historia
-- Heráldica
+- **Flora y fauna:** Conocimiento de animales vertebrados e invertebrados, plantas y vegetales. En el caso de flora, se trata de un conocimiento más bien amplio, no de carácter específico como el de hierbas y venenos. Por ejemplo se puede utilizar para identificar las partes fundamentales de una planta o reconocer las especies autóctonas de un determinado lugar o clima.
+- **Historia:** Conocimiento de sucesos relevantes del pasado.
+- **Heráldica:** Conocimientos sobre escudos, emblemas, banderas y su significado. Sirve para identificar a quien obedece una fortificación, escuadrón, barco, etc.
 
 ## Conocimientos Mágicos [Intu/Sab] [#cat-con-magico]
 
-- Artefactos
-- Hechizos y runas
-- Criaturas magicas
+- **Artefactos:** Se utiliza para descubrir información sobre objetos que tienen propiedades mágicas. Permite identificar estos artefactos y entender su funcionamiento.
+- **Hechizos y runas:** Las runas son el lenguaje de la magia. Esta habilidad permite obtener información sobre un hechizo al leer runas que los describen o al inspeccionar un área, objeto o ser afectado por el hechizo. La habilidad solo plantea la posibilidad de entender dicha información, no necesariamente de reproducirla.
+- **Criaturas mágicas:** Se utiliza para obtener información sobre criaturas mágicas (por ej. dragones, unicornios o cualquier criatura que el director considere mágica).
 
 ## Conocimientos Técnicos [Ra/Sab] [#cat-con-tecnico]
 
-- Falsificar documentos
-- Etiqueta
-- Leyes
-- Anatomía
-- Mecánica
-- Fortificaciones
+- **Etiqueta:** Conocimiento de usos y costumbres que establecen las conductas esperadas dentro de una clase social, un evento, una cultura o un lugar en particular (vestimenta, modales, saludos, rituales, etc).
+- **Leyes:** Conocimiento de las normas jurídicas y comerciales establecidas por la autoridad de un determinado lugar.
+- **Anatomía:** Conocimiento de la forma y estructura del cuerpo.
+- **Mecánica:** Conocimiento de las leyes naturales que regulan el equilibrio y movimiento de los cuerpos. Se puede utilizar por ejemplo para entender como funciona una polea u otro dispositivo mecánico.
+- **Fortificaciones:** Conocimiento de edificaciones construidas para servir como defensas.
+- **Nudos:** Conocimiento de distintos tipos de sujeciones que se pueden realizar con cuerdas o hilos.
+- **Hierbas y venenos:** Conocimiento que permite distinguir entre distintos tipos de plantas y conocer su utilidad (comestible, medicinal, venenoso, etc.). También permite identificar una sustancia venenosa si su origen es vegetal.
 
 ## Combate [#cat-combate]
 
-- Tácticas de combate [Fu/Sab]
-- Malabares y florituras [Ag/Re]
-- Primeros auxilios [Sab/Intu]
-- Desenvaine veloz [Ag/Fu]
-- Ataque silencioso [Re/Intu]
+- **Tácticas de combate:** Conocimiento sobre estrategias grupales de combate, manejo de escuadrones y su aplicación. Puede usarse como conocimiento (el director te da una solución) o como aplicación de un plan para determinar su resolución. [Fu/Sab]
+- **Malabares y florituras:** Es la capacidad de hacer proezas extrañas con armas, como por ejemplo tomar una espada por el filo, tirarla hacia arriba y volverla a agarrar. [Ag/Intu]
+- **Primeros auxilios:** Se emplea para improvisar vendajes, tratar y suturar heridas. Se puede utilizar de forma narrativa o en combate para frenar la penalización de una herida de críticos de sangrado (2 éxitos VE6) o hemorragia (2 éxitos VE8). [Sab/Intu]
+- **Desenvaine veloz:** Permite desenvainar de forma instantánea. En caso de una tirada exitosa (2 éxitos VE6) se logra desenvainar el arma o armas deseadas sin gastar ningún PA. [Ag/Fu]
+- **Ataque silencioso:** En caso de una tirada exitosa (2 éxitos VE a criterio del DJ) el siguiente ataque que se realice no hace ruido, y de ser mortal, su víctima tampoco hará ruido. [Ag/Intu]
+- **†Desarmar (maniobra):** Habilita la maniobra [Desarmar](/docs/ruling-combat/05#5-8) [Arranca en 3]
 
 ## Atletismo - Gimnastico [Ag] [#cat-gimnastico]
 
-- Acrobacias
-- Contorsionismo
-- Caer/Caida/Equilibrio
+- **Acrobacias:** Permite hacer piruetas, volteretas y movimientos de alta coordinación (como los de alguien que hizo gimnasia deportiva).
+- **Contorsionismo:** Es la capacidad de manipular el cuerpo con gran flexibilidad para adoptar posturas poco convencionales o caber en pequeños espacios. Por ejemplo se puede usar para pasar por pequeñas aberturas o esconderse en lugares que de otro modo no sería posible.
+- **Caída/Equilibrio:** Es la capacidad de mantener el equilibrio y amortiguar caídas desde alturas razonables.
 
 ## Atletismo - Potencia [Fu] [#cat-potencia]
 
-- Levantar pesos
-- Saltar/Saltos
-- Esprintar/Pique
+- **Levantar pesos:** Permite manipular cargas cuyo peso sea superior al indicado por tu derivada "Sobrecarga". En caso de que un objeto tenga un peso inferior a tu "Sobrecarga" no requiere tirada alguna para su manipulación. En caso de superar dicho valor se requiere de esta habilidad para poder manipularlo.
+- **Saltar/Saltos:** Permite elevarse del suelo u otra superficie con impulso, es decir realizar saltos, los que a su vez pueden ser ornamentales.
+- **Esprintar/Pique:** Es la capacidad de acelerar al máximo para realizar una corrida corta y veloz. Se utiliza en entorno narrativo como cualquier otra maniobra dinámica. También puede utilizarse dentro del combate para moverse un determinado número de casillas en un solo turno. En ese caso es una acción que consume 2PA y requiere dos éxitos como mínimo para ser correctamente ejecutada. El valor de éxito se fija de acuerdo a la cantidad de casillas que desee desplazarse. En caso de querer desplazarse 3 casillas el VE será 6, será VE 7 si busca moverse 4 casillas y VE 8 si el desplazamiento objetivo es de 5 casillas. En caso de obtener un único éxito en la maniobra se realizará un movimiento de 2 casillas. Si no se obtiene ningún éxito no habrá movimiento alguno, y en caso de sacar pifia el DJ determinará la penalidad.
 
 ## Atletismo - Resistencia [Re] [#cat-resistencia]
 
-- †Nadar
-- Carrera de larga distancia
-- Trepar y escalar
+- **†Nadar:** Permite trasladarse en el agua a partir de movimientos corporales sincronizados. Sólo se hacen chequeos en caso de estrés, entornos peligrosos o cuando hay una contienda (como al nadar en un río caudaloso o en una carrera).
+- **Carrera de larga distancia:** Se utiliza sólo en caso de carreras de resistencia, en las cuales se debe sostener un ritmo durante largo tiempo o en actividades similares.
+- **Trepar y escalar:** Permite subir por alguna superficie vertical o casi vertical con hendiduras o salientes ayudándose con pies y manos o con alguna herramienta adecuada para tal fin.
 
 ## Subterfugio - Ofensivo [#cat-subt-ofensivo]
 
-- Abrir cerraduras [Ra/Per]
-- Urgar bolsillos [Intu/Per]
-- Preparar trampas [Ra/Intu]
+- **Abrir cerraduras:** Es la capacidad de saber como funciona una cerradura o dispositivos similares y poder intervenirlos. Puede utilizarse tanto para abrir como para cerrar. [Ra/Per]
+- **Hurgar bolsillos:** Permite revisar y obtener objetos de los bolsillos, carteras o bolsos de la gente. Siempre se utiliza como contienda contra la percepción de la víctima para determinar si es descubierto o no en el proceso. [Intu/Per]
+- **Armar y desarmar trampas:** Es la capacidad de improvisar trampas, prepararlas y saber como funcionan. Se puede utilizar tanto para colocar trampas en un determinado sitio como para deshabilitar trampas existentes en caso de ser detectadas. [Ra/Intu]
 
 ## Subterfugio - Defensivo [Ag/Intu] [#cat-subt-defensivo]
 
-- Sigilo
-- Esconderse
-- Camuflar/Disfraz
-- Agilidad manual (prestidigitación)
+- **Sigilo:** Es la habilidad de moverse usando el silencio, las sombras y el entorno para no ser detectado. Si hay posibles observadores, se debe realizar una contienda contra la percepción de los mismos.
+- **Esconderse:** Es la capacidad de buscar escondites y utilizarlos o de permanecer quieto en algún lugar sin ser detectado.
+- **Camuflaje:** Permite que algo o alguien se mimetice en un determinado entorno para pasar desapercibido.
+- **Disfraz:** Se emplea para cambiar la apariencia de algo o alguien utilizando vestimentas, maquillaje y otros elementos.
+- **Agilidad manual (prestidigitación):** Permite hacer movimientos de manos mas veloces que los ojos (como trucos de magia con cartas).
 
 ## Exteriores - Entorno [#cat-ext-entorno]
 
-- Espeleogía [Sab/Intu]
-- Supervivencia [Re/Vo]
-- Orientacion celeste [Per/Sab]
-- Orientacion climática [Per/Intu]
+- **Espeleología:** Permite explorar y estudiar cavidades subterráneas como cuevas o cavernas. También se puede utilizar para salir de laberintos o guiarse por espacios complejos y cerrados. [Sab/Intu]
+- **Supervivencia:** Es la capacidad de sobrevivir en espacios exteriores a través de conocimientos referentes a buscar refugios, alimentos, etc. [Re/Vo]
+- **Orientación celeste:** Sirve para conocer los puntos cardinales o deducir la ubicación con solo ver el cielo. [Per/Sab]
+- **Orientación climática:** Permite saber si se avecina algún cambio de clima en el próximo tiempo. También se puede utilizar para inferir las condiciones climáticas de un lugar a partir de observaciones del entorno. [Per/Intu]
 
 ## Exteriores - Animales [#cat-ext-animales]
 
-- †Montar [Re/Ag]
-- Adiestrar/Domesticar [Fu/Soc]
-- Cazar [Fu/Ra]
+- **†Montar:** Es la habilidad de subirse a lomos de un animal para utilizarlo como medio de transporte. Cuando se selecciona esta habilidad se debe especificar si se sabe montar animales terrestres, aéreos o acuáticos. Sólo se hacen chequeos en caso de estrés, entornos peligrosos, maniobras complejas (como montar un animal no domesticado) o cuando hay una contienda (como en una carrera). [Re/Intu]
+- **Adiestrar/Domesticar:** Se utiliza para enseñar a un animal a ejecutar determinados movimientos o habilidades siguiendo las órdenes de una persona. [Fu/Vo]
+- **Cazar:** Permite matar o capturar un animal en estado salvaje o silvestre, como así también su persecución y rastreo. [Fu/Ra]
 
 ## Urbanas [#cat-urbanas]
 
-- Contactos [Soc]
-- Mezclarse [Ag/Per]
-- Instinto callejero [Ra/Intu]
-- Busqueda urbana [Per/Sab]
+- **Contactos:** Se utiliza para determinar la existencia de una persona conocida en una determinada locación. Puede ser invocada por el jugador o pedida como un chequeo por el director para determinar la existencia de algún conocido que nos pueda ser de ayuda. [Soc]
+- **Mezclarse:** Sirve para mimetizarse entre las masas (mezclarse en un grupo de gente), ya sea para escapar de un perseguidor o simplemente para moverse con facilidad entre muchedumbres sin ser detectado. [Soc/Per]
+- **Instinto callejero / Búsqueda urbana:** Sirve para encontrar lugares, individuos u objetos dentro de una ciudad o urbe, o para tener una orientación básica a pesar de no conocer el lugar, como por ejemplo ubicar dónde se encuentran los mercados. También sirve como una etiqueta urbana, proporcionando los códigos de conducta necesarios acorde al lugar. [Soc/Intu]
 
-## Oficios [Fu/Re/Ra] [#cat-oficio]
+## Oficios Físicos [Fu/Sab] [#cat-oficio]
 
-- Caligrafía/Escriba
-- Navegación
-- Talabartería
+- **Talabartería:** Permite trabajar y elaborar artículos de cuero. Se puede utilizar por ejemplo para reparar o crear armaduras de cuero teniendo los materiales y herramientas necesarios.
+- **Tallar madera:** Permite trabajar y elaborar artículos de madera. Se necesita una herramienta con filo para poder hacerlo.
+- **Albañilería:** Es el arte de construir edificaciones u otras obras empleando según corresponda piedra, ladrillo, cal, yeso, cemento u otros materiales semejantes.
+- **Herrería:** Es el oficio de labrar el hierro y el acero para transformarlo en estructuras y objetos. Se puede utilizar por ejemplo para reparar o crear armas y armaduras de acero teniendo los materiales y herramientas necesarios.
+- **Orfebrería y joyería:** Es el arte de labrar adornos, accesorios u objetos pequeños a partir de distintos metales, gemas o piedras preciosas. El fin de estos objetos es siempre principalmente ornamental.
+- **Minería:** Permite explorar minas y extraer distintos tipos de minerales con las herramientas adecuadas.
 
-Nota: aquí el director puede agregar tantos oficios como prefiera o se adapten a su mesa (por ejemplo: minero, barbero, etc);
+> Nota: aquí el director puede agregar tantos oficios como prefiera o se adapten a su mesa (por ejemplo: pescador, barbero, pellejero, zapatero, tejedor, sastre, pañero, carpintero, tintorero, alfarero, candelero, carniceros, panaderos, etc)
 
-## Comercio [Ra/Soc] [#cat-comercio]
+## Oficios Técnicos [Sab/Intu] [#cat-comercio]
 
-- Tasación
-- Regateo
-- Mendigar
-- Apostar
+- **Caligrafía y falsificación de documentos:** Es el conocimiento y aplicación del manejo de la pluma y la escritura. Permite copiar a gran velocidad y falsificar documentos (imitación de tintas, firmas, sellos, etc.)
+- **Navegación:** Son los conocimientos respecto a la navegación de botes y barcos y la aplicación de los mismos.Permite gobernar una embarcación de un punto a otro de forma eficiente y responsable.
+- **Cartografía:** Es la capacidad de crear e interpretar mapas de diversos tipos.
+
+## Comercio [Soc/Intu] [#cat-comercio]
+
+- **Tasación:** Se utiliza para aproximar o estimar el valor económico de un objeto o servicio.
+- **Regateo:** Es la capacidad de negociar un precio más conveniente en una transacción. En caso de una tirada exitosa el director debe bajar el precio del objeto o servicio negociado.
+- **Mendigar:** Permite convencer a los demás para conseguir pequeñas cantidades de dinero u objetos de poco valor.
+- **Apostar:** Permite calcular probabilidades y tomar mejores decisiones en juegos de azar o aquellos en los que existe un rédito económico.
 
 ## Arte - Activo [Vo/Soc/Intu] [#cat-arte-activo]
 
-- Actuación y mimica
-- Tocar instrumento
-- Cantar e Imitar sonidos
+- **Actuación y mímica:** Es la capacidad interpretativa. Permite simular acciones o representaciones, interpretar un personaje o imitar a otra persona.
+- **Cantar y tocar instrumento (elegir uno):** Es la capacidad de afinar la voz, modulación, tono y volumen para producir un sonido armonioso y conocimiento en el arte de tocar determinado instrumento.
+- **Imitar sonidos:** Se trata del arte de modificar la voz para imitar otras voces u otros sonidos.
 
 ## Arte - Pasivo [Intu/Ra] [#cat-arte-pasivo]
 
-- Pintura
-- Escultura
-- Poesía
+- **Pintura y escultura:** Es el arte de usar pigmentos (pinturas) para hacer representaciones gráficas y de modelar el barro o tallar la piedra para realizar esculturas.
+- **Poesía:** Permite manifestar un sentimiento, idea o historia utilizando el lenguaje de manera estética. También se utiliza como conocimiento de las técnicas literarias.
 
 <Callout type="info">
   Habilidades excluyentes (†): Las habilidades que comienzan con **†** son
   habilidades excluyentes (es decir, una persona que no sabe nadar no sabe ni
   siquiera lo básico como para mantenerse a flote en el agua) Las habilidades
-  excluyentes son: nadar, leer y escribir, desarmar -que además es maniobra-
-  montar y todas las habilidades de la categoría autocontrol (pero el Dj es
-  libre de considerar cualquier habilidad que crea imposible de hacer sin previo
-  conocimiento)
+  excluyentes son: Nadar, Lenguas antiguas, Desarmar -que además es maniobra-
+  Montar y todas las habilidades de la categoría autocontrol (pero el director
+  es libre de considerar cualquier habilidad que crea imposible de hacer sin
+  previo conocimiento)
 </Callout>
