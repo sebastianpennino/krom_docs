@@ -1,5 +1,5 @@
 {
-  "weapon": "Armas",
+  "weapon": { "title": "Armas", "display": "hidden" },
   "individual": "Individuales",
   "grouped": "Skillpacks"
 }
